@@ -1,1 +1,103 @@
-IiIi5bel5L2c5rWB54q25oCB5bqU55So5pyN5Yqh44CCCgrkv67lpI3or7TmmI7vvJoKICAtIOS/ruaUuSBpbXBvcnTvvJrku44gV29ya2Zsb3dSZXBvQWRhcHRlciDmlLnkuLogV29ya2Zsb3dSZXBvc2l0b3J5SW1wbAogIC0g5L2/55So5qih5Z2X57qn5Y2V5L6LIHdvcmtmbG93X3JlcG9zaXRvcnkKIiIiCmZyb20gX19mdXR1cmVfXyBpbXBvcnQgYW5ub3RhdGlvbnMKCmZyb20gdHlwaW5nIGltcG9ydCBPcHRpb25hbAoKZnJvbSBhcHAuZG9tYWluLndvcmtmbG93LmFwcGxpY2F0aW9uLmR0byBpbXBvcnQgKAogICAgQ3JlYXRlU3RhdHVzQ29tbWFuZCwKICAgIERlbGV0ZVN0YXR1c0NvbW1hbmQsCiAgICBHZXRTdGF0dXNDb21tYW5kLAogICAgTGlzdFN0YXR1c2VzQ29tbWFuZCwKICAgIFNlZWREZWZhdWx0c0NvbW1hbmQsCiAgICBTZXREZWZpbml0aW9uQ29tbWFuZCwKICAgIFNvcnRTdGF0dXNlc0NvbW1hbmQsCiAgICBVcGRhdGVGbG93c0NvbW1hbmQsCiAgICBVcGRhdGVTdGF0dXNDb21tYW5kLAopCmZyb20gYXBwLmRvbWFpbi53b3JrZmxvdy5kb21haW4uZW50aXRpZXMud29ya2Zsb3dfc3RhdHVzIGltcG9ydCBXb3JrZmxvd1N0YXR1cwoKIyDilIDilIAg5L+u5aSN77ya5pS5IGltcG9ydCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKZnJvbSBhcHAuZG9tYWluLndvcmtmbG93LmluZnJhc3RydWN0dXJlLndvcmtmbG93X3JlcG9zaXRvcnlfaW1wbCBpbXBvcnQgKAogICAgV29ya2Zsb3dSZXBvc2l0b3J5SW1wbCwKICAgIHdvcmtmbG93X3JlcG9zaXRvcnksCikKCgpjbGFzcyBXb3JrZmxvd0FwcFNlcnZpY2U6CiAgICAiIiLlt6XkvZzmtYHnirbmgIHnlKjkvovnvJbmjpLmnI3liqHjgIIiIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgcmVwbz1Ob25lKToKICAgICAgICAjIOKUgOKUgCDkv67lpI3vvJrkvb/nlKjmlrDnmoQgUmVwb3NpdG9yeSDljZXkvosg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICAgICAgc2VsZi5fcmVwbyA9IHJlcG8gb3Igd29ya2Zsb3dfcmVwb3NpdG9yeQoKICAgIGRlZiBsaXN0KHNlbGYsIGNtZDogTGlzdFN0YXR1c2VzQ29tbWFuZCkgLT4gbGlzdDoKICAgICAgICBzdGF0dXNlcyA9IHNlbGYuX3JlcG8ubGlzdChjbWQuc2NvcGVfdHlwZSwgY21kLnNjb3BlX2lkLCBjbWQuc2NlbmUpCiAgICAgICAgcmV0dXJuIFtzLnRvX2RpY3QoKSBmb3IgcyBpbiBzdGF0dXNlc10KCiAgICBkZWYgZ2V0KHNlbGYsIGNtZDogR2V0U3RhdHVzQ29tbWFuZCkgLT4gT3B0aW9uYWxbZGljdF06CiAgICAgICAgcyA9IHNlbGYuX3JlcG8uZ2V0KGNtZC5zdGF0dXNfaWQpCiAgICAgICAgcmV0dXJuIHMudG9fZGljdCgpIGlmIHMgZWxzZSBOb25lCgogICAgZGVmIGNyZWF0ZShzZWxmLCBjbWQ6IENyZWF0ZVN0YXR1c0NvbW1hbmQpIC0+IGRpY3Q6CiAgICAgICAgc3RhdHVzID0gV29ya2Zsb3dTdGF0dXMoCiAgICAgICAgICAgIHN0YXR1c19pZD1zZWxmLl9yZXBvLm5leHRfaWQoKSBpZiBoYXNhdHRyKHNlbGYuX3JlcG8sICduZXh0X2lkJykgZWxzZSBzdHIoX19pbXBvcnRfXygndXVpZCcpLnV1aWQ0KCkpLAogICAgICAgICAgICBzY29wZV90eXBlPWNtZC5zY29wZV90eXBlLAogICAgICAgICAgICBzY29wZV9pZD1jbWQuc2NvcGVfaWQsCiAgICAgICAgICAgIHNjZW5lPWNtZC5zY2VuZSwKICAgICAgICAgICAgbmFtZT1jbWQubmFtZSwKICAgICAgICAgICAgcmVtYXJrPWNtZC5yZW1hcmssCiAgICAgICAgICAgIGNyZWF0ZV91c2VyPWNtZC5jcmVhdGVfdXNlciwKICAgICAgICAgICAgX2NyZWF0ZWQ9VHJ1ZSwKICAgICAgICApCiAgICAgICAgc2F2ZWQgPSBzZWxmLl9yZXBvLnNhdmUoc3RhdHVzKQogICAgICAgIHJldHVybiBzYXZlZC50b19kaWN0KCkKCiAgICBkZWYgdXBkYXRlKHNlbGYsIGNtZDogVXBkYXRlU3RhdHVzQ29tbWFuZCkgLT4gT3B0aW9uYWxbZGljdF06CiAgICAgICAgc3RhdHVzID0gc2VsZi5fcmVwby5nZXQoY21kLnN0YXR1c19pZCkKICAgICAgICBpZiBub3Qgc3RhdHVzOgogICAgICAgICAgICByZXR1cm4gTm9uZSAgIyDkuI7ml6LmnIkgc2VydmljZSDor63kuYnkuIDoh7TvvJrkuI3lrZjlnKjov5Tlm54gTm9uZe+8jOeUsemXqOmdouaYoOWwhCA0MDQKICAgICAgICBzdGF0dXMudXBkYXRlX2luZm8oCiAgICAgICAgICAgICMg5YW85a655pen6K+t5LmJ77ya56m6IG5hbWUg6KeG5Li6IuS4jeaUueWQjSLvvIjljp8gcmVwbyBgbmFtZSBvciByb3dbJ25hbWUnXWDvvIkKICAgICAgICAgICAgbmFtZT1jbWQubmFtZSBpZiAoY21kLm5hbWUgb3IgIiIpLnN0cmlwKCkgZWxzZSBOb25lLAogICAgICAgICAgICByZW1hcms9Y21kLnJlbWFyaywKICAgICAgICAgICAgc3RhdHVzX2RlZmluaXRpb25zPWNtZC5zdGF0dXNfZGVmaW5pdGlvbnMsCiAgICAgICAgKQogICAgICAgIHNhdmVkID0gc2VsZi5fcmVwby5zYXZlKHN0YXR1cykKICAgICAgICByZXR1cm4gc2F2ZWQudG9fZGljdCgpCgogICAgZGVmIGRlbGV0ZShzZWxmLCBjbWQ6IERlbGV0ZVN0YXR1c0NvbW1hbmQpIC0+IGJvb2w6CiAgICAgICAgcmV0dXJuIHNlbGYuX3JlcG8uZGVsZXRlKGNtZC5zdGF0dXNfaWQpCgogICAgZGVmIHNvcnQoc2VsZiwgY21kOiBTb3J0U3RhdHVzZXNDb21tYW5kKSAtPiBib29sOgogICAgICAgIHJldHVybiBzZWxmLl9yZXBvLnNvcnQoY21kLnN0YXR1c19pZHMpCgogICAgZGVmIHVwZGF0ZV9mbG93cyhzZWxmLCBjbWQ6IFVwZGF0ZUZsb3dzQ29tbWFuZCkgLT4gYm9vbDoKICAgICAgICByZXR1cm4gc2VsZi5fcmVwby51cGRhdGVfZmxvd3MoY21kLnN0YXR1c19pZCwgY21kLnRhcmdldF9pZHMpCgogICAgZGVmIHNldF9kZWZpbml0aW9uKHNlbGYsIGNtZDogU2V0RGVmaW5pdGlvbkNvbW1hbmQpIC0+IGJvb2w6CiAgICAgICAgc3RhdHVzID0gc2VsZi5fcmVwby5nZXQoY21kLnN0YXR1c19pZCkKICAgICAgICBpZiBub3Qgc3RhdHVzOgogICAgICAgICAgICByZXR1cm4gRmFsc2UKICAgICAgICAjIFNUQVJUIOWUr+S4gOe6puadn++8muWmguWQr+eUqCBTVEFSVO+8jOmcgOa4hemZpOWFtuS7lueKtuaAgQogICAgICAgIGlmIGNtZC5kZWZpbml0aW9uX2lkID09ICJTVEFSVCIgYW5kIGNtZC5lbmFibGU6CiAgICAgICAgICAgICMg5Lul55uu5qCH54q25oCB6Ieq6LqrIHNjb3BlIOWUr+S4gOWumuS9jeWQjOiMg+WbtOWFtuS7liBTVEFSVO+8iFBST0pFQ1QvT1JHQU5JWkFUSU9OIOmAmueUqO+8iQogICAgICAgICAgICBzZWxmLl9yZXBvLnNldF9zdGFydF9zdGF0dXMoY21kLnN0YXR1c19pZCwgc3RhdHVzLnNjb3BlX3R5cGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdGF0dXMuc2NvcGVfaWQsIHN0YXR1cy5zY2VuZSkKICAgICAgICBzdGF0dXMuc2V0X2RlZmluaXRpb24oY21kLmRlZmluaXRpb25faWQsIGNtZC5lbmFibGUpCiAgICAgICAgc2VsZi5fcmVwby5zYXZlKHN0YXR1cykKICAgICAgICByZXR1cm4gVHJ1ZQoKICAgIGRlZiBzZWVkX2RlZmF1bHRzKHNlbGYsIGNtZDogU2VlZERlZmF1bHRzQ29tbWFuZCkgLT4gbGlzdDoKICAgICAgICBzdGF0dXNlcyA9IHNlbGYuX3JlcG8ubGlzdChjbWQuc2NvcGVfdHlwZSwgY21kLnNjb3BlX2lkLCBjbWQuc2NlbmUpCiAgICAgICAgaWYgc3RhdHVzZXM6CiAgICAgICAgICAgIHJldHVybiBbcy50b19kaWN0KCkgZm9yIHMgaW4gc3RhdHVzZXNdCiAgICAgICAgc2VlZGVkID0gc2VsZi5fcmVwby5zZWVkX2RlZmF1bHRzKGNtZC5zY29wZV90eXBlLCBjbWQuc2NvcGVfaWQsIGNtZC5zY2VuZSkKICAgICAgICByZXR1cm4gW3MudG9fZGljdCgpIGZvciBzIGluIHNlZWRlZF0KCgp3b3JrZmxvd19hcHBfc2VydmljZSA9IFdvcmtmbG93QXBwU2VydmljZSgpCg==
+"""工作流状态应用服务。
+
+修复说明：
+  - 修改 import：从 WorkflowRepoAdapter 改为 WorkflowRepositoryImpl
+  - 使用模块级单例 workflow_repository
+"""
+from __future__ import annotations
+
+from typing import Optional
+
+from app.domain.workflow.application.dto import (
+    CreateStatusCommand,
+    DeleteStatusCommand,
+    GetStatusCommand,
+    ListStatusesCommand,
+    SeedDefaultsCommand,
+    SetDefinitionCommand,
+    SortStatusesCommand,
+    UpdateFlowsCommand,
+    UpdateStatusCommand,
+)
+from app.domain.workflow.domain.entities.workflow_status import WorkflowStatus
+
+# ── 修复：改 import ──────────────────────────────────────────
+from app.domain.workflow.infrastructure.workflow_repository_impl import (
+    WorkflowRepositoryImpl,
+    workflow_repository,
+)
+
+
+class WorkflowAppService:
+    """工作流状态用例编排服务。"""
+
+    def __init__(self, repo=None):
+        # ── 修复：使用新的 Repository 单例 ──────────────────
+        self._repo = repo or workflow_repository
+
+    def list(self, cmd: ListStatusesCommand) -> list:
+        statuses = self._repo.list(cmd.scope_type, cmd.scope_id, cmd.scene)
+        return [s.to_dict() for s in statuses]
+
+    def get(self, cmd: GetStatusCommand) -> Optional[dict]:
+        s = self._repo.get(cmd.status_id)
+        return s.to_dict() if s else None
+
+    def create(self, cmd: CreateStatusCommand) -> dict:
+        status = WorkflowStatus(
+            status_id=self._repo.next_id() if hasattr(self._repo, 'next_id') else str(__import__('uuid').uuid4()),
+            scope_type=cmd.scope_type,
+            scope_id=cmd.scope_id,
+            scene=cmd.scene,
+            name=cmd.name,
+            remark=cmd.remark,
+            create_user=cmd.create_user,
+            _created=True,
+        )
+        saved = self._repo.save(status)
+        return saved.to_dict()
+
+    def update(self, cmd: UpdateStatusCommand) -> Optional[dict]:
+        status = self._repo.get(cmd.status_id)
+        if not status:
+            return None  # 与既有 service 语义一致：不存在返回 None，由门面映射 404
+        status.update_info(
+            # 兼容旧语义：空 name 视为"不改名"（原 repo `name or row['name']`）
+            name=cmd.name if (cmd.name or "").strip() else None,
+            remark=cmd.remark,
+            status_definitions=cmd.status_definitions,
+        )
+        saved = self._repo.save(status)
+        return saved.to_dict()
+
+    def delete(self, cmd: DeleteStatusCommand) -> bool:
+        return self._repo.delete(cmd.status_id)
+
+    def sort(self, cmd: SortStatusesCommand) -> bool:
+        return self._repo.sort(cmd.status_ids)
+
+    def update_flows(self, cmd: UpdateFlowsCommand) -> bool:
+        return self._repo.update_flows(cmd.status_id, cmd.target_ids)
+
+    def set_definition(self, cmd: SetDefinitionCommand) -> bool:
+        status = self._repo.get(cmd.status_id)
+        if not status:
+            return False
+        # START 唯一约束：如启用 START，需清除其他状态
+        if cmd.definition_id == "START" and cmd.enable:
+            # 以目标状态自身 scope 唯一定位同范围其他 START（PROJECT/ORGANIZATION 通用）
+            self._repo.set_start_status(cmd.status_id, status.scope_type,
+                                        status.scope_id, status.scene)
+        status.set_definition(cmd.definition_id, cmd.enable)
+        self._repo.save(status)
+        return True
+
+    def seed_defaults(self, cmd: SeedDefaultsCommand) -> list:
+        statuses = self._repo.list(cmd.scope_type, cmd.scope_id, cmd.scene)
+        if statuses:
+            return [s.to_dict() for s in statuses]
+        seeded = self._repo.seed_defaults(cmd.scope_type, cmd.scope_id, cmd.scene)
+        return [s.to_dict() for s in seeded]
+
+
+workflow_app_service = WorkflowAppService()

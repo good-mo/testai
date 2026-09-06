@@ -37,7 +37,7 @@ def remove_org_member(org_id: str, user_id: str, request: Request):
     """Remove Org Member。"""
     try:
         from app.domain.admin_system.application.dto import RemoveMemberCommand
-        cmd = RemoveMemberCommand("org_id": org_id, "user_id": user_id)
+        cmd = RemoveMemberCommand(org_id=org_id, user_id=user_id)
         result = admin_system_app_service.remove_org_member(cmd)
         return ok(result)
     except Exception as e:

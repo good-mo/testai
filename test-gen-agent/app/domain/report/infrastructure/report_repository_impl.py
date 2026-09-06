@@ -12,7 +12,7 @@ import uuid
 from typing import List, Optional, Tuple
 
 from app.domain.report.domain.entities.report import Report
-from app.repositories.report_repo import ReportRepo
+from app.domain.report.infrastructure.report_store import ReportRepo
 
 
 class ReportRepoAdapter:

@@ -170,9 +170,9 @@ def seed_defects() -> None:
 
 
 def preheat_rsa_keys() -> None:
-    """预热 RSA 密钥：登录接口首次调用无需现场生成，避免首次登录卡顿。"""
-    from app.auth.store import _ensure_rsa_keys
-    _ensure_rsa_keys()
+    """初始化认证上下文的持久化结构。"""
+    from app.domain.auth.infrastructure.auth_repository_impl import AuthRepositoryImpl
+    AuthRepositoryImpl()
 
 
 __all__ = [

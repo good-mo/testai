@@ -11,7 +11,7 @@ from typing import List, Optional, Tuple
 
 from app.domain.common.exceptions import AggregateNotFound
 from app.domain.generation.domain.entities.generation_job import GenerationJob
-from app.repositories.run_repo import RunRepo
+from app.domain.generation.infrastructure.generation_store import RunRepo
 
 
 class GenerationJobRepoAdapter:

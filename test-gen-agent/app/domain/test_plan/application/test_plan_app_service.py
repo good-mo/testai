@@ -270,3 +270,4 @@ class TestPlanAppService:
 
 # 单例门面（进程内复用）
 test_plan_app_service = TestPlanAppService()
+test_plan_service = test_plan_app_service

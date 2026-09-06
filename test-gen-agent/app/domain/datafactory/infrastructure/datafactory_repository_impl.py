@@ -23,7 +23,7 @@ from typing import List, Optional
 from app.domain.datafactory.domain.entities.data_batch import DataBatch
 from app.domain.datafactory.domain.entities.data_template import DataTemplate
 from app.domain.datafactory.domain.value_objects.category import VALID as CATEGORY_VALID
-from app.repositories.datafactory_repo import DatafactoryRepo
+from app.domain.datafactory.infrastructure.datafactory_store import DatafactoryRepo
 
 
 def _normalize_category(row: dict) -> dict:

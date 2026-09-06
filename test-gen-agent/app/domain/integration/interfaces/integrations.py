@@ -14,7 +14,7 @@ from fastapi import APIRouter, Request
 
 from app.core.response import ok
 from app.logging_config import get_logger
-from app.models.integration import (
+from app.domain.integration.application.dto import (
     DingTalkConfigBody,
     LarkConfigBody,
     LarkSuiteConfigBody,

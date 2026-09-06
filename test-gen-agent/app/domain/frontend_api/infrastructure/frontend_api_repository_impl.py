@@ -7,7 +7,7 @@ from __future__ import annotations
 
 from typing import Optional
 
-from app.repositories.apitest_repo import ApitestRepo
+from app.domain.apitest.infrastructure.apitest_store import ApitestRepo
 
 
 class FrontendApiRepoAdapter:

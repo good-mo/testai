@@ -71,3 +71,4 @@ class TaskCenterAppService:
 
 
 task_center_app_service = TaskCenterAppService()
+task_center_service = task_center_app_service

@@ -13,7 +13,7 @@ from typing import Any, Dict, List
 from fastapi import APIRouter
 
 from app.core.response import ok, page_result
-from app.models.organizations import (
+from app.domain.organization.application.dto import (
     OrgMemberAddBody,
     OrgMemberListPageQuery,
     OrgMemberRemoveBody,

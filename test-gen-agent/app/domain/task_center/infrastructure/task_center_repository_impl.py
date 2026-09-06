@@ -8,7 +8,7 @@
 from __future__ import annotations
 
 from app.core.task_enums import normalize_status
-from app.repositories.test_plan_repo import TestPlanRepo
+from app.domain.task_center.infrastructure.schedule_store import TestPlanRepo
 from app.tasks.manager import manager
 
 

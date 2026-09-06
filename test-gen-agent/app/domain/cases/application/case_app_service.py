@@ -364,3 +364,4 @@ class CaseAppService:
 
 # 单例门面（进程内复用）
 case_app_service = CaseAppService()
+case_service = case_app_service

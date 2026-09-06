@@ -10,7 +10,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import FileResponse
 
 from app.core.response import fail, ok, read_body
-from app.models.case import (
+from app.domain.cases.application.dto import (
     CaseCreate,
     CaseDependencyAdd,
     CaseFunctionalIdBody,

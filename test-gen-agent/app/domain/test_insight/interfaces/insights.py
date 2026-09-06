@@ -16,7 +16,7 @@ from fastapi import APIRouter
 
 from app.core.response import fail, ok
 from app.domain.test_insight.application import web_bridge as insight_bridge
-from app.models.insights import LowcodeRequest, TraceRecord
+from app.domain.test_insight.application.dto import LowcodeRequest, TraceRecord
 
 router = APIRouter(tags=["insights"])
 

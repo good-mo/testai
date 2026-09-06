@@ -1,1 +1,208 @@
-IiIi5qih5p2/6IGa5ZCI5LuT5YKo5a6e546w77yI5Y67IEFkYXB0ZXLvvIznm7TmjqUgU1FM77yJ44CCCgrkv67lpI3or7TmmI7vvJoKICAtIOa2iOmZpCBUZW1wbGF0ZVJlcG9BZGFwdGVyIOS4remXtOWxgu+8iOWPquWBmiBlbnRpdHnihpRkaWN0IOe/u+ivke+8jOaXoOS4muWKoemAu+i+ke+8iQogIC0g5oqKIHRlbXBsYXRlX3JlcG8g55qEIFNRTCDnp7vlhaXmraTlpITvvIzmiJDkuLrln5/lhoXnp4HmnInlrp7njrAKICAtIOiBmuWQiOmHjeW7uu+8iGZyb21fZGljdO+8ieS4juaMgeS5heWMluWcqOWQjOS4gOS4quaWh+S7tuWGhemXreeOr++8jOS4jeWGjei3qOaWh+S7tue/u+ivkQoK5L+u5aSN5YmN6LCD55So6ZO+77yaQXBwU2VydmljZSDihpIgVGVtcGxhdGVSZXBvQWRhcHRlciDihpIgVGVtcGxhdGVSZXBvIOKGkiBTUUxpdGXvvIg0IOWxgu+8iQrkv67lpI3lkI7osIPnlKjpk77vvJpBcHBTZXJ2aWNlIOKGkiBUZW1wbGF0ZVJlcG9zaXRvcnlJbXBsIOKGkiBTUUxpdGXvvIgyIOWxgu+8iQoiIiIKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGpzb24KaW1wb3J0IHRpbWUKaW1wb3J0IHV1aWQKZnJvbSB0eXBpbmcgaW1wb3J0IExpc3QsIE9wdGlvbmFsCgpmcm9tIGFwcC5jb3JlLmRhdGFiYXNlIGltcG9ydCBEYXRhYmFzZQpmcm9tIGFwcC5kb21haW4udGVtcGxhdGUuZG9tYWluLmVudGl0aWVzLnRlbXBsYXRlIGltcG9ydCBUZW1wbGF0ZQpmcm9tIGFwcC5sb2dnaW5nX2NvbmZpZyBpbXBvcnQgZ2V0X2xvZ2dlcgoKbG9nZ2VyID0gZ2V0X2xvZ2dlcihfX25hbWVfXykKCiMg4pSA4pSAIOWfn+WGheW4uOmHjyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKREJfTkFNRSA9ICJ0Z2EuZGIiClRBQkxFID0gInRlbXBsYXRlcyIKCgpjbGFzcyBUZW1wbGF0ZVJlcG9zaXRvcnlJbXBsOgogICAgIiIi5qih5p2/5LuT5YKo77ya55u05o6l5oyB5pyJIFNRTO+8jOS4jeWGjeWnlOaJmCBGbGF0IFJlcG9zaXRvcnnjgIIiIiIKCiAgICBkZWYgX19pbml0X18oc2VsZik6CiAgICAgICAgc2VsZi5fZW5zdXJlX3RhYmxlKCkKCiAgICBAc3RhdGljbWV0aG9kCiAgICBkZWYgX2Nvbm4oKToKICAgICAgICByZXR1cm4gRGF0YWJhc2UuZ2V0X2Nvbm4oREJfTkFNRSkKCiAgICAjIOKUgOKUgCDlu7rooagg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBAY2xhc3NtZXRob2QKICAgIGRlZiBfZW5zdXJlX3RhYmxlKGNscykgLT4gTm9uZToKICAgICAgICAiIiLluYLnrYnlu7rooajjgIIiIiIKICAgICAgICBjb25uID0gY2xzLl9jb25uKCkKICAgICAgICBjb25uLmV4ZWN1dGUoIiIiCiAgICAgICAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIHRlbXBsYXRlcyAoCiAgICAgICAgICAgICAgICBpZCBURVhUIFBSSU1BUlkgS0VZLAogICAgICAgICAgICAgICAgbmFtZSBURVhUIE5PVCBOVUxMLAogICAgICAgICAgICAgICAgcmVtYXJrIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIHNjZW5lIFRFWFQgREVGQVVMVCAnRlVOQ1RJT05BTCcsCiAgICAgICAgICAgICAgICBzY29wZV90eXBlIFRFWFQgREVGQVVMVCAnUFJPSkVDVCcsCiAgICAgICAgICAgICAgICBzY29wZV9pZCBURVhUIERFRkFVTFQgJycsCiAgICAgICAgICAgICAgICBpbnRlcm5hbCBJTlRFR0VSIERFRkFVTFQgMCwKICAgICAgICAgICAgICAgIGVuYWJsZV9kZWZhdWx0IElOVEVHRVIgREVGQVVMVCAwLAogICAgICAgICAgICAgICAgZW5hYmxlX3RoaXJkX3BhcnQgSU5URUdFUiBERUZBVUxUIDAsCiAgICAgICAgICAgICAgICByZWZfaWQgVEVYVCBERUZBVUxUICcnLAogICAgICAgICAgICAgICAgcGxhdGZvcm1fZGVmYXVsdCBJTlRFR0VSIERFRkFVTFQgMCwKICAgICAgICAgICAgICAgIGN1c3RvbV9maWVsZHMgVEVYVCBERUZBVUxUICdbXScsCiAgICAgICAgICAgICAgICBzeXN0ZW1fZmllbGRzIFRFWFQgREVGQVVMVCAnW10nLAogICAgICAgICAgICAgICAgdXBsb2FkX2ltZ19maWxlX2lkcyBURVhUIERFRkFVTFQgJ1tdJywKICAgICAgICAgICAgICAgIGNyZWF0ZV90aW1lIFJFQUwsCiAgICAgICAgICAgICAgICB1cGRhdGVfdGltZSBSRUFMLAogICAgICAgICAgICAgICAgY3JlYXRlX3VzZXIgVEVYVCBERUZBVUxUICdhZG1pbicsCiAgICAgICAgICAgICAgICB1cGRhdGVfdXNlciBURVhUIERFRkFVTFQgJ2FkbWluJwogICAgICAgICAgICApCiAgICAgICAgIiIiKQogICAgICAgIGNvbm4uY29tbWl0KCkKCiAgICAjIOKUgOKUgCDogZrlkIjph43lu7og4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBAc3RhdGljbWV0aG9kCiAgICBkZWYgX3Jvd190b19lbnRpdHkocm93OiBkaWN0KSAtPiBUZW1wbGF0ZToKICAgICAgICAiIiLmlbDmja7lupPooYwg4oaSIOiBmuWQiOagueWunuS9k+OAgiIiIgogICAgICAgIGQgPSBkaWN0KHJvdykKICAgICAgICAjIOWPjeW6j+WIl+WMliBKU09OIOaWh+acrOWtl+autQogICAgICAgIGZvciBrIGluICgiY3VzdG9tX2ZpZWxkcyIsICJzeXN0ZW1fZmllbGRzIiwgInVwbG9hZF9pbWdfZmlsZV9pZHMiKToKICAgICAgICAgICAgaWYgaXNpbnN0YW5jZShkLmdldChrKSwgc3RyKToKICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICBkW2tdID0ganNvbi5sb2FkcyhkW2tdKQogICAgICAgICAgICAgICAgZXhjZXB0IChqc29uLkpTT05EZWNvZGVFcnJvciwgVHlwZUVycm9yKToKICAgICAgICAgICAgICAgICAgICBkW2tdID0gW10KICAgICAgICByZXR1cm4gVGVtcGxhdGUuZnJvbV9kaWN0KGQpCgogICAgIyDilIDilIAg6K+7IOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIGxpc3RfdGVtcGxhdGVzKHNlbGYsIHNjb3BlX3R5cGU6IHN0ciwgc2NvcGVfaWQ6IHN0ciwKICAgICAgICAgICAgICAgICAgICAgICBzY2VuZTogc3RyID0gIiIpIC0+IExpc3RbVGVtcGxhdGVdOgogICAgICAgIHF1ZXJ5ID0gIlNFTEVDVCAqIEZST00gdGVtcGxhdGVzIFdIRVJFIHNjb3BlX3R5cGUgPSA/IEFORCBzY29wZV9pZCA9ID8iCiAgICAgICAgcGFyYW1zOiBsaXN0ID0gW3Njb3BlX3R5cGUsIHNjb3BlX2lkXQogICAgICAgIGlmIHNjZW5lOgogICAgICAgICAgICBxdWVyeSArPSAiIEFORCBzY2VuZSA9ID8iCiAgICAgICAgICAgIHBhcmFtcy5hcHBlbmQoc2NlbmUpCiAgICAgICAgcXVlcnkgKz0gIiBPUkRFUiBCWSBjcmVhdGVfdGltZSBBU0MiCiAgICAgICAgcm93cyA9IHNlbGYuX2Nvbm4oKS5leGVjdXRlKHF1ZXJ5LCB0dXBsZShwYXJhbXMpKS5mZXRjaGFsbCgpCiAgICAgICAgcmV0dXJuIFtzZWxmLl9yb3dfdG9fZW50aXR5KGRpY3QocikpIGZvciByIGluIHJvd3NdCgogICAgZGVmIGdldF90ZW1wbGF0ZShzZWxmLCB0ZW1wbGF0ZV9pZDogc3RyKSAtPiBPcHRpb25hbFtUZW1wbGF0ZV06CiAgICAgICAgcm93ID0gc2VsZi5fY29ubigpLmV4ZWN1dGUoCiAgICAgICAgICAgICJTRUxFQ1QgKiBGUk9NIHRlbXBsYXRlcyBXSEVSRSBpZCA9ID8iLCAodGVtcGxhdGVfaWQsKQogICAgICAgICkuZmV0Y2hvbmUoKQogICAgICAgIHJldHVybiBzZWxmLl9yb3dfdG9fZW50aXR5KGRpY3Qocm93KSkgaWYgcm93IGVsc2UgTm9uZQoKICAgIGRlZiBjb3VudF9pbl9zY29wZShzZWxmLCBzY29wZV90eXBlOiBzdHIsIHNjb3BlX2lkOiBzdHIsIHNjZW5lOiBzdHIpIC0+IGludDoKICAgICAgICByb3cgPSBzZWxmLl9jb25uKCkuZXhlY3V0ZSgKICAgICAgICAgICAgIlNFTEVDVCBDT1VOVCgqKSBBUyBjIEZST00gdGVtcGxhdGVzIFdIRVJFIHNjb3BlX3R5cGU9PyBBTkQgc2NvcGVfaWQ9PyBBTkQgc2NlbmU9PyIsCiAgICAgICAgICAgIChzY29wZV90eXBlLCBzY29wZV9pZCwgc2NlbmUpLAogICAgICAgICkuZmV0Y2hvbmUoKQogICAgICAgIHJldHVybiByb3dbImMiXSBpZiByb3cgZWxzZSAwCgogICAgIyDilIDilIAg5YaZIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIHVwc2VydF90ZW1wbGF0ZShzZWxmLCB0ZW1wbGF0ZTogVGVtcGxhdGUpIC0+IE9wdGlvbmFsW1RlbXBsYXRlXToKICAgICAgICAiIiLmlrDlop7miJbmm7TmlrDmqKHmnb/vvIzov5Tlm57ogZrlkIjmoLnjgIIiIiIKICAgICAgICBkID0gdGVtcGxhdGUudG9fZGljdCgpCiAgICAgICAgIyDlubPlj7Dpu5jorqTmoIforrDlhbzlrrkKICAgICAgICBwbGF0Zm9ybV9kZWZhdWx0ID0gZC5nZXQoInBsYXRmb3JtRGVmYXVsdCIsIGQuZ2V0KCJwbGF0Zm9ybV9kZWZhdWx0IiwgRmFsc2UpKQogICAgICAgIG5vdyA9IHRpbWUudGltZSgpCiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQoKICAgICAgICBleGlzdGluZyA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgIlNFTEVDVCBpZCBGUk9NIHRlbXBsYXRlcyBXSEVSRSBpZCA9ID8iLCAoc3RyKHRlbXBsYXRlLmlkLnZhbHVlKSwpCiAgICAgICAgKS5mZXRjaG9uZSgpCgogICAgICAgIGN1c3RvbV9maWVsZHMgPSBqc29uLmR1bXBzKHRlbXBsYXRlLl9jdXN0b21fZmllbGRzLCBlbnN1cmVfYXNjaWk9RmFsc2UpCiAgICAgICAgc3lzdGVtX2ZpZWxkcyA9IGpzb24uZHVtcHModGVtcGxhdGUuX3N5c3RlbV9maWVsZHMsIGVuc3VyZV9hc2NpaT1GYWxzZSkKICAgICAgICB1cGxvYWRfaWRzID0ganNvbi5kdW1wcyh0ZW1wbGF0ZS5fdXBsb2FkX2ltZ19maWxlX2lkcywgZW5zdXJlX2FzY2lpPUZhbHNlKQoKICAgICAgICBpZiBleGlzdGluZzoKICAgICAgICAgICAgY29ubi5leGVjdXRlKAogICAgICAgICAgICAgICAgIlVQREFURSB0ZW1wbGF0ZXMgU0VUIG5hbWU9PywgcmVtYXJrPT8sIHNjZW5lPT8sIHNjb3BlX2lkPT8sICIKICAgICAgICAgICAgICAgICJlbmFibGVfdGhpcmRfcGFydD0/LCBpbnRlcm5hbD0/LCBjdXN0b21fZmllbGRzPT8sIHN5c3RlbV9maWVsZHM9PywgIgogICAgICAgICAgICAgICAgInVwbG9hZF9pbWdfZmlsZV9pZHM9PywgdXBkYXRlX3RpbWU9PywgdXBkYXRlX3VzZXI9PyBXSEVSRSBpZD0/IiwKICAgICAgICAgICAgICAgICgKICAgICAgICAgICAgICAgICAgICB0ZW1wbGF0ZS5fbmFtZSwgdGVtcGxhdGUuX3JlbWFyaywgdGVtcGxhdGUuX3NjZW5lLnZhbHVlLAogICAgICAgICAgICAgICAgICAgIHRlbXBsYXRlLl9zY29wZV9pZCwKICAgICAgICAgICAgICAgICAgICAxIGlmIHRlbXBsYXRlLl9lbmFibGVfdGhpcmRfcGFydCBlbHNlIDAsCiAgICAgICAgICAgICAgICAgICAgMSBpZiB0ZW1wbGF0ZS5faW50ZXJuYWwgZWxzZSAwLAogICAgICAgICAgICAgICAgICAgIGN1c3RvbV9maWVsZHMsIHN5c3RlbV9maWVsZHMsIHVwbG9hZF9pZHMsCiAgICAgICAgICAgICAgICAgICAgbm93LCB0ZW1wbGF0ZS5fdXBkYXRlX3VzZXIsCiAgICAgICAgICAgICAgICAgICAgc3RyKHRlbXBsYXRlLmlkLnZhbHVlKSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICkKICAgICAgICBlbHNlOgogICAgICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICAgICAiSU5TRVJUIElOVE8gdGVtcGxhdGVzIChpZCwgbmFtZSwgcmVtYXJrLCBzY2VuZSwgc2NvcGVfdHlwZSwgc2NvcGVfaWQsICIKICAgICAgICAgICAgICAgICJpbnRlcm5hbCwgZW5hYmxlX2RlZmF1bHQsIGVuYWJsZV90aGlyZF9wYXJ0LCByZWZfaWQsIHBsYXRmb3JtX2RlZmF1bHQsICIKICAgICAgICAgICAgICAgICJjdXN0b21fZmllbGRzLCBzeXN0ZW1fZmllbGRzLCB1cGxvYWRfaW1nX2ZpbGVfaWRzLCBjcmVhdGVfdGltZSwgdXBkYXRlX3RpbWUsICIKICAgICAgICAgICAgICAgICJjcmVhdGVfdXNlciwgdXBkYXRlX3VzZXIpIFZBTFVFUyAoPyw/LD8sPyw/LD8sPyw/LD8sPyw/LD8sPyw/LD8sPyw/LD8pIiwKICAgICAgICAgICAgICAgICgKICAgICAgICAgICAgICAgICAgICBzdHIodGVtcGxhdGUuaWQudmFsdWUpLCB0ZW1wbGF0ZS5fbmFtZSwgdGVtcGxhdGUuX3JlbWFyaywKICAgICAgICAgICAgICAgICAgICB0ZW1wbGF0ZS5fc2NlbmUudmFsdWUsIHRlbXBsYXRlLl9zY29wZV90eXBlLnZhbHVlLCB0ZW1wbGF0ZS5fc2NvcGVfaWQsCiAgICAgICAgICAgICAgICAgICAgMSBpZiB0ZW1wbGF0ZS5faW50ZXJuYWwgZWxzZSAwLAogICAgICAgICAgICAgICAgICAgIDEgaWYgdGVtcGxhdGUuX2VuYWJsZV9kZWZhdWx0IGVsc2UgMCwKICAgICAgICAgICAgICAgICAgICAxIGlmIHRlbXBsYXRlLl9lbmFibGVfdGhpcmRfcGFydCBlbHNlIDAsCiAgICAgICAgICAgICAgICAgICAgdGVtcGxhdGUuX3JlZl9pZCwKICAgICAgICAgICAgICAgICAgICAxIGlmIHBsYXRmb3JtX2RlZmF1bHQgZWxzZSAwLAogICAgICAgICAgICAgICAgICAgIGN1c3RvbV9maWVsZHMsIHN5c3RlbV9maWVsZHMsIHVwbG9hZF9pZHMsCiAgICAgICAgICAgICAgICAgICAgbm93LCBub3csCiAgICAgICAgICAgICAgICAgICAgdGVtcGxhdGUuX2NyZWF0ZV91c2VyLCB0ZW1wbGF0ZS5fdXBkYXRlX3VzZXIsCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICApCiAgICAgICAgY29ubi5jb21taXQoKQogICAgICAgIHJldHVybiBzZWxmLmdldF90ZW1wbGF0ZShzdHIodGVtcGxhdGUuaWQudmFsdWUpKQoKICAgIGRlZiBkZWxldGVfdGVtcGxhdGUoc2VsZiwgdGVtcGxhdGVfaWQ6IHN0cikgLT4gYm9vbDoKICAgICAgICBjdXJzb3IgPSBzZWxmLl9jb25uKCkuZXhlY3V0ZSgKICAgICAgICAgICAgIkRFTEVURSBGUk9NIHRlbXBsYXRlcyBXSEVSRSBpZCA9ID8iLCAodGVtcGxhdGVfaWQsKQogICAgICAgICkKICAgICAgICBzZWxmLl9jb25uKCkuY29tbWl0KCkKICAgICAgICByZXR1cm4gY3Vyc29yLnJvd2NvdW50ID4gMAoKICAgIGRlZiBzZXRfZGVmYXVsdChzZWxmLCBzY29wZV90eXBlOiBzdHIsIHNjb3BlX2lkOiBzdHIsIHNjZW5lOiBzdHIsCiAgICAgICAgICAgICAgICAgICAgdGVtcGxhdGVfaWQ6IHN0cikgLT4gYm9vbDoKICAgICAgICAiIiLlsIbmjIflrprmqKHmnb/orr7kuLrojIPlm7TlhoXpu5jorqTmqKHmnb/vvIzlubbmuIXpmaTlhbbkvZnpu5jorqTmoIforrDjgIIiIiIKICAgICAgICB3aXRoIERhdGFiYXNlLnRyYW5zYWN0aW9uKERCX05BTUUpIGFzIGNvbm46CiAgICAgICAgICAgIGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgICAgICJVUERBVEUgdGVtcGxhdGVzIFNFVCBlbmFibGVfZGVmYXVsdD0wIFdIRVJFIHNjb3BlX3R5cGU9PyBBTkQgc2NvcGVfaWQ9PyBBTkQgc2NlbmU9PyIsCiAgICAgICAgICAgICAgICAoc2NvcGVfdHlwZSwgc2NvcGVfaWQsIHNjZW5lKSwKICAgICAgICAgICAgKQogICAgICAgICAgICBjdXJzb3IgPSBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICAgICAiVVBEQVRFIHRlbXBsYXRlcyBTRVQgZW5hYmxlX2RlZmF1bHQ9MSBXSEVSRSBpZD0/IEFORCBzY29wZV90eXBlPT8gQU5EIHNjb3BlX2lkPT8gQU5EIHNjZW5lPT8iLAogICAgICAgICAgICAgICAgKHRlbXBsYXRlX2lkLCBzY29wZV90eXBlLCBzY29wZV9pZCwgc2NlbmUpLAogICAgICAgICAgICApCiAgICAgICAgcmV0dXJuIGN1cnNvci5yb3djb3VudCA+IDAKCiAgICBkZWYgc2VlZF9kZWZhdWx0KHNlbGYsIHNjb3BlX3R5cGU6IHN0ciwgc2NvcGVfaWQ6IHN0ciwgc2NlbmU6IHN0ciwKICAgICAgICAgICAgICAgICAgICAgbmFtZTogc3RyKSAtPiBPcHRpb25hbFtUZW1wbGF0ZV06CiAgICAgICAgIiIi6IyD5Zu05YaF5peg5qih5p2/5pe277yM6JC95LiA5p2h57O757uf6buY6K6k5qih5p2/44CCIiIiCiAgICAgICAgaWYgc2VsZi5jb3VudF9pbl9zY29wZShzY29wZV90eXBlLCBzY29wZV9pZCwgc2NlbmUpID4gMDoKICAgICAgICAgICAgcmV0dXJuIE5vbmUKICAgICAgICB0ZW1wbGF0ZV9pZCA9IHN0cih1dWlkLnV1aWQ0KCkpCiAgICAgICAgbm93ID0gdGltZS50aW1lKCkKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgY29ubi5leGVjdXRlKAogICAgICAgICAgICAiSU5TRVJUIElOVE8gdGVtcGxhdGVzIChpZCwgbmFtZSwgcmVtYXJrLCBzY2VuZSwgc2NvcGVfdHlwZSwgc2NvcGVfaWQsICIKICAgICAgICAgICAgImludGVybmFsLCBlbmFibGVfZGVmYXVsdCwgY3VzdG9tX2ZpZWxkcywgc3lzdGVtX2ZpZWxkcywgdXBsb2FkX2ltZ19maWxlX2lkcywgIgogICAgICAgICAgICAiY3JlYXRlX3RpbWUsIHVwZGF0ZV90aW1lLCBjcmVhdGVfdXNlciwgdXBkYXRlX3VzZXIpICIKICAgICAgICAgICAgIlZBTFVFUyAoPyw/LD8sPyw/LD8sPyw/LD8sPyw/LD8sPyw/LD8pIiwKICAgICAgICAgICAgKAogICAgICAgICAgICAgICAgdGVtcGxhdGVfaWQsIG5hbWUsICLns7vnu5/pu5jorqTmqKHmnb8iLCBzY2VuZSwgc2NvcGVfdHlwZSwgc2NvcGVfaWQsCiAgICAgICAgICAgICAgICAxLCAxLCAiW10iLCAiW10iLCAiW10iLAogICAgICAgICAgICAgICAgbm93LCBub3csICJhZG1pbiIsICJhZG1pbiIsCiAgICAgICAgICAgICksCiAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICByZXR1cm4gc2VsZi5nZXRfdGVtcGxhdGUodGVtcGxhdGVfaWQpCgoKIyDmqKHlnZfnuqfljZXkvosKdGVtcGxhdGVfcmVwb3NpdG9yeSA9IFRlbXBsYXRlUmVwb3NpdG9yeUltcGwoKQoKX19hbGxfXyA9IFsiVGVtcGxhdGVSZXBvc2l0b3J5SW1wbCIsICJ0ZW1wbGF0ZV9yZXBvc2l0b3J5Il0K
+"""模板聚合仓储实现（去 Adapter，直接 SQL）。
+
+修复说明：
+  - 消除 TemplateRepoAdapter 中间层（只做 entity↔dict 翻译，无业务逻辑）
+  - 把 template_repo 的 SQL 移入此处，成为域内私有实现
+  - 聚合重建（from_dict）与持久化在同一个文件内闭环，不再跨文件翻译
+
+修复前调用链：AppService → TemplateRepoAdapter → TemplateRepo → SQLite（4 层）
+修复后调用链：AppService → TemplateRepositoryImpl → SQLite（2 层）
+"""
+from __future__ import annotations
+
+import json
+import time
+import uuid
+from typing import List, Optional
+
+from app.core.database import Database
+from app.domain.template.domain.entities.template import Template
+from app.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+# ── 域内常量 ──────────────────────────────────────────
+DB_NAME = "tga.db"
+TABLE = "templates"
+
+
+class TemplateRepositoryImpl:
+    """模板仓储：直接持有 SQL，不再委托 Flat Repository。"""
+
+    def __init__(self):
+        self._ensure_table()
+
+    @staticmethod
+    def _conn():
+        return Database.get_conn(DB_NAME)
+
+    # ── 建表 ──────────────────────────────────────────────
+    @classmethod
+    def _ensure_table(cls) -> None:
+        """幂等建表。"""
+        conn = cls._conn()
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS templates (
+                id TEXT PRIMARY KEY,
+                name TEXT NOT NULL,
+                remark TEXT DEFAULT '',
+                scene TEXT DEFAULT 'FUNCTIONAL',
+                scope_type TEXT DEFAULT 'PROJECT',
+                scope_id TEXT DEFAULT '',
+                internal INTEGER DEFAULT 0,
+                enable_default INTEGER DEFAULT 0,
+                enable_third_part INTEGER DEFAULT 0,
+                ref_id TEXT DEFAULT '',
+                platform_default INTEGER DEFAULT 0,
+                custom_fields TEXT DEFAULT '[]',
+                system_fields TEXT DEFAULT '[]',
+                upload_img_file_ids TEXT DEFAULT '[]',
+                create_time REAL,
+                update_time REAL,
+                create_user TEXT DEFAULT 'admin',
+                update_user TEXT DEFAULT 'admin'
+            )
+        """)
+        conn.commit()
+
+    # ── 聚合重建 ──────────────────────────────────────────
+    @staticmethod
+    def _row_to_entity(row: dict) -> Template:
+        """数据库行 → 聚合根实体。"""
+        d = dict(row)
+        # 反序列化 JSON 文本字段
+        for k in ("custom_fields", "system_fields", "upload_img_file_ids"):
+            if isinstance(d.get(k), str):
+                try:
+                    d[k] = json.loads(d[k])
+                except (json.JSONDecodeError, TypeError):
+                    d[k] = []
+        return Template.from_dict(d)
+
+    # ── 读 ────────────────────────────────────────────────
+    def list_templates(self, scope_type: str, scope_id: str,
+                       scene: str = "") -> List[Template]:
+        query = "SELECT * FROM templates WHERE scope_type = ? AND scope_id = ?"
+        params: list = [scope_type, scope_id]
+        if scene:
+            query += " AND scene = ?"
+            params.append(scene)
+        query += " ORDER BY create_time ASC"
+        rows = self._conn().execute(query, tuple(params)).fetchall()
+        return [self._row_to_entity(dict(r)) for r in rows]
+
+    def get_template(self, template_id: str) -> Optional[Template]:
+        row = self._conn().execute(
+            "SELECT * FROM templates WHERE id = ?", (template_id,)
+        ).fetchone()
+        return self._row_to_entity(dict(row)) if row else None
+
+    def count_in_scope(self, scope_type: str, scope_id: str, scene: str) -> int:
+        row = self._conn().execute(
+            "SELECT COUNT(*) AS c FROM templates WHERE scope_type=? AND scope_id=? AND scene=?",
+            (scope_type, scope_id, scene),
+        ).fetchone()
+        return row["c"] if row else 0
+
+    # ── 写 ────────────────────────────────────────────────
+    def upsert_template(self, template: Template) -> Optional[Template]:
+        """新增或更新模板，返回聚合根。"""
+        d = template.to_dict()
+        # 平台默认标记兼容
+        platform_default = d.get("platformDefault", d.get("platform_default", False))
+        now = time.time()
+        conn = self._conn()
+
+        existing = conn.execute(
+            "SELECT id FROM templates WHERE id = ?", (str(template.id.value),)
+        ).fetchone()
+
+        custom_fields = json.dumps(template._custom_fields, ensure_ascii=False)
+        system_fields = json.dumps(template._system_fields, ensure_ascii=False)
+        upload_ids = json.dumps(template._upload_img_file_ids, ensure_ascii=False)
+
+        if existing:
+            conn.execute(
+                "UPDATE templates SET name=?, remark=?, scene=?, scope_id=?, "
+                "enable_third_part=?, internal=?, custom_fields=?, system_fields=?, "
+                "upload_img_file_ids=?, update_time=?, update_user=? WHERE id=?",
+                (
+                    template._name, template._remark, template._scene.value,
+                    template._scope_id,
+                    1 if template._enable_third_part else 0,
+                    1 if template._internal else 0,
+                    custom_fields, system_fields, upload_ids,
+                    now, template._update_user,
+                    str(template.id.value),
+                ),
+            )
+        else:
+            conn.execute(
+                "INSERT INTO templates (id, name, remark, scene, scope_type, scope_id, "
+                "internal, enable_default, enable_third_part, ref_id, platform_default, "
+                "custom_fields, system_fields, upload_img_file_ids, create_time, update_time, "
+                "create_user, update_user) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                (
+                    str(template.id.value), template._name, template._remark,
+                    template._scene.value, template._scope_type.value, template._scope_id,
+                    1 if template._internal else 0,
+                    1 if template._enable_default else 0,
+                    1 if template._enable_third_part else 0,
+                    template._ref_id,
+                    1 if platform_default else 0,
+                    custom_fields, system_fields, upload_ids,
+                    now, now,
+                    template._create_user, template._update_user,
+                ),
+            )
+        conn.commit()
+        return self.get_template(str(template.id.value))
+
+    def delete_template(self, template_id: str) -> bool:
+        cursor = self._conn().execute(
+            "DELETE FROM templates WHERE id = ?", (template_id,)
+        )
+        self._conn().commit()
+        return cursor.rowcount > 0
+
+    def set_default(self, scope_type: str, scope_id: str, scene: str,
+                    template_id: str) -> bool:
+        """将指定模板设为范围内默认模板，并清除其余默认标记。"""
+        with Database.transaction(DB_NAME) as conn:
+            conn.execute(
+                "UPDATE templates SET enable_default=0 WHERE scope_type=? AND scope_id=? AND scene=?",
+                (scope_type, scope_id, scene),
+            )
+            cursor = conn.execute(
+                "UPDATE templates SET enable_default=1 WHERE id=? AND scope_type=? AND scope_id=? AND scene=?",
+                (template_id, scope_type, scope_id, scene),
+            )
+        return cursor.rowcount > 0
+
+    def seed_default(self, scope_type: str, scope_id: str, scene: str,
+                     name: str) -> Optional[Template]:
+        """范围内无模板时，落一条系统默认模板。"""
+        if self.count_in_scope(scope_type, scope_id, scene) > 0:
+            return None
+        template_id = str(uuid.uuid4())
+        now = time.time()
+        conn = self._conn()
+        conn.execute(
+            "INSERT INTO templates (id, name, remark, scene, scope_type, scope_id, "
+            "internal, enable_default, custom_fields, system_fields, upload_img_file_ids, "
+            "create_time, update_time, create_user, update_user) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (
+                template_id, name, "系统默认模板", scene, scope_type, scope_id,
+                1, 1, "[]", "[]", "[]",
+                now, now, "admin", "admin",
+            ),
+        )
+        conn.commit()
+        return self.get_template(template_id)
+
+
+# 模块级单例
+template_repository = TemplateRepositoryImpl()
+
+__all__ = ["TemplateRepositoryImpl", "template_repository"]

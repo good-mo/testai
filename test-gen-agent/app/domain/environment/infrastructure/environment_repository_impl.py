@@ -4,7 +4,7 @@ from __future__ import annotations
 from typing import List, Optional
 
 from app.domain.environment.domain.entities.environment import Environment
-from app.repositories.environment_repo import EnvironmentRepo
+from app.domain.environment.infrastructure.environment_store import EnvironmentRepo
 
 
 class EnvironmentRepoAdapter:

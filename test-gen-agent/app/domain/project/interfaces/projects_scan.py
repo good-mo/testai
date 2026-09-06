@@ -6,7 +6,7 @@ from fastapi import APIRouter, Request
 
 from app.core.response import fail, ok
 from app.logging_config import get_logger
-from app.models.project import ProjectGenerateRequest, ProjectScanRequest
+from app.domain.project.application.dto import ProjectGenerateRequest, ProjectScanRequest
 
 logger = get_logger(__name__)
 router = APIRouter(tags=["projects-scan"])

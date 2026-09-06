@@ -7,6 +7,18 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional
+from pydantic import BaseModel, Field
+
+
+class ChatRequest(BaseModel):
+    """测试生成接口请求。"""
+
+    source_code: str = Field("", description="源代码")
+    file_path: str = Field("", description="源文件路径")
+    test_type: str = Field("functional", description="测试类型")
+    generate_script: bool = Field(True, description="是否生成脚本")
+
+    model_config = {"extra": "allow"}
 
 
 @dataclass
@@ -112,6 +124,7 @@ class JobStats:
 
 
 __all__ = [
+    "ChatRequest",
     "CreateGenerationCommand",
     "UpdateArtifactsCommand",
     "RecordStepCommand",

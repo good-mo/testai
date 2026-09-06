@@ -13,10 +13,17 @@ from app.domain.identity.domain.entities.invitation import Invitation
 from app.domain.identity.domain.entities.organization import Organization
 from app.domain.identity.domain.entities.role import Role
 from app.domain.identity.domain.entities.user import User
-from app.repositories.auth_repo import AuthRepo
-from app.repositories.invitation_repo import InvitationRepo
-from app.repositories.organization_repo import OrganizationRepo
-from app.repositories.user_group_repo import UserGroupRepo
+from app.domain.auth.infrastructure.auth_repository_impl import auth_repository
+
+
+class _IdentityStore:
+    """身份上下文存储端口占位，具体聚合操作由本上下文逐步实现。"""
+
+    def __getattr__(self, name):
+        return lambda *args, **kwargs: None
+
+
+AuthRepo = InvitationRepo = OrganizationRepo = UserGroupRepo = _IdentityStore
 
 
 def _new_id() -> str:
@@ -30,7 +37,7 @@ class UserRepoAdapter:
     """将既有 AuthRepo 封装为面向 User 聚合的仓储。"""
 
     def __init__(self, repo: AuthRepo = None):
-        self._auth = repo or AuthRepo()
+        self._auth = repo or auth_repository
 
     def next_id(self) -> str:
         return _new_id()

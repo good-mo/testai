@@ -15,7 +15,7 @@ from fastapi import APIRouter, Request
 from app.core.response import fail, ok, page_result, read_body
 from app.core.helpers import as_model, current_user_name
 from app.logging_config import get_logger
-from app.models.ai_config import (
+from app.domain.ai_config.application.dto import (
     AiConfigIdBody,
     AiConfigSourceListQuery,
     AiConversationAddBody,

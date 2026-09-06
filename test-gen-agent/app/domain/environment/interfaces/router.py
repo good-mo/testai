@@ -8,7 +8,7 @@ import asyncio
 from fastapi import APIRouter
 
 from app.core.response import fail, ok
-from app.models.environment import EnvironmentCreate, EnvironmentUpdate
+from app.domain.environment.application.dto import EnvironmentCreate, EnvironmentUpdate
 from app.domain.environment.application.environment_app_service import environment_service
 
 router = APIRouter(tags=["environments"])

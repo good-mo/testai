@@ -1,1 +1,205 @@
-IiIi57y66Zm35bqU55So5pyN5Yqh77yIQXBwbGljYXRpb24gU2VydmljZSAvIFVzZSBDYXNlIOmXqOmdou+8ieOAggoK5L+u5aSN6K+05piO77yaCiAgLSDkv67mlLkgaW1wb3J077ya5LuOIERlZmVjdFJlcG9BZGFwdGVyIOaUueS4uiBEZWZlY3RSZXBvc2l0b3J5SW1wbAogIC0g5L2/55So5qih5Z2X57qn5Y2V5L6LIGRlZmVjdF9yZXBvc2l0b3J5CgrogYzotKPvvJoKICAxLiDkvZzkuLrot6/nlLHlmajkuI7poobln5/lsYLkuYvpl7TnmoTnlKjkvovnvJbmjpLlhaXlj6PvvJsKICAyLiDmib/ovb0i57y66Zm3IueUqOS+i+eahOS6i+WKoei+ueeVjO+8muWKoOi9veiBmuWQiCDihpIg5omn6KGM6aKG5Z+f5ZG95LukIOKGkiDkv53lrZjogZrlkIgg4oaSCiAgICAg5Y+R5biD6aKG5Z+f5LqL5Lu277ybCiAgMy4g5bCG6aKG5Z+f5byC5bi46YCP5Lyg57uZ5LiK5bGC77yI55SxIFdlYiDlsYLnu5/kuIDnv7vor5HkuLogSFRUUCDlk43lupTvvInjgIIKCuS/neaMgeeYpu+8muWPquWBmue8luaOku+8jOS4jeWGmeS4muWKoeinhOWIme+8iOS4muWKoeinhOWImeWcqOmihuWfn+WxguiBmuWQiOWGhe+8ieOAggoiIiIKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGxvZ2dpbmcKZnJvbSB0eXBpbmcgaW1wb3J0IE9wdGlvbmFsCgpmcm9tIGFwcC5kb21haW4uY29tbW9uLmRvbWFpbl9ldmVudHMgaW1wb3J0IGV2ZW50X2J1cwpmcm9tIGFwcC5kb21haW4uY29tbW9uLmV4Y2VwdGlvbnMgaW1wb3J0IEFnZ3JlZ2F0ZU5vdEZvdW5kCmZyb20gYXBwLmRvbWFpbi5kZWZlY3RzLmFwcGxpY2F0aW9uLmR0byBpbXBvcnQgKAogICAgQXV0b0NyZWF0ZUZyb21SZXN1bHRDb21tYW5kLAogICAgQ2hhbmdlU3RhdHVzQ29tbWFuZCwKICAgIENyZWF0ZUNvbW1lbnRDb21tYW5kLAogICAgQ3JlYXRlRGVmZWN0Q29tbWFuZCwKICAgIERlZmVjdExpc3RRdWVyeSwKICAgIERlbGV0ZUNvbW1lbnRDb21tYW5kLAogICAgTGlzdENvbW1lbnRzUXVlcnksCiAgICBQZXJtYW5lbnREZWxldGVDb21tYW5kLAogICAgVXBkYXRlQ29tbWVudENvbW1hbmQsCiAgICBVcGRhdGVEZWZlY3RDb21tYW5kLAopCmZyb20gYXBwLmRvbWFpbi5kZWZlY3RzLmRvbWFpbi5lbnRpdGllcy5kZWZlY3QgaW1wb3J0IERlZmVjdAoKIyDilIDilIAg5L+u5aSN77ya5pS5IGltcG9ydCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKZnJvbSBhcHAuZG9tYWluLmRlZmVjdHMuaW5mcmFzdHJ1Y3R1cmUuZGVmZWN0X3JlcG9zaXRvcnlfaW1wbCBpbXBvcnQgKAogICAgRGVmZWN0UmVwb3NpdG9yeUltcGwsCiAgICBkZWZlY3RfcmVwb3NpdG9yeSwKKQoKbG9nZ2VyID0gbG9nZ2luZy5nZXRMb2dnZXIoX19uYW1lX18pCgoKY2xhc3MgRGVmZWN0QXBwU2VydmljZToKICAgICIiIue8uumZt+eUqOS+i+e8luaOkuacjeWKoeOAgiIiIgoKICAgIGRlZiBfX2luaXRfXyhzZWxmLCByZXBvPU5vbmUpOgogICAgICAgICMg4pSA4pSAIOS/ruWkje+8muS9v+eUqOaWsOeahCBSZXBvc2l0b3J5IOWNleS+iyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgICAgICBzZWxmLl9yZXBvID0gcmVwbyBvciBkZWZlY3RfcmVwb3NpdG9yeQoKICAgICMg4pSA4pSAIOiBmuWQiOe6p+WfuuehgOaTjeS9nCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIGRlZiBjcmVhdGUoc2VsZiwgY21kOiBDcmVhdGVEZWZlY3RDb21tYW5kKSAtPiBkaWN0OgogICAgICAgIGRlZmVjdCA9IERlZmVjdCgKICAgICAgICAgICAgZGVmZWN0X2lkPXNlbGYuX3JlcG8ubmV4dF9pZCgpLAogICAgICAgICAgICB0aXRsZT1jbWQudGl0bGUsCiAgICAgICAgICAgIGRlc2NyaXB0aW9uPWNtZC5kZXNjcmlwdGlvbiwKICAgICAgICAgICAgc2V2ZXJpdHk9Y21kLnNldmVyaXR5LAogICAgICAgICAgICBzdGF0dXM9Y21kLnN0YXR1cywKICAgICAgICAgICAgZmlsZV9wYXRoPWNtZC5maWxlX3BhdGgsCiAgICAgICAgICAgIHRlc3RfY2FzZV9pZD1jbWQudGVzdF9jYXNlX2lkLAogICAgICAgICAgICBlcnJvcl9zbmlwcGV0PWNtZC5lcnJvcl9zbmlwcGV0LAogICAgICAgICAgICBhc3NpZ25lZT1jbWQuYXNzaWduZWUsCiAgICAgICAgICAgIHRhZ3M9Y21kLnRhZ3MsCiAgICAgICAgKQogICAgICAgIHNlbGYuX3JlcG8uc2F2ZShkZWZlY3QpCiAgICAgICAgc2VsZi5fcHVibGlzaChkZWZlY3QpCiAgICAgICAgcmV0dXJuIGRlZmVjdC50b19kaWN0KCkKCiAgICBkZWYgZ2V0KHNlbGYsIGRlZmVjdF9pZDogc3RyKSAtPiBPcHRpb25hbFtkaWN0XToKICAgICAgICBkZWZlY3QgPSBzZWxmLl9yZXBvLmZpbmRfYnlfaWQoZGVmZWN0X2lkKQogICAgICAgIHJldHVybiBkZWZlY3QudG9fZGljdCgpIGlmIGRlZmVjdCBlbHNlIE5vbmUKCiAgICBkZWYgZ2V0X29yX3JhaXNlKHNlbGYsIGRlZmVjdF9pZDogc3RyKSAtPiBkaWN0OgogICAgICAgIGRlZmVjdCA9IHNlbGYuX3JlcG8uZmluZF9ieV9pZChkZWZlY3RfaWQpCiAgICAgICAgaWYgZGVmZWN0IGlzIE5vbmU6CiAgICAgICAgICAgIHJhaXNlIEFnZ3JlZ2F0ZU5vdEZvdW5kKGYi57y66Zm35LiN5a2Y5Zyo5oiW5bey5Yig6ZmkOiB7ZGVmZWN0X2lkfSIpCiAgICAgICAgcmV0dXJuIGRlZmVjdC50b19kaWN0KCkKCiAgICBkZWYgdXBkYXRlKHNlbGYsIGNtZDogVXBkYXRlRGVmZWN0Q29tbWFuZCkgLT4gT3B0aW9uYWxbZGljdF06CiAgICAgICAgZGVmZWN0ID0gc2VsZi5fZmluZF9vcl9yYWlzZShjbWQuZGVmZWN0X2lkKQogICAgICAgIGlmIGNtZC50aXRsZSBpcyBub3QgTm9uZToKICAgICAgICAgICAgZGVmZWN0LnJlbmFtZShjbWQudGl0bGUsIGNtZC5vcGVyYXRvcikKICAgICAgICBpZiBjbWQuZGVzY3JpcHRpb24gaXMgbm90IE5vbmU6CiAgICAgICAgICAgIGRlZmVjdC5jaGFuZ2VfZGVzY3JpcHRpb24oY21kLmRlc2NyaXB0aW9uLCBjbWQub3BlcmF0b3IpCiAgICAgICAgaWYgY21kLnNldmVyaXR5IGlzIG5vdCBOb25lOgogICAgICAgICAgICBkZWZlY3QuY2hhbmdlX3NldmVyaXR5KGNtZC5zZXZlcml0eSwgY21kLm9wZXJhdG9yKQogICAgICAgIGlmIGNtZC5hc3NpZ25lZSBpcyBub3QgTm9uZToKICAgICAgICAgICAgZGVmZWN0LmFzc2lnbihjbWQuYXNzaWduZWUsIGNtZC5vcGVyYXRvcikKICAgICAgICBpZiBjbWQudGFncyBpcyBub3QgTm9uZToKICAgICAgICAgICAgZGVmZWN0LnNldF90YWdzKGNtZC50YWdzLCBjbWQub3BlcmF0b3IpCiAgICAgICAgaWYgY21kLmZpbGVfcGF0aCBpcyBub3QgTm9uZToKICAgICAgICAgICAgZGVmZWN0Ll9maWxlX3BhdGggPSBjbWQuZmlsZV9wYXRoCiAgICAgICAgICAgIGRlZmVjdC5fdG91Y2goKQogICAgICAgIGlmIGNtZC50ZXN0X2Nhc2VfaWQgaXMgbm90IE5vbmU6CiAgICAgICAgICAgIGRlZmVjdC5fdGVzdF9jYXNlX2lkID0gY21kLnRlc3RfY2FzZV9pZAogICAgICAgICAgICBkZWZlY3QuX3RvdWNoKCkKICAgICAgICBpZiBjbWQuZXJyb3Jfc25pcHBldCBpcyBub3QgTm9uZToKICAgICAgICAgICAgZGVmZWN0Ll9lcnJvcl9zbmlwcGV0ID0gY21kLmVycm9yX3NuaXBwZXQKICAgICAgICAgICAgZGVmZWN0Ll90b3VjaCgpCiAgICAgICAgIyBzdGF0dXMg5Y2V54us6LWw54q25oCB5py6CiAgICAgICAgaWYgY21kLnN0YXR1cyBpcyBub3QgTm9uZSBhbmQgY21kLnN0YXR1cyAhPSBkZWZlY3Quc3RhdHVzLnZhbHVlLnZhbHVlOgogICAgICAgICAgICBkZWZlY3QuY2hhbmdlX3N0YXR1cyhjbWQuc3RhdHVzLCBjbWQub3BlcmF0b3IpCiAgICAgICAgc2VsZi5fcmVwby51cGRhdGUoZGVmZWN0KQogICAgICAgIHNlbGYuX3B1Ymxpc2goZGVmZWN0KQogICAgICAgIHJldHVybiBkZWZlY3QudG9fZGljdCgpCgogICAgZGVmIGNoYW5nZV9zdGF0dXMoc2VsZiwgY21kOiBDaGFuZ2VTdGF0dXNDb21tYW5kKSAtPiBPcHRpb25hbFtkaWN0XToKICAgICAgICBkZWZlY3QgPSBzZWxmLl9maW5kX29yX3JhaXNlKGNtZC5kZWZlY3RfaWQpCiAgICAgICAgZGVmZWN0LmNoYW5nZV9zdGF0dXMoY21kLnRhcmdldF9zdGF0dXMsIGNtZC5vcGVyYXRvcikKICAgICAgICBzZWxmLl9yZXBvLnVwZGF0ZShkZWZlY3QpCiAgICAgICAgc2VsZi5fcHVibGlzaChkZWZlY3QpCiAgICAgICAgcmV0dXJuIGRlZmVjdC50b19kaWN0KCkKCiAgICAjIOKUgOKUgCDlm57mlLbnq5kg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBkZWYgc29mdF9kZWxldGUoc2VsZiwgZGVmZWN0X2lkOiBzdHIsIG9wZXJhdG9yOiBzdHIgPSAic3lzdGVtIikgLT4gYm9vbDoKICAgICAgICBkZWZlY3QgPSBzZWxmLl9maW5kX29yX3JhaXNlKGRlZmVjdF9pZCkKICAgICAgICBkZWZlY3QuZGVsZXRlKG9wZXJhdG9yKQogICAgICAgIHNlbGYuX3JlcG8uc29mdF9kZWxldGUoZGVmZWN0X2lkKQogICAgICAgIHNlbGYuX3B1Ymxpc2goZGVmZWN0KQogICAgICAgIHJldHVybiBUcnVlCgogICAgZGVmIHJlc3RvcmUoc2VsZiwgZGVmZWN0X2lkOiBzdHIsIG9wZXJhdG9yOiBzdHIgPSAic3lzdGVtIikgLT4gYm9vbDoKICAgICAgICBkZWZlY3QgPSBzZWxmLl9maW5kX2RlbGV0ZWRfb3JfcmFpc2UoZGVmZWN0X2lkKQogICAgICAgIGRlZmVjdC5yZXN0b3JlKG9wZXJhdG9yKQogICAgICAgIHNlbGYuX3JlcG8ucmVzdG9yZShkZWZlY3RfaWQpCiAgICAgICAgc2VsZi5fcHVibGlzaChkZWZlY3QpCiAgICAgICAgcmV0dXJuIFRydWUKCiAgICBkZWYgcHVyZ2Uoc2VsZiwgZGVmZWN0X2lkOiBzdHIpIC0+IGJvb2w6CiAgICAgICAgaWYgbm90IHNlbGYuX3JlcG8ucHVyZ2UoZGVmZWN0X2lkKToKICAgICAgICAgICAgcmFpc2UgQWdncmVnYXRlTm90Rm91bmQoZiLnvLrpmbfkuI3lrZjlnKg6IHtkZWZlY3RfaWR9IikKICAgICAgICByZXR1cm4gVHJ1ZQoKICAgICMg4pSA4pSAIOafpeivou+8iOivu+aooeWei++8ieKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIGxpc3Qoc2VsZiwgcXVlcnk6IERlZmVjdExpc3RRdWVyeSkgLT4gZGljdDoKICAgICAgICBpdGVtcywgdG90YWwgPSBzZWxmLl9yZXBvLmxpc3QoCiAgICAgICAgICAgIHN0YXR1cz1xdWVyeS5zdGF0dXMsIHNldmVyaXR5PXF1ZXJ5LnNldmVyaXR5LAogICAgICAgICAgICBsaW1pdD1xdWVyeS5saW1pdCwgb2Zmc2V0PXF1ZXJ5Lm9mZnNldCwKICAgICAgICApCiAgICAgICAgcmV0dXJuIHsibGlzdCI6IFtkLnRvX2RpY3QoKSBmb3IgZCBpbiBpdGVtc10sICJ0b3RhbCI6IHRvdGFsfQoKICAgIGRlZiBsaXN0X3RyYXNoKHNlbGYsIGxpbWl0OiBpbnQgPSAxMDAsIG9mZnNldDogaW50ID0gMCkgLT4gZGljdDoKICAgICAgICBpdGVtcywgdG90YWwgPSBzZWxmLl9yZXBvLmxpc3RfdHJhc2gobGltaXQ9bGltaXQsIG9mZnNldD1vZmZzZXQpCiAgICAgICAgcmV0dXJuIHsibGlzdCI6IFtkLnRvX2RpY3QoKSBmb3IgZCBpbiBpdGVtc10sICJ0b3RhbCI6IHRvdGFsfQoKICAgIGRlZiBzdGF0cyhzZWxmKSAtPiBkaWN0OgogICAgICAgIHJldHVybiBzZWxmLl9yZXBvLnN0YXRzKCkKCiAgICAjIOKUgOKUgCDlhoXpg6jliqnmiYsg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBkZWYgX2ZpbmRfb3JfcmFpc2Uoc2VsZiwgZGVmZWN0X2lkOiBzdHIpIC0+IERlZmVjdDoKICAgICAgICBkZWZlY3QgPSBzZWxmLl9yZXBvLmZpbmRfYnlfaWQoZGVmZWN0X2lkKQogICAgICAgIGlmIGRlZmVjdCBpcyBOb25lOgogICAgICAgICAgICByYWlzZSBBZ2dyZWdhdGVOb3RGb3VuZChmIue8uumZt+S4jeWtmOWcqOaIluW3suWIoOmZpDoge2RlZmVjdF9pZH0iKQogICAgICAgIHJldHVybiBkZWZlY3QKCiAgICBkZWYgX2ZpbmRfZGVsZXRlZF9vcl9yYWlzZShzZWxmLCBkZWZlY3RfaWQ6IHN0cikgLT4gRGVmZWN0OgogICAgICAgIGRlZmVjdCA9IHNlbGYuX3JlcG8uZmluZF9ieV9pZChkZWZlY3RfaWQsIGluY2x1ZGVfZGVsZXRlZD1UcnVlKQogICAgICAgIGlmIGRlZmVjdCBpcyBOb25lIG9yIG5vdCBkZWZlY3QuZGVsZXRlZDoKICAgICAgICAgICAgcmFpc2UgQWdncmVnYXRlTm90Rm91bmQoZiLlm57mlLbnq5nkuK3kuI3lrZjlnKjor6XnvLrpmbc6IHtkZWZlY3RfaWR9IikKICAgICAgICByZXR1cm4gZGVmZWN0CgogICAgZGVmIF9wdWJsaXNoKHNlbGYsIGRlZmVjdDogRGVmZWN0KSAtPiBOb25lOgogICAgICAgIGV2ZW50cyA9IGRlZmVjdC5wdWxsX2RvbWFpbl9ldmVudHMoKQogICAgICAgIGZvciBldiBpbiBldmVudHM6CiAgICAgICAgICAgIGV2ZW50X2J1cy5kaXNwYXRjaChldikKCiAgICAjIOKUgOKUgCDor4TorrrvvIjlrZDooajml4Hot6/or7vlhpnpl6jpnaLvvInilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIGRlZiBsaXN0X2NvbW1lbnRzKHNlbGYsIHF1ZXJ5OiAiTGlzdENvbW1lbnRzUXVlcnkiKSAtPiBsaXN0OgogICAgICAgICIiIuWIl+WHuuafkOe8uumZt+S4i+eahOivhOiuuuOAgiIiIgogICAgICAgIHJldHVybiBzZWxmLl9yZXBvLmxpc3RfY29tbWVudHMocXVlcnkuYnVnX2lkKQoKICAgIGRlZiBjcmVhdGVfY29tbWVudChzZWxmLCBjbWQ6ICJDcmVhdGVDb21tZW50Q29tbWFuZCIpIC0+IGRpY3Q6CiAgICAgICAgIiIi5Yib5bu657y66Zm36K+E6K6644CCIiIiCiAgICAgICAgcmV0dXJuIHNlbGYuX3JlcG8uY3JlYXRlX2NvbW1lbnQoCiAgICAgICAgICAgIGJ1Z19pZD1jbWQuYnVnX2lkLCBjb250ZW50PWNtZC5jb250ZW50LCBwYXJlbnRfaWQ9Y21kLnBhcmVudF9pZCwKICAgICAgICAgICAgY3JlYXRlX3VzZXI9Y21kLmNyZWF0ZV91c2VyLCByZXBseV91c2VyPWNtZC5yZXBseV91c2VyLAogICAgICAgICAgICBub3RpZmllcj1jbWQubm90aWZpZXIsCiAgICAgICAgKQoKICAgIGRlZiB1cGRhdGVfY29tbWVudChzZWxmLCBjbWQ6ICJVcGRhdGVDb21tZW50Q29tbWFuZCIpIC0+IE9wdGlvbmFsW2RpY3RdOgogICAgICAgICIiIuabtOaWsOe8uumZt+ivhOiuuu+8jOS4jeWtmOWcqOi/lOWbniBOb25l44CCIiIiCiAgICAgICAgcmV0dXJuIHNlbGYuX3JlcG8udXBkYXRlX2NvbW1lbnQoY21kLmNvbW1lbnRfaWQsIGNtZC5jb250ZW50KQoKICAgIGRlZiBkZWxldGVfY29tbWVudChzZWxmLCBjbWQ6ICJEZWxldGVDb21tZW50Q29tbWFuZCIpIC0+IGJvb2w6CiAgICAgICAgIiIi6L2v5Yig6Zmk57y66Zm36K+E6K665bm257qn6IGU5Yig6Zmk5a2Q6K+E6K6644CCIiIiCiAgICAgICAgcmV0dXJuIHNlbGYuX3JlcG8uZGVsZXRlX2NvbW1lbnQoY21kLmNvbW1lbnRfaWQpCgogICAgIyDilIDilIAg5peB6Lev77ya6Ieq5Yqo5Yib5bu6IC8g5rC45LmF5Yig6ZmkIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIGF1dG9fY3JlYXRlX2Zyb21fcmVzdWx0KHNlbGYsIGNtZDogIkF1dG9DcmVhdGVGcm9tUmVzdWx0Q29tbWFuZCIpIC0+IE9wdGlvbmFsW2RpY3RdOgogICAgICAgICIiIua1i+ivleWksei0peaXtuiHquWKqOWIm+W7uue8uumZt+OAgiIiIgogICAgICAgIHJldHVybiBzZWxmLl9yZXBvLmF1dG9fY3JlYXRlX2Zyb21fcmVzdWx0KAogICAgICAgICAgICBmaWxlX3BhdGg9Y21kLmZpbGVfcGF0aCwgdGVzdF9yZXN1bHQ9Y21kLnRlc3RfcmVzdWx0LAogICAgICAgICAgICB0ZXN0X2Nhc2VfaWQ9Y21kLnRlc3RfY2FzZV9pZCwKICAgICAgICApCgogICAgZGVmIHBlcm1hbmVudF9kZWxldGUoc2VsZiwgY21kOiAiUGVybWFuZW50RGVsZXRlQ29tbWFuZCIpIC0+IGJvb2w6CiAgICAgICAgIiIi5b275bqV5Yig6Zmk57y66Zm377yI57uV6L+H5Zue5pS256uZ5rWB77yM55u05Yig5a2Y5YKo6KGM77yJ44CCIiIiCiAgICAgICAgaWYgbm90IHNlbGYuX3JlcG8ucGVybWFuZW50X2RlbGV0ZShjbWQuZGVmZWN0X2lkKToKICAgICAgICAgICAgcmFpc2UgQWdncmVnYXRlTm90Rm91bmQoZiLnvLrpmbfkuI3lrZjlnKg6IHtjbWQuZGVmZWN0X2lkfSIpCiAgICAgICAgcmV0dXJuIFRydWUKCgojIOWNleS+i+mXqOmdogpkZWZlY3RfYXBwX3NlcnZpY2UgPSBEZWZlY3RBcHBTZXJ2aWNlKCkK
+"""缺陷应用服务（Application Service / Use Case 门面）。
+
+修复说明：
+  - 修改 import：从 DefectRepoAdapter 改为 DefectRepositoryImpl
+  - 使用模块级单例 defect_repository
+
+职责：
+  1. 作为路由器与领域层之间的用例编排入口；
+  2. 承载"缺陷"用例的事务边界：加载聚合 → 执行领域命令 → 保存聚合 →
+     发布领域事件；
+  3. 将领域异常透传给上层（由 Web 层统一翻译为 HTTP 响应）。
+
+保持瘦：只做编排，不写业务规则（业务规则在领域层聚合内）。
+"""
+from __future__ import annotations
+
+import logging
+from typing import Optional
+
+from app.domain.common.domain_events import event_bus
+from app.domain.common.exceptions import AggregateNotFound
+from app.domain.defects.application.dto import (
+    AutoCreateFromResultCommand,
+    ChangeStatusCommand,
+    CreateCommentCommand,
+    CreateDefectCommand,
+    DefectListQuery,
+    DeleteCommentCommand,
+    ListCommentsQuery,
+    PermanentDeleteCommand,
+    UpdateCommentCommand,
+    UpdateDefectCommand,
+)
+from app.domain.defects.domain.entities.defect import Defect
+
+# ── 修复：改 import ──────────────────────────────────────────
+from app.domain.defects.infrastructure.defect_repository_impl import (
+    DefectRepositoryImpl,
+    defect_repository,
+)
+
+logger = logging.getLogger(__name__)
+
+
+class DefectAppService:
+    """缺陷用例编排服务。"""
+
+    def __init__(self, repo=None):
+        # ── 修复：使用新的 Repository 单例 ──────────────────
+        self._repo = repo or defect_repository
+
+    # ── 聚合级基础操作 ─────────────────────────────
+    def create(self, cmd: CreateDefectCommand) -> dict:
+        defect = Defect(
+            defect_id=self._repo.next_id(),
+            title=cmd.title,
+            description=cmd.description,
+            severity=cmd.severity,
+            status=cmd.status,
+            file_path=cmd.file_path,
+            test_case_id=cmd.test_case_id,
+            error_snippet=cmd.error_snippet,
+            assignee=cmd.assignee,
+            tags=cmd.tags,
+        )
+        self._repo.save(defect)
+        self._publish(defect)
+        return defect.to_dict()
+
+    def get(self, defect_id: str) -> Optional[dict]:
+        defect = self._repo.find_by_id(defect_id)
+        return defect.to_dict() if defect else None
+
+    def get_or_raise(self, defect_id: str) -> dict:
+        defect = self._repo.find_by_id(defect_id)
+        if defect is None:
+            raise AggregateNotFound(f"缺陷不存在或已删除: {defect_id}")
+        return defect.to_dict()
+
+    def update(self, cmd: UpdateDefectCommand) -> Optional[dict]:
+        defect = self._find_or_raise(cmd.defect_id)
+        if cmd.title is not None:
+            defect.rename(cmd.title, cmd.operator)
+        if cmd.description is not None:
+            defect.change_description(cmd.description, cmd.operator)
+        if cmd.severity is not None:
+            defect.change_severity(cmd.severity, cmd.operator)
+        if cmd.assignee is not None:
+            defect.assign(cmd.assignee, cmd.operator)
+        if cmd.tags is not None:
+            defect.set_tags(cmd.tags, cmd.operator)
+        if cmd.file_path is not None:
+            defect._file_path = cmd.file_path
+            defect._touch()
+        if cmd.test_case_id is not None:
+            defect._test_case_id = cmd.test_case_id
+            defect._touch()
+        if cmd.error_snippet is not None:
+            defect._error_snippet = cmd.error_snippet
+            defect._touch()
+        # status 单独走状态机
+        if cmd.status is not None and cmd.status != defect.status.value.value:
+            defect.change_status(cmd.status, cmd.operator)
+        self._repo.update(defect)
+        self._publish(defect)
+        return defect.to_dict()
+
+    def change_status(self, cmd: ChangeStatusCommand) -> Optional[dict]:
+        defect = self._find_or_raise(cmd.defect_id)
+        defect.change_status(cmd.target_status, cmd.operator)
+        self._repo.update(defect)
+        self._publish(defect)
+        return defect.to_dict()
+
+    # ── 回收站 ─────────────────────────────────────
+    def soft_delete(self, defect_id: str, operator: str = "system") -> bool:
+        defect = self._find_or_raise(defect_id)
+        defect.delete(operator)
+        self._repo.soft_delete(defect_id)
+        self._publish(defect)
+        return True
+
+    def restore(self, defect_id: str, operator: str = "system") -> bool:
+        defect = self._find_deleted_or_raise(defect_id)
+        defect.restore(operator)
+        self._repo.restore(defect_id)
+        self._publish(defect)
+        return True
+
+    def purge(self, defect_id: str) -> bool:
+        if not self._repo.purge(defect_id):
+            raise AggregateNotFound(f"缺陷不存在: {defect_id}")
+        return True
+
+    # ── 查询（读模型）──────────────────────────────
+    def list(self, query: DefectListQuery) -> dict:
+        items, total = self._repo.list(
+            status=query.status, severity=query.severity,
+            limit=query.limit, offset=query.offset,
+        )
+        return {"list": [d.to_dict() for d in items], "total": total}
+
+    def list_trash(self, limit: int = 100, offset: int = 0) -> dict:
+        items, total = self._repo.list_trash(limit=limit, offset=offset)
+        return {"list": [d.to_dict() for d in items], "total": total}
+
+    def stats(self) -> dict:
+        return self._repo.stats()
+
+    # ── 内部助手 ───────────────────────────────────
+    def _find_or_raise(self, defect_id: str) -> Defect:
+        defect = self._repo.find_by_id(defect_id)
+        if defect is None:
+            raise AggregateNotFound(f"缺陷不存在或已删除: {defect_id}")
+        return defect
+
+    def _find_deleted_or_raise(self, defect_id: str) -> Defect:
+        defect = self._repo.find_by_id(defect_id, include_deleted=True)
+        if defect is None or not defect.deleted:
+            raise AggregateNotFound(f"回收站中不存在该缺陷: {defect_id}")
+        return defect
+
+    def _publish(self, defect: Defect) -> None:
+        events = defect.pull_domain_events()
+        for ev in events:
+            event_bus.dispatch(ev)
+
+    # ── 评论（子表旁路读写门面）────────────────────────
+    def list_comments(self, query: "ListCommentsQuery") -> list:
+        """列出某缺陷下的评论。"""
+        return self._repo.list_comments(query.bug_id)
+
+    def create_comment(self, cmd: "CreateCommentCommand") -> dict:
+        """创建缺陷评论。"""
+        return self._repo.create_comment(
+            bug_id=cmd.bug_id, content=cmd.content, parent_id=cmd.parent_id,
+            create_user=cmd.create_user, reply_user=cmd.reply_user,
+            notifier=cmd.notifier,
+        )
+
+    def update_comment(self, cmd: "UpdateCommentCommand") -> Optional[dict]:
+        """更新缺陷评论，不存在返回 None。"""
+        return self._repo.update_comment(cmd.comment_id, cmd.content)
+
+    def delete_comment(self, cmd: "DeleteCommentCommand") -> bool:
+        """软删除缺陷评论并级联删除子评论。"""
+        return self._repo.delete_comment(cmd.comment_id)
+
+    # ── 旁路：自动创建 / 永久删除 ─────────────────────
+    def auto_create_from_result(self, cmd: "AutoCreateFromResultCommand") -> Optional[dict]:
+        """测试失败时自动创建缺陷。"""
+        return self._repo.auto_create_from_result(
+            file_path=cmd.file_path, test_result=cmd.test_result,
+            test_case_id=cmd.test_case_id,
+        )
+
+    def permanent_delete(self, cmd: "PermanentDeleteCommand") -> bool:
+        """彻底删除缺陷（绕过回收站流，直删存储行）。"""
+        if not self._repo.permanent_delete(cmd.defect_id):
+            raise AggregateNotFound(f"缺陷不存在: {cmd.defect_id}")
+        return True
+
+
+# 单例门面
+defect_app_service = DefectAppService()

@@ -17,7 +17,7 @@ import uuid
 from typing import List, Optional, Tuple
 
 from app.domain.test_insight.domain.entities.trace_run import TraceRun
-from app.repositories.insight_repo import InsightRepo
+from app.domain.test_insight.infrastructure.insight_store import InsightRepo
 
 
 class InsightRepoAdapter:

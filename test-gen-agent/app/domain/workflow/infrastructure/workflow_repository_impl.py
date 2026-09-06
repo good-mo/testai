@@ -1,1 +1,285 @@
-IiIi5bel5L2c5rWB54q25oCB6IGa5ZCI5LuT5YKo5a6e546w77yI5Y67IEFkYXB0ZXLvvIznm7TmjqUgU1FM77yJ44CCCgrkv67lpI3or7TmmI7vvJoKICAtIOa2iOmZpCBXb3JrZmxvd1JlcG9BZGFwdGVyIOS4remXtOWxgu+8iOWPquWBmiBlbnRpdHnihpRkaWN0IOe/u+ivke+8jOaXoOS4muWKoemAu+i+ke+8iQogIC0g5oqKIHdvcmtmbG93X3JlcG8g55qEIFNRTCDnp7vlhaXmraTlpITvvIzmiJDkuLrln5/lhoXnp4HmnInlrp7njrAKICAtIOiBmuWQiOmHjeW7uu+8iGZyb21fZGljdO+8ieS4juaMgeS5heWMluWcqOWQjOS4gOS4quaWh+S7tuWGhemXreeOr++8jOS4jeWGjei3qOaWh+S7tue/u+ivkQogIC0gREIg5LuOIHByb2plY3RzLmRiIOe7n+S4gOS4uiB0Z2EuZGIKCuS/ruWkjeWJjeiwg+eUqOmTvu+8mkFwcFNlcnZpY2Ug4oaSIFdvcmtmbG93UmVwb0FkYXB0ZXIg4oaSIHdvcmtmbG93X3JlcG8g4oaSIFNRTGl0Ze+8iDQg5bGC77yJCuS/ruWkjeWQjuiwg+eUqOmTvu+8mkFwcFNlcnZpY2Ug4oaSIFdvcmtmbG93UmVwb3NpdG9yeUltcGwg4oaSIFNRTGl0Ze+8iDIg5bGC77yJCiIiIgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQganNvbgppbXBvcnQgdGltZQppbXBvcnQgdXVpZApmcm9tIHR5cGluZyBpbXBvcnQgQW55LCBEaWN0LCBMaXN0LCBPcHRpb25hbAoKZnJvbSBhcHAuY29yZS5kYXRhYmFzZSBpbXBvcnQgRGF0YWJhc2UKZnJvbSBhcHAuZG9tYWluLndvcmtmbG93LmRvbWFpbi5lbnRpdGllcy53b3JrZmxvd19zdGF0dXMgaW1wb3J0IFdvcmtmbG93U3RhdHVzCmZyb20gYXBwLmxvZ2dpbmdfY29uZmlnIGltcG9ydCBnZXRfbG9nZ2VyCgpsb2dnZXIgPSBnZXRfbG9nZ2VyKF9fbmFtZV9fKQoKIyDilIDilIAg5Z+f5YaF5bi46YePIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApEQl9OQU1FID0gInRnYS5kYiIKVEFCTEVfU1RBVFVTRVMgPSAid29ya2Zsb3dfc3RhdHVzZXMiClRBQkxFX0ZMT1dTID0gIndvcmtmbG93X2Zsb3dzIgoKCmNsYXNzIFdvcmtmbG93UmVwb3NpdG9yeUltcGw6CiAgICAiIiLlt6XkvZzmtYHnirbmgIHku5PlgqjvvJrnm7TmjqXmjIHmnIkgU1FM77yM5LiN5YaN5aeU5omYIEZsYXQgUmVwb3NpdG9yeeOAgiIiIgoKICAgIGRlZiBfX2luaXRfXyhzZWxmKToKICAgICAgICBzZWxmLl9lbnN1cmVfdGFibGVzKCkKCiAgICBAc3RhdGljbWV0aG9kCiAgICBkZWYgX2Nvbm4oKToKICAgICAgICByZXR1cm4gRGF0YWJhc2UuZ2V0X2Nvbm4oREJfTkFNRSkKCiAgICAjIOKUgOKUgCDlu7rooagg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBAY2xhc3NtZXRob2QKICAgIGRlZiBfZW5zdXJlX3RhYmxlcyhjbHMpIC0+IE5vbmU6CiAgICAgICAgIiIi5bmC562J5bu66KGo44CCIiIiCiAgICAgICAgY29ubiA9IGNscy5fY29ubigpCiAgICAgICAgdHJ5OgogICAgICAgICAgICBjb25uLmV4ZWN1dGUoIiIiCiAgICAgICAgICAgICAgICBDUkVBVEUgVEFCTEUgSUYgTk9UIEVYSVNUUyB3b3JrZmxvd19zdGF0dXNlcyAoCiAgICAgICAgICAgICAgICAgICAgaWQgVEVYVCBQUklNQVJZIEtFWSwKICAgICAgICAgICAgICAgICAgICBzY29wZV90eXBlIFRFWFQgREVGQVVMVCAnUFJPSkVDVCcsCiAgICAgICAgICAgICAgICAgICAgc2NvcGVfaWQgVEVYVCBERUZBVUxUICcnLAogICAgICAgICAgICAgICAgICAgIHNjZW5lIFRFWFQgREVGQVVMVCAnRlVOQ1RJT05BTCcsCiAgICAgICAgICAgICAgICAgICAgbmFtZSBURVhUIERFRkFVTFQgJycsCiAgICAgICAgICAgICAgICAgICAgcmVtYXJrIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgICAgICBwb3MgSU5URUdFUiBERUZBVUxUIDAsCiAgICAgICAgICAgICAgICAgICAgc3RhdHVzX2RlZmluaXRpb25zIFRFWFQgREVGQVVMVCAnW10nLAogICAgICAgICAgICAgICAgICAgIGludGVybmFsIElOVEVHRVIgREVGQVVMVCAwLAogICAgICAgICAgICAgICAgICAgIGNyZWF0ZV90aW1lIFJFQUwsCiAgICAgICAgICAgICAgICAgICAgdXBkYXRlX3RpbWUgUkVBTCwKICAgICAgICAgICAgICAgICAgICBjcmVhdGVfdXNlciBURVhUIERFRkFVTFQgJ2FkbWluJwogICAgICAgICAgICAgICAgKQogICAgICAgICAgICAiIiIpCiAgICAgICAgICAgIGNvbm4uZXhlY3V0ZSgiIiIKICAgICAgICAgICAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIHdvcmtmbG93X2Zsb3dzICgKICAgICAgICAgICAgICAgICAgICBzb3VyY2Vfc3RhdHVzX2lkIFRFWFQsCiAgICAgICAgICAgICAgICAgICAgdGFyZ2V0X3N0YXR1c19pZCBURVhULAogICAgICAgICAgICAgICAgICAgIFBSSU1BUlkgS0VZIChzb3VyY2Vfc3RhdHVzX2lkLCB0YXJnZXRfc3RhdHVzX2lkKQogICAgICAgICAgICAgICAgKQogICAgICAgICAgICAiIiIpCiAgICAgICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgIGxvZ2dlci53YXJuaW5nKCJ3b3JrZmxvdyDooajliJ3lp4vljJblpLHotKU6ICVzIiwgZSkKCiAgICAjIOKUgOKUgCDogZrlkIjph43lu7og4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBAc3RhdGljbWV0aG9kCiAgICBkZWYgX3Jvd190b19lbnRpdHkocm93OiBkaWN0KSAtPiBXb3JrZmxvd1N0YXR1czoKICAgICAgICAiIiLmlbDmja7lupPooYwg4oaSIOiBmuWQiOagueWunuS9k+OAgiIiIgogICAgICAgIGRlZnNfcmF3ID0gcm93LmdldCgic3RhdHVzX2RlZmluaXRpb25zIikgb3IgIltdIgogICAgICAgIHRyeToKICAgICAgICAgICAgc3RhdHVzX2RlZnMgPSBqc29uLmxvYWRzKGRlZnNfcmF3KSBpZiBpc2luc3RhbmNlKGRlZnNfcmF3LCBzdHIpIGVsc2UgbGlzdChkZWZzX3JhdykKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICBzdGF0dXNfZGVmcyA9IFtdCiAgICAgICAgaWYgbm90IGlzaW5zdGFuY2Uoc3RhdHVzX2RlZnMsIGxpc3QpOgogICAgICAgICAgICBzdGF0dXNfZGVmcyA9IFtdCgogICAgICAgICMg6K+75Y+W5rWB6L2s55uu5qCHCiAgICAgICAgY29ubiA9IERhdGFiYXNlLmdldF9jb25uKERCX05BTUUpCiAgICAgICAgZmxvd19jdXIgPSBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJTRUxFQ1QgdGFyZ2V0X3N0YXR1c19pZCBGUk9NIHdvcmtmbG93X2Zsb3dzIFdIRVJFIHNvdXJjZV9zdGF0dXNfaWQ9PyIsCiAgICAgICAgICAgIChyb3dbImlkIl0sKSwKICAgICAgICApCiAgICAgICAgZmxvd190YXJnZXRzID0gW3JbInRhcmdldF9zdGF0dXNfaWQiXSBmb3IgciBpbiBmbG93X2N1ci5mZXRjaGFsbCgpXQoKICAgICAgICByZXR1cm4gV29ya2Zsb3dTdGF0dXMuZnJvbV9kaWN0KHsKICAgICAgICAgICAgImlkIjogcm93WyJpZCJdLAogICAgICAgICAgICAibmFtZSI6IHJvd1sibmFtZSJdLAogICAgICAgICAgICAic2NlbmUiOiByb3dbInNjZW5lIl0sCiAgICAgICAgICAgICJyZW1hcmsiOiByb3dbInJlbWFyayJdIG9yICIiLAogICAgICAgICAgICAiaW50ZXJuYWwiOiBib29sKHJvd1siaW50ZXJuYWwiXSksCiAgICAgICAgICAgICJzY29wZVR5cGUiOiByb3dbInNjb3BlX3R5cGUiXSwKICAgICAgICAgICAgInNjb3BlSWQiOiByb3dbInNjb3BlX2lkIl0sCiAgICAgICAgICAgICJwb3MiOiByb3dbInBvcyJdLAogICAgICAgICAgICAic3RhdHVzRGVmaW5pdGlvbnMiOiBzdGF0dXNfZGVmcywKICAgICAgICAgICAgInN0YXR1c0Zsb3dUYXJnZXRzIjogZmxvd190YXJnZXRzLAogICAgICAgICAgICAiY3JlYXRlVGltZSI6IGludCgocm93WyJjcmVhdGVfdGltZSJdIG9yIDApICogMTAwMCksCiAgICAgICAgICAgICJ1cGRhdGVUaW1lIjogaW50KChyb3dbInVwZGF0ZV90aW1lIl0gb3IgMCkgKiAxMDAwKSwKICAgICAgICAgICAgImNyZWF0ZVVzZXIiOiByb3dbImNyZWF0ZV91c2VyIl0sCiAgICAgICAgfSkKCiAgICAjIOKUgOKUgCDor7sg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBkZWYgbGlzdChzZWxmLCBzY29wZV90eXBlOiBzdHIsIHNjb3BlX2lkOiBzdHIsIHNjZW5lOiBzdHIpIC0+IExpc3RbV29ya2Zsb3dTdGF0dXNdOgogICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICB0cnk6CiAgICAgICAgICAgIGN1ciA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgICAgICIiIlNFTEVDVCAqIEZST00gd29ya2Zsb3dfc3RhdHVzZXMKICAgICAgICAgICAgICAgICAgIFdIRVJFIHNjb3BlX3R5cGU9PyBBTkQgc2NvcGVfaWQ9PyBBTkQgc2NlbmU9PwogICAgICAgICAgICAgICAgICAgT1JERVIgQlkgcG9zIEFTQywgY3JlYXRlX3RpbWUgQVNDIiIiLAogICAgICAgICAgICAgICAgKHNjb3BlX3R5cGUsIHNjb3BlX2lkLCBzY2VuZSksCiAgICAgICAgICAgICkKICAgICAgICAgICAgcm93cyA9IGN1ci5mZXRjaGFsbCgpCiAgICAgICAgICAgIHJldHVybiBbc2VsZi5fcm93X3RvX2VudGl0eShkaWN0KHIpKSBmb3IgciBpbiByb3dzXQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICAgICAgbG9nZ2VyLndhcm5pbmcoImxpc3Rfc3RhdHVzZXMg5aSx6LSlOiAlcyIsIGUpCiAgICAgICAgICAgIHJldHVybiBbXQoKICAgIGRlZiBnZXQoc2VsZiwgc3RhdHVzX2lkOiBzdHIpIC0+IE9wdGlvbmFsW1dvcmtmbG93U3RhdHVzXToKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgdHJ5OgogICAgICAgICAgICBjdXIgPSBjb25uLmV4ZWN1dGUoIlNFTEVDVCAqIEZST00gd29ya2Zsb3dfc3RhdHVzZXMgV0hFUkUgaWQ9PyIsIChzdGF0dXNfaWQsKSkKICAgICAgICAgICAgcm93ID0gY3VyLmZldGNob25lKCkKICAgICAgICAgICAgaWYgbm90IHJvdzoKICAgICAgICAgICAgICAgIHJldHVybiBOb25lCiAgICAgICAgICAgIHJldHVybiBzZWxmLl9yb3dfdG9fZW50aXR5KGRpY3Qocm93KSkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICByZXR1cm4gTm9uZQoKICAgICMg4pSA4pSAIOWGmSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIGRlZiBzYXZlKHNlbGYsIHN0YXR1czogV29ya2Zsb3dTdGF0dXMpIC0+IFdvcmtmbG93U3RhdHVzOgogICAgICAgICIiIuaWsOWinuaIluabtOaWsOeKtuaAgeOAgiIiIgogICAgICAgIGV4aXN0aW5nID0gc2VsZi5nZXQoc3RhdHVzLmlkLnZhbHVlKQogICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICBub3cgPSB0aW1lLnRpbWUoKQoKICAgICAgICBpZiBleGlzdGluZzoKICAgICAgICAgICAgIyDmm7TmlrAKICAgICAgICAgICAgY29ubi5leGVjdXRlKAogICAgICAgICAgICAgICAgIiIiVVBEQVRFIHdvcmtmbG93X3N0YXR1c2VzIFNFVCBuYW1lPT8sIHJlbWFyaz0/LCBzdGF0dXNfZGVmaW5pdGlvbnM9PywgdXBkYXRlX3RpbWU9PyBXSEVSRSBpZD0/IiIiLAogICAgICAgICAgICAgICAgKAogICAgICAgICAgICAgICAgICAgIHN0YXR1cy5uYW1lLAogICAgICAgICAgICAgICAgICAgIHN0YXR1cy5yZW1hcmssCiAgICAgICAgICAgICAgICAgICAganNvbi5kdW1wcyhzdGF0dXMuc3RhdHVzX2RlZmluaXRpb25zLCBlbnN1cmVfYXNjaWk9RmFsc2UpLAogICAgICAgICAgICAgICAgICAgIG5vdywKICAgICAgICAgICAgICAgICAgICBzdGF0dXMuaWQudmFsdWUsCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICApCiAgICAgICAgZWxzZToKICAgICAgICAgICAgIyDmlrDlop4gLSDojrflj5bmnIDlpKcgcG9zCiAgICAgICAgICAgIGN1ciA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgICAgICJTRUxFQ1QgTUFYKHBvcykgQVMgbWF4X3BvcyBGUk9NIHdvcmtmbG93X3N0YXR1c2VzIFdIRVJFIHNjb3BlX3R5cGU9PyBBTkQgc2NvcGVfaWQ9PyBBTkQgc2NlbmU9PyIsCiAgICAgICAgICAgICAgICAoc3RhdHVzLnNjb3BlX3R5cGUsIHN0YXR1cy5zY29wZV9pZCwgc3RhdHVzLnNjZW5lKSwKICAgICAgICAgICAgKQogICAgICAgICAgICByb3cgPSBjdXIuZmV0Y2hvbmUoKQogICAgICAgICAgICBtYXhfcG9zID0gcm93WyJtYXhfcG9zIl0gaWYgcm93IGFuZCByb3dbIm1heF9wb3MiXSBpcyBub3QgTm9uZSBlbHNlIC0xCiAgICAgICAgICAgIHBvcyA9IG1heF9wb3MgKyAxCgogICAgICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICAgICAiIiJJTlNFUlQgSU5UTyB3b3JrZmxvd19zdGF0dXNlcwogICAgICAgICAgICAgICAgICAgKGlkLCBzY29wZV90eXBlLCBzY29wZV9pZCwgc2NlbmUsIG5hbWUsIHJlbWFyaywgcG9zLCBzdGF0dXNfZGVmaW5pdGlvbnMsCiAgICAgICAgICAgICAgICAgICAgaW50ZXJuYWwsIGNyZWF0ZV90aW1lLCB1cGRhdGVfdGltZSwgY3JlYXRlX3VzZXIpCiAgICAgICAgICAgICAgICAgICBWQUxVRVMgKD8sPyw/LD8sPyw/LD8sPyw/LD8sPyw/KSIiIiwKICAgICAgICAgICAgICAgICgKICAgICAgICAgICAgICAgICAgICBzdGF0dXMuaWQudmFsdWUsCiAgICAgICAgICAgICAgICAgICAgc3RhdHVzLnNjb3BlX3R5cGUsCiAgICAgICAgICAgICAgICAgICAgc3RhdHVzLnNjb3BlX2lkLAogICAgICAgICAgICAgICAgICAgIHN0YXR1cy5zY2VuZSwKICAgICAgICAgICAgICAgICAgICBzdGF0dXMubmFtZSwKICAgICAgICAgICAgICAgICAgICBzdGF0dXMucmVtYXJrLAogICAgICAgICAgICAgICAgICAgIHBvcywKICAgICAgICAgICAgICAgICAgICBqc29uLmR1bXBzKHN0YXR1cy5zdGF0dXNfZGVmaW5pdGlvbnMsIGVuc3VyZV9hc2NpaT1GYWxzZSksCiAgICAgICAgICAgICAgICAgICAgMSBpZiBzdGF0dXMuaXNfaW50ZXJuYWwgZWxzZSAwLAogICAgICAgICAgICAgICAgICAgIG5vdywKICAgICAgICAgICAgICAgICAgICBub3csCiAgICAgICAgICAgICAgICAgICAgc3RhdHVzLmNyZWF0ZV91c2VyLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKCiAgICAgICAgIyDlm57or7vmnYPlqIHooYwKICAgICAgICByZWZyZXNoZWQgPSBzZWxmLmdldChzdGF0dXMuaWQudmFsdWUpCiAgICAgICAgcmV0dXJuIHJlZnJlc2hlZCBpZiByZWZyZXNoZWQgaXMgbm90IE5vbmUgZWxzZSBzdGF0dXMKCiAgICBkZWYgZGVsZXRlKHNlbGYsIHN0YXR1c19pZDogc3RyKSAtPiBib29sOgogICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICB0cnk6CiAgICAgICAgICAgIGNvbm4uZXhlY3V0ZSgiREVMRVRFIEZST00gd29ya2Zsb3dfc3RhdHVzZXMgV0hFUkUgaWQ9PyIsIChzdGF0dXNfaWQsKSkKICAgICAgICAgICAgY29ubi5leGVjdXRlKCJERUxFVEUgRlJPTSB3b3JrZmxvd19mbG93cyBXSEVSRSBzb3VyY2Vfc3RhdHVzX2lkPT8gT1IgdGFyZ2V0X3N0YXR1c19pZD0/IiwKICAgICAgICAgICAgICAgICAgICAgICAgIChzdGF0dXNfaWQsIHN0YXR1c19pZCkpCiAgICAgICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICAgICAgcmV0dXJuIFRydWUKICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgIGxvZ2dlci53YXJuaW5nKCJkZWxldGVfc3RhdHVzIOWksei0pTogJXMiLCBlKQogICAgICAgICAgICByZXR1cm4gRmFsc2UKCiAgICBkZWYgc29ydChzZWxmLCBzdGF0dXNfaWRzOiBMaXN0W3N0cl0pIC0+IGJvb2w6CiAgICAgICAgIiIi6YeN5paw5o6S5bqP54q25oCB44CCIiIiCiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIGZvciBpZHgsIHNpZCBpbiBlbnVtZXJhdGUoc3RhdHVzX2lkcyk6CiAgICAgICAgICAgIGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgICAgICJVUERBVEUgd29ya2Zsb3dfc3RhdHVzZXMgU0VUIHBvcz0/IFdIRVJFIGlkPT8iLAogICAgICAgICAgICAgICAgKGlkeCwgc2lkKSwKICAgICAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICByZXR1cm4gVHJ1ZQoKICAgIGRlZiB1cGRhdGVfZmxvd3Moc2VsZiwgc3RhdHVzX2lkOiBzdHIsIHRhcmdldF9pZHM6IExpc3Rbc3RyXSkgLT4gYm9vbDoKICAgICAgICAiIiLmm7TmlrDnirbmgIHmtYHovazlhbPns7vjgIIiIiIKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgY29ubi5leGVjdXRlKCJERUxFVEUgRlJPTSB3b3JrZmxvd19mbG93cyBXSEVSRSBzb3VyY2Vfc3RhdHVzX2lkPT8iLCAoc3RhdHVzX2lkLCkpCiAgICAgICAgZm9yIHRpZCBpbiB0YXJnZXRfaWRzOgogICAgICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICAgICAiSU5TRVJUIE9SIElHTk9SRSBJTlRPIHdvcmtmbG93X2Zsb3dzIChzb3VyY2Vfc3RhdHVzX2lkLCB0YXJnZXRfc3RhdHVzX2lkKSBWQUxVRVMgKD8sPykiLAogICAgICAgICAgICAgICAgKHN0YXR1c19pZCwgc3RyKHRpZCkpLAogICAgICAgICAgICApCiAgICAgICAgY29ubi5jb21taXQoKQogICAgICAgIHJldHVybiBUcnVlCgogICAgZGVmIHNldF9zdGFydF9zdGF0dXMoc2VsZiwgc3RhdHVzX2lkOiBzdHIsIHNjb3BlX3R5cGU6IHN0ciwgc2NvcGVfaWQ6IHN0ciwgc2NlbmU6IHN0cikgLT4gTm9uZToKICAgICAgICAiIiLnoa7kv53lj6rkv53nlZnkuIDkuKogU1RBUlQg54q25oCB44CCIiIiCiAgICAgICAgc3RhdHVzZXMgPSBzZWxmLmxpc3Qoc2NvcGVfdHlwZSwgc2NvcGVfaWQsIHNjZW5lKQogICAgICAgIGZvciBzIGluIHN0YXR1c2VzOgogICAgICAgICAgICBpZiBzLmlkLnZhbHVlICE9IHN0YXR1c19pZCBhbmQgcy5pc19zdGFydCgpOgogICAgICAgICAgICAgICAgIyDmuIXpmaTor6XnirbmgIHnmoQgU1RBUlQg5qCH6K6wCiAgICAgICAgICAgICAgICBuZXdfZGVmcyA9IFtkIGZvciBkIGluIHMuc3RhdHVzX2RlZmluaXRpb25zIGlmIGQgIT0gIlNUQVJUIl0KICAgICAgICAgICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICAgICAgICAgIGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgICAgICAgICAiVVBEQVRFIHdvcmtmbG93X3N0YXR1c2VzIFNFVCBzdGF0dXNfZGVmaW5pdGlvbnM9PyBXSEVSRSBpZD0/IiwKICAgICAgICAgICAgICAgICAgICAoanNvbi5kdW1wcyhuZXdfZGVmcywgZW5zdXJlX2FzY2lpPUZhbHNlKSwgcy5pZC52YWx1ZSksCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICBjb25uLmNvbW1pdCgpCgogICAgZGVmIHNlZWRfZGVmYXVsdHMoc2VsZiwgc2NvcGVfdHlwZTogc3RyLCBzY29wZV9pZDogc3RyLCBzY2VuZTogc3RyKSAtPiBMaXN0W1dvcmtmbG93U3RhdHVzXToKICAgICAgICAiIiLlnKjojIPlm7TlhoXmkq3np43pu5jorqTnirbmgIHvvIjpppbmrKHorr/pl67ml7bvvInjgIIiIiIKICAgICAgICBleGlzdGluZyA9IHNlbGYubGlzdChzY29wZV90eXBlLCBzY29wZV9pZCwgc2NlbmUpCiAgICAgICAgaWYgZXhpc3Rpbmc6CiAgICAgICAgICAgIHJldHVybiBleGlzdGluZwoKICAgICAgICBkZWZhdWx0cyA9IFsKICAgICAgICAgICAgKCLmlrDlu7oiLCAi5Yib5bu65ZCO6L+b5YWl55qE5Yid5aeL54q25oCBIiwgWyJTVEFSVCJdKSwKICAgICAgICAgICAgKCLlpITnkIbkuK0iLCAi5q2j5Zyo5aSE55CG5LitIiwgW10pLAogICAgICAgICAgICAoIuW3suWujOaIkCIsICLlpITnkIblrozmiJAiLCBbIkVORCJdKSwKICAgICAgICBdCiAgICAgICAgY3JlYXRlZCA9IFtdCiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIG5vdyA9IHRpbWUudGltZSgpCgogICAgICAgIGZvciBpLCAobmFtZSwgcmVtYXJrLCBkZWZzKSBpbiBlbnVtZXJhdGUoZGVmYXVsdHMpOgogICAgICAgICAgICBzaWQgPSBzdHIodXVpZC51dWlkNCgpKQogICAgICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICAgICAiIiJJTlNFUlQgSU5UTyB3b3JrZmxvd19zdGF0dXNlcwogICAgICAgICAgICAgICAgICAgKGlkLCBzY29wZV90eXBlLCBzY29wZV9pZCwgc2NlbmUsIG5hbWUsIHJlbWFyaywgcG9zLCBzdGF0dXNfZGVmaW5pdGlvbnMsCiAgICAgICAgICAgICAgICAgICAgaW50ZXJuYWwsIGNyZWF0ZV90aW1lLCB1cGRhdGVfdGltZSwgY3JlYXRlX3VzZXIpCiAgICAgICAgICAgICAgICAgICBWQUxVRVMgKD8sPyw/LD8sPyw/LD8sPyw/LD8sPyw/KSIiIiwKICAgICAgICAgICAgICAgICgKICAgICAgICAgICAgICAgICAgICBzaWQsIHNjb3BlX3R5cGUsIHNjb3BlX2lkLCBzY2VuZSwgbmFtZSwgcmVtYXJrLCBpLAogICAgICAgICAgICAgICAgICAgIGpzb24uZHVtcHMoZGVmcywgZW5zdXJlX2FzY2lpPUZhbHNlKSwgMSwgbm93LCBub3csICJzeXN0ZW0iLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKQogICAgICAgICAgICBjb25uLmNvbW1pdCgpCiAgICAgICAgICAgIHN0ID0gc2VsZi5nZXQoc2lkKQogICAgICAgICAgICBpZiBzdDoKICAgICAgICAgICAgICAgIGNyZWF0ZWQuYXBwZW5kKHN0KQoKICAgICAgICAjIOiuvue9rua1gei9rOWFs+ezu++8muaWsOW7ui0+5aSE55CG5LitLT7lt7LlrozmiJAKICAgICAgICBpZiBsZW4oY3JlYXRlZCkgPj0gMzoKICAgICAgICAgICAgc2VsZi51cGRhdGVfZmxvd3MoY3JlYXRlZFswXS5pZC52YWx1ZSwgW2NyZWF0ZWRbMV0uaWQudmFsdWVdKQogICAgICAgICAgICBzZWxmLnVwZGF0ZV9mbG93cyhjcmVhdGVkWzFdLmlkLnZhbHVlLCBbY3JlYXRlZFsyXS5pZC52YWx1ZV0pCiAgICAgICAgICAgIHNlbGYudXBkYXRlX2Zsb3dzKGNyZWF0ZWRbMl0uaWQudmFsdWUsIFtdKQoKICAgICAgICByZXR1cm4gY3JlYXRlZAoKCiMg5qih5Z2X57qn5Y2V5L6LCndvcmtmbG93X3JlcG9zaXRvcnkgPSBXb3JrZmxvd1JlcG9zaXRvcnlJbXBsKCkKCl9fYWxsX18gPSBbIldvcmtmbG93UmVwb3NpdG9yeUltcGwiLCAid29ya2Zsb3dfcmVwb3NpdG9yeSJdCg==
+"""工作流状态聚合仓储实现（去 Adapter，直接 SQL）。
+
+修复说明：
+  - 消除 WorkflowRepoAdapter 中间层（只做 entity↔dict 翻译，无业务逻辑）
+  - 把 workflow_repo 的 SQL 移入此处，成为域内私有实现
+  - 聚合重建（from_dict）与持久化在同一个文件内闭环，不再跨文件翻译
+  - DB 从 projects.db 统一为 tga.db
+
+修复前调用链：AppService → WorkflowRepoAdapter → workflow_repo → SQLite（4 层）
+修复后调用链：AppService → WorkflowRepositoryImpl → SQLite（2 层）
+"""
+from __future__ import annotations
+
+import json
+import time
+import uuid
+from typing import Any, Dict, List, Optional
+
+from app.core.database import Database
+from app.domain.workflow.domain.entities.workflow_status import WorkflowStatus
+from app.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+# ── 域内常量 ──────────────────────────────────────────
+DB_NAME = "tga.db"
+TABLE_STATUSES = "workflow_statuses"
+TABLE_FLOWS = "workflow_flows"
+
+
+class WorkflowRepositoryImpl:
+    """工作流状态仓储：直接持有 SQL，不再委托 Flat Repository。"""
+
+    def __init__(self):
+        self._ensure_tables()
+
+    @staticmethod
+    def _conn():
+        return Database.get_conn(DB_NAME)
+
+    # ── 建表 ──────────────────────────────────────────────
+    @classmethod
+    def _ensure_tables(cls) -> None:
+        """幂等建表。"""
+        conn = cls._conn()
+        try:
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS workflow_statuses (
+                    id TEXT PRIMARY KEY,
+                    scope_type TEXT DEFAULT 'PROJECT',
+                    scope_id TEXT DEFAULT '',
+                    scene TEXT DEFAULT 'FUNCTIONAL',
+                    name TEXT DEFAULT '',
+                    remark TEXT DEFAULT '',
+                    pos INTEGER DEFAULT 0,
+                    status_definitions TEXT DEFAULT '[]',
+                    internal INTEGER DEFAULT 0,
+                    create_time REAL,
+                    update_time REAL,
+                    create_user TEXT DEFAULT 'admin'
+                )
+            """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS workflow_flows (
+                    source_status_id TEXT,
+                    target_status_id TEXT,
+                    PRIMARY KEY (source_status_id, target_status_id)
+                )
+            """)
+            conn.commit()
+        except Exception as e:
+            logger.warning("workflow 表初始化失败: %s", e)
+
+    # ── 聚合重建 ──────────────────────────────────────────
+    @staticmethod
+    def _row_to_entity(row: dict) -> WorkflowStatus:
+        """数据库行 → 聚合根实体。"""
+        defs_raw = row.get("status_definitions") or "[]"
+        try:
+            status_defs = json.loads(defs_raw) if isinstance(defs_raw, str) else list(defs_raw)
+        except Exception:
+            status_defs = []
+        if not isinstance(status_defs, list):
+            status_defs = []
+
+        # 读取流转目标
+        conn = Database.get_conn(DB_NAME)
+        flow_cur = conn.execute(
+            "SELECT target_status_id FROM workflow_flows WHERE source_status_id=?",
+            (row["id"],),
+        )
+        flow_targets = [r["target_status_id"] for r in flow_cur.fetchall()]
+
+        return WorkflowStatus.from_dict({
+            "id": row["id"],
+            "name": row["name"],
+            "scene": row["scene"],
+            "remark": row["remark"] or "",
+            "internal": bool(row["internal"]),
+            "scopeType": row["scope_type"],
+            "scopeId": row["scope_id"],
+            "pos": row["pos"],
+            "statusDefinitions": status_defs,
+            "statusFlowTargets": flow_targets,
+            "createTime": int((row["create_time"] or 0) * 1000),
+            "updateTime": int((row["update_time"] or 0) * 1000),
+            "createUser": row["create_user"],
+        })
+
+    # ── 读 ────────────────────────────────────────────────
+    def list(self, scope_type: str, scope_id: str, scene: str) -> List[WorkflowStatus]:
+        conn = self._conn()
+        try:
+            cur = conn.execute(
+                """SELECT * FROM workflow_statuses
+                   WHERE scope_type=? AND scope_id=? AND scene=?
+                   ORDER BY pos ASC, create_time ASC""",
+                (scope_type, scope_id, scene),
+            )
+            rows = cur.fetchall()
+            return [self._row_to_entity(dict(r)) for r in rows]
+        except Exception as e:
+            logger.warning("list_statuses 失败: %s", e)
+            return []
+
+    def get(self, status_id: str) -> Optional[WorkflowStatus]:
+        conn = self._conn()
+        try:
+            cur = conn.execute("SELECT * FROM workflow_statuses WHERE id=?", (status_id,))
+            row = cur.fetchone()
+            if not row:
+                return None
+            return self._row_to_entity(dict(row))
+        except Exception:
+            return None
+
+    # ── 写 ────────────────────────────────────────────────
+    def save(self, status: WorkflowStatus) -> WorkflowStatus:
+        """新增或更新状态。"""
+        existing = self.get(status.id.value)
+        conn = self._conn()
+        now = time.time()
+
+        if existing:
+            # 更新
+            conn.execute(
+                """UPDATE workflow_statuses SET name=?, remark=?, status_definitions=?, update_time=? WHERE id=?""",
+                (
+                    status.name,
+                    status.remark,
+                    json.dumps(status.status_definitions, ensure_ascii=False),
+                    now,
+                    status.id.value,
+                ),
+            )
+        else:
+            # 新增 - 获取最大 pos
+            cur = conn.execute(
+                "SELECT MAX(pos) AS max_pos FROM workflow_statuses WHERE scope_type=? AND scope_id=? AND scene=?",
+                (status.scope_type, status.scope_id, status.scene),
+            )
+            row = cur.fetchone()
+            max_pos = row["max_pos"] if row and row["max_pos"] is not None else -1
+            pos = max_pos + 1
+
+            conn.execute(
+                """INSERT INTO workflow_statuses
+                   (id, scope_type, scope_id, scene, name, remark, pos, status_definitions,
+                    internal, create_time, update_time, create_user)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
+                (
+                    status.id.value,
+                    status.scope_type,
+                    status.scope_id,
+                    status.scene,
+                    status.name,
+                    status.remark,
+                    pos,
+                    json.dumps(status.status_definitions, ensure_ascii=False),
+                    1 if status.is_internal else 0,
+                    now,
+                    now,
+                    status.create_user,
+                ),
+            )
+        conn.commit()
+
+        # 回读权威行
+        refreshed = self.get(status.id.value)
+        return refreshed if refreshed is not None else status
+
+    def delete(self, status_id: str) -> bool:
+        conn = self._conn()
+        try:
+            conn.execute("DELETE FROM workflow_statuses WHERE id=?", (status_id,))
+            conn.execute("DELETE FROM workflow_flows WHERE source_status_id=? OR target_status_id=?",
+                         (status_id, status_id))
+            conn.commit()
+            return True
+        except Exception as e:
+            logger.warning("delete_status 失败: %s", e)
+            return False
+
+    def sort(self, status_ids: List[str]) -> bool:
+        """重新排序状态。"""
+        conn = self._conn()
+        for idx, sid in enumerate(status_ids):
+            conn.execute(
+                "UPDATE workflow_statuses SET pos=? WHERE id=?",
+                (idx, sid),
+            )
+        conn.commit()
+        return True
+
+    def update_flows(self, status_id: str, target_ids: List[str]) -> bool:
+        """更新状态流转关系。"""
+        conn = self._conn()
+        conn.execute("DELETE FROM workflow_flows WHERE source_status_id=?", (status_id,))
+        for tid in target_ids:
+            conn.execute(
+                "INSERT OR IGNORE INTO workflow_flows (source_status_id, target_status_id) VALUES (?,?)",
+                (status_id, str(tid)),
+            )
+        conn.commit()
+        return True
+
+    def set_start_status(self, status_id: str, scope_type: str, scope_id: str, scene: str) -> None:
+        """确保只保留一个 START 状态。"""
+        statuses = self.list(scope_type, scope_id, scene)
+        for s in statuses:
+            if s.id.value != status_id and s.is_start():
+                # 清除该状态的 START 标记
+                new_defs = [d for d in s.status_definitions if d != "START"]
+                conn = self._conn()
+                conn.execute(
+                    "UPDATE workflow_statuses SET status_definitions=? WHERE id=?",
+                    (json.dumps(new_defs, ensure_ascii=False), s.id.value),
+                )
+                conn.commit()
+
+    def seed_defaults(self, scope_type: str, scope_id: str, scene: str) -> List[WorkflowStatus]:
+        """在范围内播种默认状态（首次访问时）。"""
+        existing = self.list(scope_type, scope_id, scene)
+        if existing:
+            return existing
+
+        defaults = [
+            ("新建", "创建后进入的初始状态", ["START"]),
+            ("处理中", "正在处理中", []),
+            ("已完成", "处理完成", ["END"]),
+        ]
+        created = []
+        conn = self._conn()
+        now = time.time()
+
+        for i, (name, remark, defs) in enumerate(defaults):
+            sid = str(uuid.uuid4())
+            conn.execute(
+                """INSERT INTO workflow_statuses
+                   (id, scope_type, scope_id, scene, name, remark, pos, status_definitions,
+                    internal, create_time, update_time, create_user)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
+                (
+                    sid, scope_type, scope_id, scene, name, remark, i,
+                    json.dumps(defs, ensure_ascii=False), 1, now, now, "system",
+                ),
+            )
+            conn.commit()
+            st = self.get(sid)
+            if st:
+                created.append(st)
+
+        # 设置流转关系：新建->处理中->已完成
+        if len(created) >= 3:
+            self.update_flows(created[0].id.value, [created[1].id.value])
+            self.update_flows(created[1].id.value, [created[2].id.value])
+            self.update_flows(created[2].id.value, [])
+
+        return created
+
+
+# 模块级单例
+workflow_repository = WorkflowRepositoryImpl()
+
+__all__ = ["WorkflowRepositoryImpl", "workflow_repository"]

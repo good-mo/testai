@@ -7,7 +7,7 @@ from __future__ import annotations
 from typing import List, Optional
 
 from app.domain.script.domain.entities.script import Script
-from app.repositories.script_repo import ScriptRepo
+from app.domain.script.infrastructure.script_store import ScriptRepo
 
 
 class ScriptRepoAdapter:

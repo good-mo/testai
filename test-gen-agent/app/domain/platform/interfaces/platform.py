@@ -6,7 +6,7 @@ from fastapi import APIRouter, Body, Request
 
 from app.core.response import ok
 from app.logging_config import get_logger
-from app.models.platform import LicenseAddRequest, LicenseValidateBody
+from app.domain.platform.application.dto import LicenseAddRequest, LicenseValidateBody
 
 logger = get_logger(__name__)
 router = APIRouter(tags=["adapter-platform"])

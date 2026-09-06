@@ -239,3 +239,4 @@ class CaseReviewAppService:
 
 # 单例门面（进程内复用）
 case_review_app_service = CaseReviewAppService()
+case_review_service = case_review_app_service

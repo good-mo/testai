@@ -32,7 +32,7 @@ from app.domain.script.application.dto import (
     UpdateCommand,
 )
 from app.domain.script.application.script_app_service import script_app_service
-from app.models.scripts import (
+from app.domain.script.application.dto import (
     ExecutionRecordCreate,
     LocatorEvalRequest,
     ScriptCreate,

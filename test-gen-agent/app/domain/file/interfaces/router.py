@@ -56,7 +56,7 @@ def delete_file(file_id: str, request: Request):
     """Delete File。"""
     try:
         from app.domain.file.application.dto import DeleteFileCommand
-        cmd = DeleteFileCommand("file_id": file_id)
+        cmd = DeleteFileCommand(file_id=file_id)
         result = file_app_service.delete_file(cmd)
         return ok(result)
     except Exception as e:

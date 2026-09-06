@@ -7,7 +7,7 @@ from fastapi import APIRouter, Body, Request
 
 from app.core.response import ok
 from app.logging_config import get_logger
-from app.models.plugins import PluginIdBody, PluginUpsertBody
+from app.domain.plugins.application.dto import PluginIdBody, PluginUpsertBody
 
 logger = get_logger(__name__)
 router = APIRouter(tags=["adapter-plugins"])

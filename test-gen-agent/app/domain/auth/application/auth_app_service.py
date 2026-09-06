@@ -6,13 +6,13 @@ from app.domain.auth.application.dto import (
     GetUserQuery, UpdateUserCommand, DeleteUserCommand,
     ResetPasswordCommand, SetUserEnabledCommand,
 )
+from app.domain.auth.infrastructure.auth_repository_impl import AuthRepositoryImpl
 
 class AuthAppService:
-    """认证应用服务（委托给传统 auth_service）。"""
+    """认证用例编排服务。"""
     
-    def __init__(self):
-        from app.services.auth_service import auth_service
-        self._service = auth_service
+    def __init__(self, repository: AuthRepositoryImpl | None = None):
+        self._service = repository or AuthRepositoryImpl()
     
     def authenticate(self, cmd: AuthenticateCommand) -> Optional[dict]:
         return self._service.authenticate(cmd.username, cmd.password)
@@ -48,4 +48,5 @@ class AuthAppService:
         return self._service.set_user_enabled(cmd.user_id, cmd.enabled)
 
 auth_app_service = AuthAppService()
-__all__ = ["AuthAppService", "auth_app_service"]
+auth_service = auth_app_service
+__all__ = ["AuthAppService", "auth_app_service", "auth_service"]

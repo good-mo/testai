@@ -36,7 +36,7 @@ def remove(task_id: str, request: Request):
     """Remove。"""
     try:
         from app.domain.export_task.application.dto import RemoveTaskCommand
-        cmd = RemoveTaskCommand("task_id": task_id)
+        cmd = RemoveTaskCommand(task_id=task_id)
         result = export_task_app_service.remove(cmd)
         return ok(result)
     except Exception as e:

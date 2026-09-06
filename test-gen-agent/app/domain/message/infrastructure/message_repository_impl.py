@@ -5,7 +5,7 @@ from typing import List, Optional
 
 from app.domain.message.domain.entities.notification import Notification
 from app.domain.message.domain.entities.robot import Robot
-from app.repositories.message_repo import MessageRepo
+from app.domain.message.infrastructure.message_store import MessageRepo
 
 
 class MessageRepoAdapter:

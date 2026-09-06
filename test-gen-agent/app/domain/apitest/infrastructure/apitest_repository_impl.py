@@ -19,7 +19,7 @@ from app.domain.apitest.domain.entities.api_case import ApiCase
 from app.domain.apitest.domain.entities.mock import ApiMock
 from app.domain.apitest.domain.entities.api_definition import ApiDefinition
 from app.domain.apitest.domain.entities.scenario import Scenario
-from app.repositories.apitest_repo import ApitestRepo
+from app.domain.apitest.infrastructure.apitest_store import ApitestRepo
 
 
 # ── ApiDefinition 仓储 ─────────────────────────────────

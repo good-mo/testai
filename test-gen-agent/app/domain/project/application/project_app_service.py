@@ -238,3 +238,4 @@ class ProjectAppService:
 
 # 单例门面（进程内复用）
 project_app_service = ProjectAppService()
+project_service = project_app_service

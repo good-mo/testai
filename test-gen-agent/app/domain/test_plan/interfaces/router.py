@@ -89,7 +89,7 @@ def remove_case(plan_id: str, case_id: str, request: Request):
     """Remove Case。"""
     try:
         from app.domain.test_plan.application.dto import RemoveCaseCommand
-        cmd = RemoveCaseCommand("plan_id": plan_id, "case_id": case_id)
+        cmd = RemoveCaseCommand(plan_id=plan_id, case_id=case_id)
         result = test_plan_app_service.remove_case(cmd)
         return ok(result)
     except Exception as e:

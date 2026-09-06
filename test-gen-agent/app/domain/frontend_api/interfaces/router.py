@@ -75,9 +75,7 @@ async def update_api_definition(def_id: str, request: Request):
 def delete_api_definition(def_id: str, request: Request):
     """Delete Api Definition。"""
     try:
-        from app.domain.frontend_api.application.dto import None
-        cmd = None("def_id": def_id)
-        result = frontend_api_app_service.delete_api_definition(cmd)
+        result = frontend_api_app_service.delete_api_definition(def_id)
         return ok(result)
     except Exception as e:
         return fail(str(e))

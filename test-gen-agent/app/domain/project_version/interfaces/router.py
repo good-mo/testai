@@ -60,7 +60,7 @@ def delete(version_id: str, request: Request):
     """Delete。"""
     try:
         from app.domain.project_version.application.dto import DeleteVersionCommand
-        cmd = DeleteVersionCommand("version_id": version_id)
+        cmd = DeleteVersionCommand(version_id=version_id)
         result = project_version_app_service.delete(cmd)
         return ok(result)
     except Exception as e:

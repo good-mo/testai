@@ -313,5 +313,6 @@ class EnvironmentAppService:
 
 # 单例门面
 environment_app_service = EnvironmentAppService()
+environment_service = environment_app_service
 
-__all__ = ["EnvironmentAppService", "environment_app_service"]
+__all__ = ["EnvironmentAppService", "environment_app_service", "environment_service"]

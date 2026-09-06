@@ -10,7 +10,7 @@ import uuid
 from typing import List, Optional, Tuple
 
 from app.domain.case_review.domain.entities.case_review import CaseReview
-from app.repositories.case_review_repo import CaseReviewRepo
+from app.domain.case_review.infrastructure.case_review_store import CaseReviewRepo
 
 
 class CaseReviewRepoAdapter:

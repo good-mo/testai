@@ -91,7 +91,7 @@ class TaskStore:
     def __init__(self, db_path: str = None):
         # db_path 仅向后兼容保留；实际连接由 Database 统一管理
         self.db_path = db_path or _TASK_DB_PATH
-        from app.repositories import task_repo
+        from app.core.task_queue_store import task_repo
         self._repo = task_repo
 
     def _init_db(self) -> None:
@@ -101,14 +101,14 @@ class TaskStore:
     @staticmethod
     def _get_conn():
         """获取 Database 连接（兼容旧接口，直接委托 repo）。"""
-        from app.repositories.task_repo import _get_conn as _repo_conn
-        return _repo_conn()
+        from app.core.task_queue_store import task_repo
+        return task_repo._get_conn()
 
     @staticmethod
     def _decode(row):
         """DB 行解码（兼容旧接口，委托 repo）。"""
-        from app.repositories.task_repo import _decode as _repo_decode
-        return _repo_decode(row)
+        from app.core.task_queue_store import task_repo
+        return task_repo._decode_row(row)
 
     def save_task(
         self,

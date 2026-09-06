@@ -24,7 +24,7 @@ from app.domain.task_center.application.dto import (
 from app.domain.task_center.application.task_center_app_service import (
     task_center_app_service as _svc,
 )
-from app.models.task_center import TaskCenterIdsBody, TaskScheduleCronBody
+from app.domain.task_center.application.dto import TaskCenterIdsBody, TaskScheduleCronBody
 
 # ═══════════════════════════════════════════════════════════════════════
 # 任务中心操作的真实后端接线

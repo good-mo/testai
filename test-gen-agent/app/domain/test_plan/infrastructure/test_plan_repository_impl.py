@@ -16,7 +16,7 @@ from typing import List, Optional, Tuple
 
 from app.core.database import Database
 from app.domain.test_plan.domain.entities.test_plan import TestPlan
-from app.repositories.test_plan_repo import DB_NAME, TestPlanRepo
+from app.domain.test_plan.infrastructure.test_plan_store import DB_NAME, TestPlanRepo
 
 
 class TestPlanRepoAdapter:

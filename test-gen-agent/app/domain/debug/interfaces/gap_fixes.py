@@ -13,7 +13,7 @@ import uuid
 from fastapi import APIRouter, Body, Request
 
 from app.core.response import fail, ok, page_result
-from app.models.gap_fixes import ResourceScriptExecBody, TaskCenterRealTimePageBody
+from app.domain.debug.application.dto import ResourceScriptExecBody, TaskCenterRealTimePageBody
 from app.domain.apitest.application.apitest_app_service import apitest_service
 from app.domain.auth.application.auth_app_service import auth_service
 

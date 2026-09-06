@@ -60,7 +60,7 @@ def delete(pool_id: str, request: Request):
     """Delete。"""
     try:
         from app.domain.resource_pool.application.dto import DeletePoolCommand
-        cmd = DeletePoolCommand("pool_id": pool_id)
+        cmd = DeletePoolCommand(pool_id=pool_id)
         result = resource_pool_app_service.delete(cmd)
         return ok(result)
     except Exception as e:

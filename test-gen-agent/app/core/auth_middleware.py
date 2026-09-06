@@ -190,8 +190,8 @@ class AuthMiddleware:
             await response(scope, receive, send)
             return
 
-        from app.auth.store import auth_store
-        user = auth_store.get_session_user(token)
+        from app.domain.auth.infrastructure.auth_repository_impl import auth_repository
+        user = auth_repository.get_session_user(token)
         if not user:
             response = self._unauthorized()
             await response(scope, receive, send)

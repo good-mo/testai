@@ -866,3 +866,4 @@ class ApitestAppService:
 
 # 单例门面（进程内复用）
 apitest_app_service = ApitestAppService()
+apitest_service = apitest_app_service

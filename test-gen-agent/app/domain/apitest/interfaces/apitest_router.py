@@ -5,9 +5,9 @@ import json
 
 from fastapi import APIRouter, Request
 
-from app.apitest.store.payload_guard import normalize_payload
+from app.domain.apitest.interfaces.payload_guard import normalize_payload
 from app.core.response import fail, ok, read_body
-from app.models.apitest import (
+from app.domain.apitest.application.dto import (
     ApiCaseCreate,
     ApiCaseUpdate,
     ApiDebugRequest,

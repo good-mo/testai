@@ -24,7 +24,7 @@ from app.domain.runs.application.dto import (
 from app.domain.runs.application.run_record_app_service import (
     run_record_app_service,
 )
-from app.models.runs import RunClearQuery, RunQuery
+from app.domain.runs.application.dto import RunClearQuery, RunQuery
 
 router = APIRouter(tags=["runs"])
 

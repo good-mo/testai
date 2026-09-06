@@ -23,7 +23,7 @@ from app.domain.project.application.dto import (
 )
 from app.domain.project.application.project_app_service import ProjectAppService
 from app.domain.project.application.web_contract import to_row, to_row_page
-from app.models.project import ProjectCreate, ProjectUpdate
+from app.domain.project.application.dto import ProjectCreate, ProjectUpdate
 from app.domain.project.application.project_app_service import project_service
 
 router = APIRouter(tags=["projects"])

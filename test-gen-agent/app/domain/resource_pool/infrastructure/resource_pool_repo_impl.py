@@ -5,7 +5,7 @@ import uuid
 from typing import List, Optional
 
 from app.domain.resource_pool.domain.entities.resource_pool import ResourcePool
-from app.repositories.resource_pool_repo import ResourcePoolRepo
+from app.domain.resource_pool.infrastructure.resource_pool_store import ResourcePoolRepo
 
 
 class ResourcePoolRepoAdapter:

@@ -133,3 +133,4 @@ class FrontendApiAppService:
 
 
 frontend_api_app_service = FrontendApiAppService()
+frontend_api_service = frontend_api_app_service

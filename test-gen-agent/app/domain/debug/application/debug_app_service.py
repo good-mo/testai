@@ -1,1 +1,110 @@
-IiIi6LCD6K+V5bqU55So5pyN5Yqh77yIQXBwbGljYXRpb24gU2VydmljZSAvIFVzZSBDYXNlIOmXqOmdou+8ieOAggoK5L+u5aSN6K+05piO77yaCiAgLSDkv67mlLkgaW1wb3J077ya5LuOIERlYnVnUmVwb0FkYXB0ZXIg5pS55Li6IERlYnVnUmVwb3NpdG9yeUltcGwKICAtIOS9v+eUqOaooeWdl+e6p+WNleS+iyBkZWJ1Z19yZXBvc2l0b3J5CiAgLSDmioogZGVidWdfc2VydmljZSDnmoTlhoXlrZjnvJPlrZjpgLvovpHnp7vlhaXmraTlpITvvIhoYXMvbmV4dF9udW0vYWxsX2l0ZW1z77yJCiIiIgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgdXVpZApmcm9tIHR5cGluZyBpbXBvcnQgQW55LCBEaWN0LCBMaXN0LCBPcHRpb25hbAoKZnJvbSBhcHAuZG9tYWluLmRlYnVnLmFwcGxpY2F0aW9uLmR0byBpbXBvcnQgKAogICAgRGVsZXRlRGVidWdJdGVtQ29tbWFuZCwKICAgIEdldERlYnVnSXRlbUNvbW1hbmQsCiAgICBTYXZlRGVidWdJdGVtQ29tbWFuZCwKKQpmcm9tIGFwcC5kb21haW4uZGVidWcuZG9tYWluLmVudGl0aWVzLmRlYnVnX2l0ZW0gaW1wb3J0IERlYnVnSXRlbQoKIyDilIDilIAg5L+u5aSN77ya5pS5IGltcG9ydCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKZnJvbSBhcHAuZG9tYWluLmRlYnVnLmluZnJhc3RydWN0dXJlLmRlYnVnX3JlcG9zaXRvcnlfaW1wbCBpbXBvcnQgKAogICAgRGVidWdSZXBvc2l0b3J5SW1wbCwKICAgIGRlYnVnX3JlcG9zaXRvcnksCikKCgpjbGFzcyBEZWJ1Z0FwcFNlcnZpY2U6CiAgICAiIiLosIPor5XnlKjkvovnvJbmjpLmnI3liqHvvIjlkKvlhoXlrZjnvJPlrZjvvInjgIIiIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgcmVwbz1Ob25lKToKICAgICAgICAjIOKUgOKUgCDkv67lpI3vvJrkvb/nlKjmlrDnmoQgUmVwb3NpdG9yeSDljZXkvosg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICAgICAgc2VsZi5fcmVwbyA9IHJlcG8gb3IgZGVidWdfcmVwb3NpdG9yeQogICAgICAgICMg5YaF5a2Y57yT5a2Y77yI5LuOIGRlYnVnX3NlcnZpY2Ug56e75YWl77yJCiAgICAgICAgc2VsZi5fc3RvcmU6IERpY3Rbc3RyLCBEaWN0W3N0ciwgQW55XV0gPSB7fQogICAgICAgIHNlbGYuX2luaXRpYWxpemVfY2FjaGUoKQoKICAgIGRlZiBfaW5pdGlhbGl6ZV9jYWNoZShzZWxmKSAtPiBOb25lOgogICAgICAgICIiIuS7jiBEQiDliqDovb3lhajpg6jmlbDmja7liLDlhoXlrZjnvJPlrZjjgIIiIiIKICAgICAgICB0cnk6CiAgICAgICAgICAgIGl0ZW1zID0gc2VsZi5fcmVwby5saXN0X2FsbCgpCiAgICAgICAgICAgIHNlbGYuX3N0b3JlLmNsZWFyKCkKICAgICAgICAgICAgZm9yIGl0ZW0gaW4gaXRlbXM6CiAgICAgICAgICAgICAgICBzZWxmLl9zdG9yZVtpdGVtLmlkLnZhbHVlXSA9IGl0ZW0udG9fZGljdCgpCiAgICAgICAgICAgIGlmIGl0ZW1zOgogICAgICAgICAgICAgICAgZnJvbSBhcHAubG9nZ2luZ19jb25maWcgaW1wb3J0IGdldF9sb2dnZXIKICAgICAgICAgICAgICAgIGxvZ2dlciA9IGdldF9sb2dnZXIoX19uYW1lX18pCiAgICAgICAgICAgICAgICBsb2dnZXIuaW5mbygi5LuO5pWw5o2u5bqT5Yqg6L29ICVkIOadoeiwg+ivleaVsOaNriIsIGxlbihpdGVtcykpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgICAgICBmcm9tIGFwcC5sb2dnaW5nX2NvbmZpZyBpbXBvcnQgZ2V0X2xvZ2dlcgogICAgICAgICAgICBsb2dnZXIgPSBnZXRfbG9nZ2VyKF9fbmFtZV9fKQogICAgICAgICAgICBsb2dnZXIud2FybmluZygi5Yqg6L296LCD6K+V5pWw5o2u5aSx6LSlOiAlcyIsIGUpCgogICAgIyDilIDilIAg57yT5a2Y55u45YWz5pa55rOV77yI5LuOIGRlYnVnX3NlcnZpY2Ug56e75YWl77yJ4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBkZWYgaGFzKHNlbGYsIGRlYnVnX2lkOiBzdHIpIC0+IGJvb2w6CiAgICAgICAgIiIi6LCD6K+V6aG55piv5ZCm5a2Y5Zyo44CCIiIiCiAgICAgICAgaWYgZGVidWdfaWQgaW4gc2VsZi5fc3RvcmU6CiAgICAgICAgICAgIHJldHVybiBUcnVlCiAgICAgICAgcmV0dXJuIHNlbGYuX3JlcG8uZ2V0KGRlYnVnX2lkKSBpcyBub3QgTm9uZQoKICAgIGRlZiBuZXh0X251bShzZWxmKSAtPiBpbnQ6CiAgICAgICAgIiIi6K6h566X5LiL5LiA5Liq5Y+v55So55qEIG51bSDluo/lj7fjgIIiIiIKICAgICAgICByZXR1cm4gbGVuKHNlbGYuX3N0b3JlKSArIDEKCiAgICBkZWYgYWxsX2l0ZW1zKHNlbGYpIC0+IExpc3RbRGljdFtzdHIsIEFueV1dOgogICAgICAgICIiIui/lOWbnuWFqOmDqOiwg+ivlemhue+8iOWAvOWIl+ihqO+8ieOAgiIiIgogICAgICAgIHJldHVybiBsaXN0KHNlbGYuX3N0b3JlLnZhbHVlcygpKQoKICAgICMg4pSA4pSAIOagh+WHhiBDUlVEIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIGdldChzZWxmLCBjbWQ6IEdldERlYnVnSXRlbUNvbW1hbmQpIC0+IE9wdGlvbmFsW2RpY3RdOgogICAgICAgICMg5YWI5p+l57yT5a2YCiAgICAgICAgY2FjaGVkID0gc2VsZi5fc3RvcmUuZ2V0KGNtZC5kZWJ1Z19pZCkKICAgICAgICBpZiBjYWNoZWQgaXMgbm90IE5vbmU6CiAgICAgICAgICAgIHJldHVybiBjYWNoZWQKICAgICAgICAjIOWGjeafpSBEQgogICAgICAgIGl0ZW0gPSBzZWxmLl9yZXBvLmdldChjbWQuZGVidWdfaWQpCiAgICAgICAgaWYgaXRlbToKICAgICAgICAgICAgcmVzdWx0ID0gaXRlbS50b19kaWN0KCkKICAgICAgICAgICAgc2VsZi5fc3RvcmVbY21kLmRlYnVnX2lkXSA9IHJlc3VsdAogICAgICAgICAgICByZXR1cm4gcmVzdWx0CiAgICAgICAgcmV0dXJuIE5vbmUKCiAgICBkZWYgc2F2ZShzZWxmLCBjbWQ6IFNhdmVEZWJ1Z0l0ZW1Db21tYW5kKSAtPiBkaWN0OgogICAgICAgIGRlYnVnX2lkID0gY21kLmRlYnVnX2lkIG9yIHN0cih1dWlkLnV1aWQ0KCkuaGV4WzoxMl0pCiAgICAgICAgaXRlbSA9IERlYnVnSXRlbSgKICAgICAgICAgICAgZGVidWdfaWQ9ZGVidWdfaWQsCiAgICAgICAgICAgIG5hbWU9Y21kLm5hbWUsIHByb3RvY29sPWNtZC5wcm90b2NvbCwgbWV0aG9kPWNtZC5tZXRob2QsCiAgICAgICAgICAgIHBhdGg9Y21kLnBhdGgsIHVybD1jbWQudXJsLAogICAgICAgICAgICBwcm9qZWN0X2lkPWNtZC5wcm9qZWN0X2lkLCBtb2R1bGVfaWQ9Y21kLm1vZHVsZV9pZCwKICAgICAgICAgICAgcmVxdWVzdF9kYXRhPWNtZC5yZXF1ZXN0X2RhdGEsIHJlc3BvbnNlX2RhdGE9Y21kLnJlc3BvbnNlX2RhdGEsCiAgICAgICAgICAgIGNyZWF0ZV91c2VyPWNtZC5jcmVhdGVfdXNlciwgdXBkYXRlX3VzZXI9Y21kLnVwZGF0ZV91c2VyLAogICAgICAgICAgICBudW09Y21kLm51bSwKICAgICAgICApCiAgICAgICAgc2F2ZWQgPSBzZWxmLl9yZXBvLnNhdmUoaXRlbSkKICAgICAgICByZXN1bHQgPSBzYXZlZC50b19kaWN0KCkKICAgICAgICAjIOWQjOatpee8k+WtmAogICAgICAgIHNlbGYuX3N0b3JlW2RlYnVnX2lkXSA9IHJlc3VsdAogICAgICAgIHJldHVybiByZXN1bHQKCiAgICBkZWYgZGVsZXRlKHNlbGYsIGNtZDogRGVsZXRlRGVidWdJdGVtQ29tbWFuZCkgLT4gYm9vbDoKICAgICAgICBleGlzdGVkID0gc2VsZi5fcmVwby5kZWxldGUoY21kLmRlYnVnX2lkKQogICAgICAgICMg5ZCM5q2l57yT5a2YCiAgICAgICAgc2VsZi5fc3RvcmUucG9wKGNtZC5kZWJ1Z19pZCwgTm9uZSkKICAgICAgICByZXR1cm4gZXhpc3RlZAoKICAgIGRlZiBsaXN0X2FsbChzZWxmKSAtPiBsaXN0OgogICAgICAgIGl0ZW1zID0gc2VsZi5fcmVwby5saXN0X2FsbCgpCiAgICAgICAgcmV0dXJuIFtpLnRvX2RpY3QoKSBmb3IgaSBpbiBpdGVtc10KCgpkZWJ1Z19hcHBfc2VydmljZSA9IERlYnVnQXBwU2VydmljZSgpCg==
+"""调试应用服务（Application Service / Use Case 门面）。
+
+修复说明：
+  - 修改 import：从 DebugRepoAdapter 改为 DebugRepositoryImpl
+  - 使用模块级单例 debug_repository
+  - 把 debug_service 的内存缓存逻辑移入此处（has/next_num/all_items）
+"""
+from __future__ import annotations
+
+import uuid
+from typing import Any, Dict, List, Optional
+
+from app.domain.debug.application.dto import (
+    DeleteDebugItemCommand,
+    GetDebugItemCommand,
+    SaveDebugItemCommand,
+)
+from app.domain.debug.domain.entities.debug_item import DebugItem
+
+# ── 修复：改 import ──────────────────────────────────────────
+from app.domain.debug.infrastructure.debug_repository_impl import (
+    DebugRepositoryImpl,
+    debug_repository,
+)
+
+
+class DebugAppService:
+    """调试用例编排服务（含内存缓存）。"""
+
+    def __init__(self, repo=None):
+        # ── 修复：使用新的 Repository 单例 ──────────────────
+        self._repo = repo or debug_repository
+        # 内存缓存（从 debug_service 移入）
+        self._store: Dict[str, Dict[str, Any]] = {}
+        self._initialize_cache()
+
+    def _initialize_cache(self) -> None:
+        """从 DB 加载全部数据到内存缓存。"""
+        try:
+            items = self._repo.list_all()
+            self._store.clear()
+            for item in items:
+                self._store[item.id.value] = item.to_dict()
+            if items:
+                from app.logging_config import get_logger
+                logger = get_logger(__name__)
+                logger.info("从数据库加载 %d 条调试数据", len(items))
+        except Exception as e:
+            from app.logging_config import get_logger
+            logger = get_logger(__name__)
+            logger.warning("加载调试数据失败: %s", e)
+
+    # ── 缓存相关方法（从 debug_service 移入）──────────────
+    def has(self, debug_id: str) -> bool:
+        """调试项是否存在。"""
+        if debug_id in self._store:
+            return True
+        return self._repo.get(debug_id) is not None
+
+    def next_num(self) -> int:
+        """计算下一个可用的 num 序号。"""
+        return len(self._store) + 1
+
+    def all_items(self) -> List[Dict[str, Any]]:
+        """返回全部调试项（值列表）。"""
+        return list(self._store.values())
+
+    # ── 标准 CRUD ─────────────────────────────────────────
+    def get(self, cmd: GetDebugItemCommand) -> Optional[dict]:
+        # 先查缓存
+        cached = self._store.get(cmd.debug_id)
+        if cached is not None:
+            return cached
+        # 再查 DB
+        item = self._repo.get(cmd.debug_id)
+        if item:
+            result = item.to_dict()
+            self._store[cmd.debug_id] = result
+            return result
+        return None
+
+    def save(self, cmd: SaveDebugItemCommand) -> dict:
+        debug_id = cmd.debug_id or str(uuid.uuid4().hex[:12])
+        item = DebugItem(
+            debug_id=debug_id,
+            name=cmd.name, protocol=cmd.protocol, method=cmd.method,
+            path=cmd.path, url=cmd.url,
+            project_id=cmd.project_id, module_id=cmd.module_id,
+            request_data=cmd.request_data, response_data=cmd.response_data,
+            create_user=cmd.create_user, update_user=cmd.update_user,
+            num=cmd.num,
+        )
+        saved = self._repo.save(item)
+        result = saved.to_dict()
+        # 同步缓存
+        self._store[debug_id] = result
+        return result
+
+    def delete(self, cmd: DeleteDebugItemCommand) -> bool:
+        existed = self._repo.delete(cmd.debug_id)
+        # 同步缓存
+        self._store.pop(cmd.debug_id, None)
+        return existed
+
+    def list_all(self) -> list:
+        items = self._repo.list_all()
+        return [i.to_dict() for i in items]
+
+
+debug_app_service = DebugAppService()

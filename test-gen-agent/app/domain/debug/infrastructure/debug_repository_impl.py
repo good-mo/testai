@@ -1,1 +1,154 @@
-IiIi6LCD6K+V6IGa5ZCI5LuT5YKo5a6e546w77yI5Y67IEFkYXB0ZXLvvIznm7TmjqUgU1FM77yJ44CCCgrkv67lpI3or7TmmI7vvJoKICAtIOa2iOmZpCBEZWJ1Z1JlcG9BZGFwdGVyIOS4remXtOWxgu+8muWug+WPquWBmiBlbnRpdHnihpRkaWN0IOe/u+ivke+8jOayoeacieS4muWKoemAu+i+kQogIC0g5oqKIGRlYnVnX3JlcG8g55qEIFNRTCDnp7vlhaXmraTlpITvvIzmiJDkuLrln5/lhoXnp4HmnInlrp7njrAKICAtIOiBmuWQiOmHjeW7uu+8iGZyb21fZGljdO+8ieS4juaMgeS5heWMluWcqOWQjOS4gOS4quaWh+S7tuWGhemXreeOr++8jOS4jeWGjei3qOaWh+S7tue/u+ivkQoK5L+u5aSN5YmN6LCD55So6ZO+77yaQXBwU2VydmljZSDihpIgRGVidWdSZXBvQWRhcHRlciDihpIgRGVidWdSZXBvIOKGkiBTUUxpdGXvvIg0IOWxgu+8iQrkv67lpI3lkI7osIPnlKjpk77vvJpBcHBTZXJ2aWNlIOKGkiBEZWJ1Z1JlcG9zaXRvcnlJbXBsIOKGkiBTUUxpdGXvvIgyIOWxgu+8iQoiIiIKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGpzb24KaW1wb3J0IHRpbWUKaW1wb3J0IHV1aWQKZnJvbSB0eXBpbmcgaW1wb3J0IExpc3QsIE9wdGlvbmFsCgpmcm9tIGFwcC5jb3JlLmRhdGFiYXNlIGltcG9ydCBEYXRhYmFzZQpmcm9tIGFwcC5kb21haW4uZGVidWcuZG9tYWluLmVudGl0aWVzLmRlYnVnX2l0ZW0gaW1wb3J0IERlYnVnSXRlbQpmcm9tIGFwcC5sb2dnaW5nX2NvbmZpZyBpbXBvcnQgZ2V0X2xvZ2dlcgoKbG9nZ2VyID0gZ2V0X2xvZ2dlcihfX25hbWVfXykKCiMg4pSA4pSAIOWfn+WGheW4uOmHj++8iOS7jiBkZWJ1Z19yZXBvLnB5IOi/geWFpe+8ieKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApEQl9OQU1FID0gInRnYS5kYiIgICMg57uf5LiA5pWw5o2u5bqT77yI5LiN5YaN55SoICJhcGl0ZXN0LmRiIu+8iQpUQUJMRSA9ICJkZWJ1Z19pdGVtcyIKCgpjbGFzcyBEZWJ1Z1JlcG9zaXRvcnlJbXBsOgogICAgIiIi6LCD6K+V5LuT5YKo77ya55u05o6l5oyB5pyJIFNRTO+8jOS4jeWGjeWnlOaJmCBGbGF0IFJlcG9zaXRvcnnjgIIiIiIKCiAgICBkZWYgX19pbml0X18oc2VsZik6CiAgICAgICAgc2VsZi5fZW5zdXJlX3RhYmxlKCkKCiAgICBAc3RhdGljbWV0aG9kCiAgICBkZWYgX2Nvbm4oKToKICAgICAgICByZXR1cm4gRGF0YWJhc2UuZ2V0X2Nvbm4oREJfTkFNRSkKCiAgICAjIOKUgOKUgCDlu7rooagg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBAY2xhc3NtZXRob2QKICAgIGRlZiBfZW5zdXJlX3RhYmxlKGNscykgLT4gTm9uZToKICAgICAgICAiIiLluYLnrYnlu7rooajjgIIiIiIKICAgICAgICBjb25uID0gY2xzLl9jb25uKCkKICAgICAgICBjb25uLmV4ZWN1dGUoIiIiCiAgICAgICAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIGRlYnVnX2l0ZW1zICgKICAgICAgICAgICAgICAgIGlkIFRFWFQgUFJJTUFSWSBLRVksCiAgICAgICAgICAgICAgICBuYW1lIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIHByb3RvY29sIFRFWFQgREVGQVVMVCAnSFRUUCcsCiAgICAgICAgICAgICAgICBtZXRob2QgVEVYVCBERUZBVUxUICdHRVQnLAogICAgICAgICAgICAgICAgcGF0aCBURVhUIERFRkFVTFQgJy8nLAogICAgICAgICAgICAgICAgdXJsIFRFWFQgREVGQVVMVCAnLycsCiAgICAgICAgICAgICAgICBwcm9qZWN0X2lkIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIG1vZHVsZV9pZCBURVhUIERFRkFVTFQgJ3Jvb3QnLAogICAgICAgICAgICAgICAgcmVxdWVzdF9kYXRhIFRFWFQgREVGQVVMVCAne30nLAogICAgICAgICAgICAgICAgcmVzcG9uc2VfZGF0YSBURVhUIERFRkFVTFQgJ3t9JywKICAgICAgICAgICAgICAgIGNyZWF0ZV90aW1lIFJFQUwsCiAgICAgICAgICAgICAgICB1cGRhdGVfdGltZSBSRUFMLAogICAgICAgICAgICAgICAgY3JlYXRlX3VzZXIgVEVYVCBERUZBVUxUICdhZG1pbicsCiAgICAgICAgICAgICAgICB1cGRhdGVfdXNlciBURVhUIERFRkFVTFQgJ2FkbWluJywKICAgICAgICAgICAgICAgIG51bSBJTlRFR0VSIERFRkFVTFQgMAogICAgICAgICAgICApCiAgICAgICAgIiIiKQogICAgICAgIGNvbm4uY29tbWl0KCkKCiAgICBkZWYgbmV4dF9pZChzZWxmKSAtPiBzdHI6CiAgICAgICAgcmV0dXJuIHV1aWQudXVpZDQoKS5oZXhbOjEyXQoKICAgICMg4pSA4pSAIOiBmuWQiOmHjeW7uiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIEBzdGF0aWNtZXRob2QKICAgIGRlZiBfcm93X3RvX2VudGl0eShyb3c6IGRpY3QpIC0+IERlYnVnSXRlbToKICAgICAgICAiIiLmlbDmja7lupPooYwg4oaSIOiBmuWQiOagueWunuS9k+OAgiIiIgogICAgICAgIHRyeToKICAgICAgICAgICAgcmVxdWVzdF9kYXRhID0ganNvbi5sb2Fkcyhyb3cuZ2V0KCJyZXF1ZXN0X2RhdGEiKSBvciAie30iKQogICAgICAgIGV4Y2VwdCAoanNvbi5KU09ORGVjb2RlRXJyb3IsIFR5cGVFcnJvcik6CiAgICAgICAgICAgIHJlcXVlc3RfZGF0YSA9IHt9CiAgICAgICAgdHJ5OgogICAgICAgICAgICByZXNwb25zZV9kYXRhID0ganNvbi5sb2Fkcyhyb3cuZ2V0KCJyZXNwb25zZV9kYXRhIikgb3IgInt9IikKICAgICAgICBleGNlcHQgKGpzb24uSlNPTkRlY29kZUVycm9yLCBUeXBlRXJyb3IpOgogICAgICAgICAgICByZXNwb25zZV9kYXRhID0ge30KCiAgICAgICAgcmV0dXJuIERlYnVnSXRlbSgKICAgICAgICAgICAgZGVidWdfaWQ9cm93LmdldCgiaWQiLCAiIiksCiAgICAgICAgICAgIG5hbWU9cm93LmdldCgibmFtZSIsICLmnKrlkb3lkI3osIPor5UiKSwKICAgICAgICAgICAgcHJvdG9jb2w9cm93LmdldCgicHJvdG9jb2wiLCAiSFRUUCIpLAogICAgICAgICAgICBtZXRob2Q9cm93LmdldCgibWV0aG9kIiwgIkdFVCIpLAogICAgICAgICAgICBwYXRoPXJvdy5nZXQoInBhdGgiLCAiLyIpLAogICAgICAgICAgICB1cmw9cm93LmdldCgidXJsIiwgcm93LmdldCgicGF0aCIsICIvIikpLAogICAgICAgICAgICBwcm9qZWN0X2lkPXJvdy5nZXQoInByb2plY3RfaWQiLCAiIiksCiAgICAgICAgICAgIG1vZHVsZV9pZD1yb3cuZ2V0KCJtb2R1bGVfaWQiLCAicm9vdCIpLAogICAgICAgICAgICByZXF1ZXN0X2RhdGE9cmVxdWVzdF9kYXRhLAogICAgICAgICAgICByZXNwb25zZV9kYXRhPXJlc3BvbnNlX2RhdGEsCiAgICAgICAgICAgIGNyZWF0ZV91c2VyPXJvdy5nZXQoImNyZWF0ZV91c2VyIiwgImFkbWluIiksCiAgICAgICAgICAgIHVwZGF0ZV91c2VyPXJvdy5nZXQoInVwZGF0ZV91c2VyIiwgImFkbWluIiksCiAgICAgICAgICAgIG51bT1yb3cuZ2V0KCJudW0iLCAwKSwKICAgICAgICAgICAgY3JlYXRlX3RpbWU9cm93LmdldCgiY3JlYXRlX3RpbWUiKSwKICAgICAgICAgICAgdXBkYXRlX3RpbWU9cm93LmdldCgidXBkYXRlX3RpbWUiKSwKICAgICAgICApCgogICAgIyDilIDilIAg6K+7IOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIGdldChzZWxmLCBkZWJ1Z19pZDogc3RyKSAtPiBPcHRpb25hbFtEZWJ1Z0l0ZW1dOgogICAgICAgIHJvdyA9IHNlbGYuX2Nvbm4oKS5leGVjdXRlKAogICAgICAgICAgICAiU0VMRUNUICogRlJPTSBkZWJ1Z19pdGVtcyBXSEVSRSBpZCA9ID8iLCAoZGVidWdfaWQsKQogICAgICAgICkuZmV0Y2hvbmUoKQogICAgICAgIHJldHVybiBzZWxmLl9yb3dfdG9fZW50aXR5KGRpY3Qocm93KSkgaWYgcm93IGVsc2UgTm9uZQoKICAgIGRlZiBsaXN0X2FsbChzZWxmKSAtPiBMaXN0W0RlYnVnSXRlbV06CiAgICAgICAgcm93cyA9IHNlbGYuX2Nvbm4oKS5leGVjdXRlKAogICAgICAgICAgICAiU0VMRUNUICogRlJPTSBkZWJ1Z19pdGVtcyBPUkRFUiBCWSBudW0gQVNDIgogICAgICAgICkuZmV0Y2hhbGwoKQogICAgICAgIHJldHVybiBbc2VsZi5fcm93X3RvX2VudGl0eShkaWN0KHIpKSBmb3IgciBpbiByb3dzXQoKICAgICMg4pSA4pSAIOWGmSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIGRlZiBzYXZlKHNlbGYsIGl0ZW06IERlYnVnSXRlbSkgLT4gRGVidWdJdGVtOgogICAgICAgIGQgPSBpdGVtLnRvX2RpY3QoKQogICAgICAgIG5vdyA9IHRpbWUudGltZSgpCiAgICAgICAgc2VsZi5fY29ubigpLmV4ZWN1dGUoCiAgICAgICAgICAgICIiIklOU0VSVCBPUiBSRVBMQUNFIElOVE8gZGVidWdfaXRlbXMKICAgICAgICAgICAgICAgKGlkLCBuYW1lLCBwcm90b2NvbCwgbWV0aG9kLCBwYXRoLCB1cmwsIHByb2plY3RfaWQsIG1vZHVsZV9pZCwKICAgICAgICAgICAgICAgIHJlcXVlc3RfZGF0YSwgcmVzcG9uc2VfZGF0YSwgY3JlYXRlX3RpbWUsIHVwZGF0ZV90aW1lLAogICAgICAgICAgICAgICAgY3JlYXRlX3VzZXIsIHVwZGF0ZV91c2VyLCBudW0pCiAgICAgICAgICAgICAgIFZBTFVFUyAoPywgPywgPywgPywgPywgPywgPywgPywgPywgPywgPywgPywgPywgPywgPykiIiIsCiAgICAgICAgICAgICgKICAgICAgICAgICAgICAgIGl0ZW0uaWQudmFsdWUsCiAgICAgICAgICAgICAgICBpdGVtLm5hbWUsCiAgICAgICAgICAgICAgICBpdGVtLnByb3RvY29sLAogICAgICAgICAgICAgICAgaXRlbS5tZXRob2QsCiAgICAgICAgICAgICAgICBpdGVtLnBhdGgsCiAgICAgICAgICAgICAgICBpdGVtLnVybCwKICAgICAgICAgICAgICAgIGl0ZW0ucHJvamVjdF9pZCwKICAgICAgICAgICAgICAgIGl0ZW0ubW9kdWxlX2lkLAogICAgICAgICAgICAgICAganNvbi5kdW1wcyhpdGVtLnJlcXVlc3RfZGF0YSwgZW5zdXJlX2FzY2lpPUZhbHNlKSwKICAgICAgICAgICAgICAgIGpzb24uZHVtcHMoaXRlbS5yZXNwb25zZV9kYXRhLCBlbnN1cmVfYXNjaWk9RmFsc2UpLAogICAgICAgICAgICAgICAgaXRlbS5jcmVhdGVfdGltZSwKICAgICAgICAgICAgICAgIG5vdywKICAgICAgICAgICAgICAgIGl0ZW0uX2NyZWF0ZV91c2VyLAogICAgICAgICAgICAgICAgaXRlbS5fdXBkYXRlX3VzZXIsCiAgICAgICAgICAgICAgICBpdGVtLl9udW0sCiAgICAgICAgICAgICksCiAgICAgICAgKQogICAgICAgIHNlbGYuX2Nvbm4oKS5jb21taXQoKQogICAgICAgIHJldHVybiBpdGVtCgogICAgZGVmIGRlbGV0ZShzZWxmLCBkZWJ1Z19pZDogc3RyKSAtPiBib29sOgogICAgICAgIGN1cnNvciA9IHNlbGYuX2Nvbm4oKS5leGVjdXRlKAogICAgICAgICAgICAiREVMRVRFIEZST00gZGVidWdfaXRlbXMgV0hFUkUgaWQgPSA/IiwgKGRlYnVnX2lkLCkKICAgICAgICApCiAgICAgICAgc2VsZi5fY29ubigpLmNvbW1pdCgpCiAgICAgICAgcmV0dXJuIGN1cnNvci5yb3djb3VudCA+IDAKCgojIOaooeWdl+e6p+WNleS+iwpkZWJ1Z19yZXBvc2l0b3J5ID0gRGVidWdSZXBvc2l0b3J5SW1wbCgpCgpfX2FsbF9fID0gWyJEZWJ1Z1JlcG9zaXRvcnlJbXBsIiwgImRlYnVnX3JlcG9zaXRvcnkiXQo=
+"""调试聚合仓储实现（去 Adapter，直接 SQL）。
+
+修复说明：
+  - 消除 DebugRepoAdapter 中间层：它只做 entity↔dict 翻译，没有业务逻辑
+  - 把 debug_repo 的 SQL 移入此处，成为域内私有实现
+  - 聚合重建（from_dict）与持久化在同一个文件内闭环，不再跨文件翻译
+
+修复前调用链：AppService → DebugRepoAdapter → DebugRepo → SQLite（4 层）
+修复后调用链：AppService → DebugRepositoryImpl → SQLite（2 层）
+"""
+from __future__ import annotations
+
+import json
+import time
+import uuid
+from typing import List, Optional
+
+from app.core.database import Database
+from app.domain.debug.domain.entities.debug_item import DebugItem
+from app.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+# ── 域内常量（从 debug_repo.py 迁入）──────────────────
+DB_NAME = "tga.db"  # 统一数据库（不再用 "apitest.db"）
+TABLE = "debug_items"
+
+
+class DebugRepositoryImpl:
+    """调试仓储：直接持有 SQL，不再委托 Flat Repository。"""
+
+    def __init__(self):
+        self._ensure_table()
+
+    @staticmethod
+    def _conn():
+        return Database.get_conn(DB_NAME)
+
+    # ── 建表 ──────────────────────────────────────────────
+    @classmethod
+    def _ensure_table(cls) -> None:
+        """幂等建表。"""
+        conn = cls._conn()
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS debug_items (
+                id TEXT PRIMARY KEY,
+                name TEXT DEFAULT '',
+                protocol TEXT DEFAULT 'HTTP',
+                method TEXT DEFAULT 'GET',
+                path TEXT DEFAULT '/',
+                url TEXT DEFAULT '/',
+                project_id TEXT DEFAULT '',
+                module_id TEXT DEFAULT 'root',
+                request_data TEXT DEFAULT '{}',
+                response_data TEXT DEFAULT '{}',
+                create_time REAL,
+                update_time REAL,
+                create_user TEXT DEFAULT 'admin',
+                update_user TEXT DEFAULT 'admin',
+                num INTEGER DEFAULT 0
+            )
+        """)
+        conn.commit()
+
+    def next_id(self) -> str:
+        return uuid.uuid4().hex[:12]
+
+    # ── 聚合重建 ──────────────────────────────────────────
+    @staticmethod
+    def _row_to_entity(row: dict) -> DebugItem:
+        """数据库行 → 聚合根实体。"""
+        try:
+            request_data = json.loads(row.get("request_data") or "{}")
+        except (json.JSONDecodeError, TypeError):
+            request_data = {}
+        try:
+            response_data = json.loads(row.get("response_data") or "{}")
+        except (json.JSONDecodeError, TypeError):
+            response_data = {}
+
+        return DebugItem(
+            debug_id=row.get("id", ""),
+            name=row.get("name", "未命名调试"),
+            protocol=row.get("protocol", "HTTP"),
+            method=row.get("method", "GET"),
+            path=row.get("path", "/"),
+            url=row.get("url", row.get("path", "/")),
+            project_id=row.get("project_id", ""),
+            module_id=row.get("module_id", "root"),
+            request_data=request_data,
+            response_data=response_data,
+            create_user=row.get("create_user", "admin"),
+            update_user=row.get("update_user", "admin"),
+            num=row.get("num", 0),
+            create_time=row.get("create_time"),
+            update_time=row.get("update_time"),
+        )
+
+    # ── 读 ────────────────────────────────────────────────
+    def get(self, debug_id: str) -> Optional[DebugItem]:
+        row = self._conn().execute(
+            "SELECT * FROM debug_items WHERE id = ?", (debug_id,)
+        ).fetchone()
+        return self._row_to_entity(dict(row)) if row else None
+
+    def list_all(self) -> List[DebugItem]:
+        rows = self._conn().execute(
+            "SELECT * FROM debug_items ORDER BY num ASC"
+        ).fetchall()
+        return [self._row_to_entity(dict(r)) for r in rows]
+
+    # ── 写 ────────────────────────────────────────────────
+    def save(self, item: DebugItem) -> DebugItem:
+        d = item.to_dict()
+        now = time.time()
+        self._conn().execute(
+            """INSERT OR REPLACE INTO debug_items
+               (id, name, protocol, method, path, url, project_id, module_id,
+                request_data, response_data, create_time, update_time,
+                create_user, update_user, num)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                item.id.value,
+                item.name,
+                item.protocol,
+                item.method,
+                item.path,
+                item.url,
+                item.project_id,
+                item.module_id,
+                json.dumps(item.request_data, ensure_ascii=False),
+                json.dumps(item.response_data, ensure_ascii=False),
+                item.create_time,
+                now,
+                item._create_user,
+                item._update_user,
+                item._num,
+            ),
+        )
+        self._conn().commit()
+        return item
+
+    def delete(self, debug_id: str) -> bool:
+        cursor = self._conn().execute(
+            "DELETE FROM debug_items WHERE id = ?", (debug_id,)
+        )
+        self._conn().commit()
+        return cursor.rowcount > 0
+
+
+# 模块级单例
+debug_repository = DebugRepositoryImpl()
+
+__all__ = ["DebugRepositoryImpl", "debug_repository"]

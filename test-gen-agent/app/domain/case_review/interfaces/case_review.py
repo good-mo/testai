@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, Request
 
 from app.core.response import fail, ok, read_body
 from app.core.helpers import as_model
-from app.models.case_review import (
+from app.domain.case_review.application.dto import (
     ReviewAssociateBody,
     ReviewBatchMoveBody,
     ReviewCaseStatusBody,
@@ -31,7 +31,7 @@ from app.models.case_review import (
 )
 from app.domain.apitest.application.apitest_app_service import apitest_service
 from app.domain.case_review.application.case_review_app_service import case_review_service as cvs
-from app.domain.cases.application.case_app_service import case_service
+from app.domain.cases.application.case_app_service import case_app_service as case_service
 
 router = APIRouter(tags=["case_review"])
 

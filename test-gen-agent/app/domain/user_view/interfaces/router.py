@@ -60,7 +60,7 @@ def delete(view_id: str, request: Request):
     """Delete。"""
     try:
         from app.domain.user_view.application.dto import DeleteUserViewCommand
-        cmd = DeleteUserViewCommand("view_id": view_id)
+        cmd = DeleteUserViewCommand(view_id=view_id)
         result = user_view_app_service.delete(cmd)
         return ok(result)
     except Exception as e:

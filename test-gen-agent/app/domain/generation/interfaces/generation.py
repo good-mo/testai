@@ -7,7 +7,7 @@ from fastapi import APIRouter, Request, WebSocket, WebSocketDisconnect
 
 from app.core.response import fail, ok
 from app.logging_config import get_logger
-from app.models.schemas import ChatRequest
+from app.domain.generation.application.dto import ChatRequest
 from app.domain.task_center.application.task_center_app_service import task_center_service
 from app.tasks.manager import get_app_context, register_handler
 
@@ -155,7 +155,7 @@ async def run_generation_named(req_data: dict) -> dict:
     参数 req_data 为 ChatRequest 的 dict 序列化形式，
     可通过 submit_named("generation.run", req_data) 提交。
     """
-    from app.models.schemas import ChatRequest as _CR
+    from app.domain.generation.application.dto import ChatRequest as _CR
     req = _CR(**req_data)
     graph = get_app_context("graph")
     if graph is None:

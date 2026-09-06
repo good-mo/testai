@@ -33,7 +33,7 @@ from app.domain.datafactory.application.web_mapper import (
     batch_generate_payload,
     template_list_payload,
 )
-from app.models.datafactory import (
+from app.domain.datafactory.application.dto import (
     DataGenerateRequest,
     DataTemplateCreate,
     DataTemplateUpdate,

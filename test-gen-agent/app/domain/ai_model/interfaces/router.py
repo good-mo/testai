@@ -60,7 +60,7 @@ def delete(model_id: str, request: Request):
     """Delete。"""
     try:
         from app.domain.ai_model.application.dto import DeleteModelCommand
-        cmd = DeleteModelCommand("model_id": model_id)
+        cmd = DeleteModelCommand(model_id=model_id)
         result = ai_model_app_service.delete(cmd)
         return ok(result)
     except Exception as e:

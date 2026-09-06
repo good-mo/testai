@@ -36,7 +36,7 @@ def delete(project_id: str, request: Request):
     """Delete。"""
     try:
         from app.domain.fake_error.application.dto import DeleteRulesCommand
-        cmd = DeleteRulesCommand("project_id": project_id)
+        cmd = DeleteRulesCommand(project_id=project_id)
         result = fake_error_app_service.delete(cmd)
         return ok(result)
     except Exception as e:

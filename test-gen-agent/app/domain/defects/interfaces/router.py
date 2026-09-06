@@ -37,7 +37,7 @@ from app.domain.defects.application.dto import (
     PermanentDeleteCommand,
     UpdateDefectCommand,
 )
-from app.models.defect import DefectCreate, DefectIdsBody, DefectUpdate
+from app.domain.defects.application.dto import DefectCreate, DefectIdsBody, DefectUpdate
 
 router = APIRouter(tags=["defects"])
 

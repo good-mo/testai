@@ -5,7 +5,7 @@ import asyncio
 from fastapi import APIRouter, Body
 
 from app.core.response import ok
-from app.models.apitest import BatchIdsBody
+from app.domain.apitest.application.dto import BatchIdsBody
 from app.domain.apitest.application.apitest_app_service import apitest_service
 
 router = APIRouter(tags=["apitest"])

@@ -9,7 +9,7 @@ import uuid
 from typing import List, Optional
 
 from app.domain.runs.domain.entities.task import Task
-from app.repositories import task_repo
+from app.core.task_queue_store import task_repo
 
 
 class TaskRepoAdapter:

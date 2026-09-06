@@ -12,7 +12,7 @@ import uuid
 from typing import List, Optional, Tuple
 
 from app.domain.runs.domain.entities.run_record import RunRecord
-from app.repositories.run_repo import RunRepo
+from app.domain.generation.infrastructure.generation_store import RunRepo
 
 
 class RunRecordRepoAdapter:

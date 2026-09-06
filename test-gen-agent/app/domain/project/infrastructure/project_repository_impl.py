@@ -12,7 +12,7 @@ from typing import List, Optional, Tuple
 from app.domain.common.entities import Identifier
 from app.domain.project.domain.entities.project import Project
 from app.domain.project.domain.value_objects.member import ProjectMember
-from app.repositories.project_repo import ProjectRepo
+from app.domain.project.infrastructure.project_store import ProjectRepo
 
 
 class ProjectRepoAdapter:

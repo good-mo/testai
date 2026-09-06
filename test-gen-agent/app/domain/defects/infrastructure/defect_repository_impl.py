@@ -1,1 +1,392 @@
-IiIi57y66Zm36IGa5ZCI5LuT5YKo5a6e546w77yI5Y67IEFkYXB0ZXLvvIznm7TmjqUgU1FM77yJ44CCCgrkv67lpI3or7TmmI7vvJoKICAtIOa2iOmZpCBEZWZlY3RSZXBvQWRhcHRlciDkuK3pl7TlsYLvvIjlj6rlgZogZW50aXR54oaUZGljdCDnv7vor5HvvIzml6DkuJrliqHpgLvovpHvvIkKICAtIOaKiiBkZWZlY3RfcmVwbyDnmoQgU1FMIOenu+WFpeatpOWkhO+8jOaIkOS4uuWfn+WGheengeacieWunueOsAogIC0g6IGa5ZCI6YeN5bu677yIZnJvbV9kaWN077yJ5LiO5oyB5LmF5YyW5Zyo5ZCM5LiA5Liq5paH5Lu25YaF6Zet546v77yM5LiN5YaN6Leo5paH5Lu257+76K+RCiAgLSBEQiDku44gZGVmZWN0cy5kYiDnu5/kuIDkuLogdGdhLmRiCgrkv67lpI3liY3osIPnlKjpk77vvJpBcHBTZXJ2aWNlIOKGkiBEZWZlY3RSZXBvQWRhcHRlciDihpIgRGVmZWN0UmVwbyDihpIgU1FMaXRl77yINCDlsYLvvIkK5L+u5aSN5ZCO6LCD55So6ZO+77yaQXBwU2VydmljZSDihpIgRGVmZWN0UmVwb3NpdG9yeUltcGwg4oaSIFNRTGl0Ze+8iDIg5bGC77yJCiIiIgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQganNvbgppbXBvcnQgdGltZQppbXBvcnQgdXVpZApmcm9tIHR5cGluZyBpbXBvcnQgTGlzdCwgT3B0aW9uYWwsIFR1cGxlCgpmcm9tIGFwcC5jb3JlLmRhdGFiYXNlIGltcG9ydCBEYXRhYmFzZQpmcm9tIGFwcC5kb21haW4uZGVmZWN0cy5kb21haW4uZW50aXRpZXMuZGVmZWN0IGltcG9ydCBEZWZlY3QKZnJvbSBhcHAubG9nZ2luZ19jb25maWcgaW1wb3J0IGdldF9sb2dnZXIKCmxvZ2dlciA9IGdldF9sb2dnZXIoX19uYW1lX18pCgojIOKUgOKUgCDln5/lhoXluLjph48g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACkRCX05BTUUgPSAidGdhLmRiIgpUQUJMRV9ERUZFQ1RTID0gImRlZmVjdHMiClRBQkxFX0NPTU1FTlRTID0gImRlZmVjdF9jb21tZW50cyIKCiMg57y66Zm354q25oCBIC8g5Lil6YeN56iL5bqmClNUQVRVU19PUEVOID0gIm9wZW4iClNUQVRVU19JTl9QUk9HUkVTUyA9ICJpbl9wcm9ncmVzcyIKU1RBVFVTX0ZJWEVEID0gImZpeGVkIgpTVEFUVVNfQ0xPU0VEID0gImNsb3NlZCIKU1RBVFVTX1dPTlRfRklYID0gIndvbnRfZml4IgpWQUxJRF9TVEFUVVNFUyA9IHtTVEFUVVNfT1BFTiwgU1RBVFVTX0lOX1BST0dSRVNTLCBTVEFUVVNfRklYRUQsIFNUQVRVU19DTE9TRUQsIFNUQVRVU19XT05UX0ZJWH0KClNFVkVSSVRZX0JMT0NLRVIgPSAiYmxvY2tlciIKU0VWRVJJVFlfQ1JJVElDQUwgPSAiY3JpdGljYWwiClNFVkVSSVRZX01BSk9SID0gIm1ham9yIgpTRVZFUklUWV9NSU5PUiA9ICJtaW5vciIKU0VWRVJJVFlfVFJJVklBTCA9ICJ0cml2aWFsIgpWQUxJRF9TRVZFUklUSUVTID0gewogICAgU0VWRVJJVFlfQkxPQ0tFUiwgU0VWRVJJVFlfQ1JJVElDQUwsIFNFVkVSSVRZX01BSk9SLCBTRVZFUklUWV9NSU5PUiwgU0VWRVJJVFlfVFJJVklBTCwKfQoKCmNsYXNzIERlZmVjdFJlcG9zaXRvcnlJbXBsOgogICAgIiIi57y66Zm35LuT5YKo77ya55u05o6l5oyB5pyJIFNRTO+8jOS4jeWGjeWnlOaJmCBGbGF0IFJlcG9zaXRvcnnjgIIiIiIKCiAgICBkZWYgX19pbml0X18oc2VsZik6CiAgICAgICAgc2VsZi5fZW5zdXJlX3RhYmxlcygpCgogICAgQHN0YXRpY21ldGhvZAogICAgZGVmIF9jb25uKCk6CiAgICAgICAgcmV0dXJuIERhdGFiYXNlLmdldF9jb25uKERCX05BTUUpCgogICAgIyDilIDilIAg5bu66KGoIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgQGNsYXNzbWV0aG9kCiAgICBkZWYgX2Vuc3VyZV90YWJsZXMoY2xzKSAtPiBOb25lOgogICAgICAgICIiIuW5guetieW7uuihqOOAgiIiIgogICAgICAgIGNvbm4gPSBjbHMuX2Nvbm4oKQogICAgICAgIGNvbm4uZXhlY3V0ZSgiIiIKICAgICAgICAgICAgQ1JFQVRFIFRBQkxFIElGIE5PVCBFWElTVFMgZGVmZWN0cyAoCiAgICAgICAgICAgICAgICBpZCBURVhUIFBSSU1BUlkgS0VZLAogICAgICAgICAgICAgICAgdGl0bGUgVEVYVCBOT1QgTlVMTCwKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIHNldmVyaXR5IFRFWFQgREVGQVVMVCAnbWFqb3InLAogICAgICAgICAgICAgICAgc3RhdHVzIFRFWFQgREVGQVVMVCAnb3BlbicsCiAgICAgICAgICAgICAgICBmaWxlX3BhdGggVEVYVCBERUZBVUxUICcnLAogICAgICAgICAgICAgICAgdGVzdF9jYXNlX2lkIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIGVycm9yX3NuaXBwZXQgVEVYVCBERUZBVUxUICcnLAogICAgICAgICAgICAgICAgY3JlYXRlZF9hdCBSRUFMLAogICAgICAgICAgICAgICAgdXBkYXRlZF9hdCBSRUFMLAogICAgICAgICAgICAgICAgYXNzaWduZWUgVEVYVCBERUZBVUxUICcnLAogICAgICAgICAgICAgICAgdGFncyBURVhUIERFRkFVTFQgJ1tdJywKICAgICAgICAgICAgICAgIGRlbGV0ZWQgSU5URUdFUiBERUZBVUxUIDAsCiAgICAgICAgICAgICAgICBkZWxldGVkX2F0IFJFQUwKICAgICAgICAgICAgKQogICAgICAgICIiIikKICAgICAgICAjIOWFvOWuueaXp+W6k++8muS4uuW3suWtmOWcqOeahOe8uumZt+ihqOihpeWFhSB0YWdzIOWIlwogICAgICAgIGV4aXN0aW5nX2NvbHMgPSB7cm93WyJuYW1lIl0gZm9yIHJvdyBpbiBjb25uLmV4ZWN1dGUoIlBSQUdNQSB0YWJsZV9pbmZvKGRlZmVjdHMpIil9CiAgICAgICAgaWYgInRhZ3MiIG5vdCBpbiBleGlzdGluZ19jb2xzOgogICAgICAgICAgICBjb25uLmV4ZWN1dGUoIkFMVEVSIFRBQkxFIGRlZmVjdHMgQUREIENPTFVNTiB0YWdzIFRFWFQgREVGQVVMVCAnW10nIikKICAgICAgICBjb25uLmV4ZWN1dGUoIiIiCiAgICAgICAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIGRlZmVjdF9jb21tZW50cyAoCiAgICAgICAgICAgICAgICBpZCBURVhUIFBSSU1BUlkgS0VZLAogICAgICAgICAgICAgICAgYnVnX2lkIFRFWFQgTk9UIE5VTEwsCiAgICAgICAgICAgICAgICBwYXJlbnRfaWQgVEVYVCBERUZBVUxUICcnLAogICAgICAgICAgICAgICAgY29udGVudCBURVhUIERFRkFVTFQgJycsCiAgICAgICAgICAgICAgICBjcmVhdGVfdXNlciBURVhUIERFRkFVTFQgJycsCiAgICAgICAgICAgICAgICByZXBseV91c2VyIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIG5vdGlmaWVyIFRFWFQgREVGQVVMVCAnJywKICAgICAgICAgICAgICAgIGNyZWF0ZV90aW1lIFJFQUwsCiAgICAgICAgICAgICAgICB1cGRhdGVfdGltZSBSRUFMLAogICAgICAgICAgICAgICAgZGVsZXRlZCBJTlRFR0VSIERFRkFVTFQgMAogICAgICAgICAgICApCiAgICAgICAgIiIiKQogICAgICAgIGNvbm4uY29tbWl0KCkKCiAgICBkZWYgbmV4dF9pZChzZWxmKSAtPiBzdHI6CiAgICAgICAgcmV0dXJuIHV1aWQudXVpZDQoKS5oZXhbOjEyXQoKICAgICMg4pSA4pSAIOiBmuWQiOmHjeW7uiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIEBzdGF0aWNtZXRob2QKICAgIGRlZiBfcm93X3RvX2VudGl0eShyb3c6IGRpY3QpIC0+IERlZmVjdDoKICAgICAgICAiIiLmlbDmja7lupPooYwg4oaSIOiBmuWQiOagueWunuS9k+OAgiIiIgogICAgICAgIHJldHVybiBEZWZlY3QuZnJvbV9kaWN0KGRpY3Qocm93KSkKCiAgICAjIOKUgOKUgCDor7sg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBkZWYgZmluZF9ieV9pZChzZWxmLCBkZWZlY3RfaWQ6IHN0ciwgaW5jbHVkZV9kZWxldGVkOiBib29sID0gRmFsc2UpIC0+IE9wdGlvbmFsW0RlZmVjdF06CiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIGlmIGluY2x1ZGVfZGVsZXRlZDoKICAgICAgICAgICAgIyDlm57mlLbnq5kgLyDlhajpg6jvvJrnm7TmjqXmn6XkuLvooajvvIjlkKvlt7LliKDpmaTooYzvvIkKICAgICAgICAgICAgZm9yIHIgaW4gc2VsZi5saXN0X3RyYXNoKGxpbWl0PTk5OTksIG9mZnNldD0wKVswXToKICAgICAgICAgICAgICAgIGlmIHN0cihyLmlkLnZhbHVlKSA9PSBzdHIoZGVmZWN0X2lkKToKICAgICAgICAgICAgICAgICAgICByZXR1cm4gcgogICAgICAgICAgICByZXR1cm4gTm9uZQogICAgICAgIHJvdyA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgIlNFTEVDVCAqIEZST00gZGVmZWN0cyBXSEVSRSBpZD0/IEFORCAoZGVsZXRlZCBJUyBOVUxMIE9SIGRlbGV0ZWQ9MCkiLAogICAgICAgICAgICAoZGVmZWN0X2lkLCkKICAgICAgICApLmZldGNob25lKCkKICAgICAgICByZXR1cm4gc2VsZi5fcm93X3RvX2VudGl0eShkaWN0KHJvdykpIGlmIHJvdyBlbHNlIE5vbmUKCiAgICBkZWYgbGlzdChzZWxmLCAqLCBzdGF0dXM6IHN0ciA9ICIiLCBzZXZlcml0eTogc3RyID0gIiIsIGxpbWl0OiBpbnQgPSAxMDAsCiAgICAgICAgICAgICBvZmZzZXQ6IGludCA9IDApIC0+IFR1cGxlW0xpc3RbRGVmZWN0XSwgaW50XToKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgY2xhdXNlID0gIiBXSEVSRSAxPTEgQU5EIChkZWxldGVkIElTIE5VTEwgT1IgZGVsZXRlZCA9IDApIgogICAgICAgIHBhcmFtczogbGlzdCA9IFtdCiAgICAgICAgaWYgc3RhdHVzIGFuZCBzdGF0dXMgaW4gVkFMSURfU1RBVFVTRVM6CiAgICAgICAgICAgIGNsYXVzZSArPSAiIEFORCBzdGF0dXMgPSA/IgogICAgICAgICAgICBwYXJhbXMuYXBwZW5kKHN0YXR1cykKICAgICAgICBpZiBzZXZlcml0eSBhbmQgc2V2ZXJpdHkgaW4gVkFMSURfU0VWRVJJVElFUzoKICAgICAgICAgICAgY2xhdXNlICs9ICIgQU5EIHNldmVyaXR5ID0gPyIKICAgICAgICAgICAgcGFyYW1zLmFwcGVuZChzZXZlcml0eSkKICAgICAgICAKICAgICAgICBxdWVyeSA9ICJTRUxFQ1QgKiBGUk9NIGRlZmVjdHMiICsgY2xhdXNlCiAgICAgICAgcXVlcnkgKz0gIiBPUkRFUiBCWSBjcmVhdGVkX2F0IERFU0MgTElNSVQgPyBPRkZTRVQgPyIKICAgICAgICBwYXJhbXMgPSBsaXN0KHBhcmFtcykgKyBbaW50KGxpbWl0KSwgaW50KG9mZnNldCldCiAgICAgICAgcm93cyA9IGNvbm4uZXhlY3V0ZShxdWVyeSwgdHVwbGUocGFyYW1zKSkuZmV0Y2hhbGwoKQogICAgICAgIGl0ZW1zID0gW3NlbGYuX3Jvd190b19lbnRpdHkoZGljdChyKSkgZm9yIHIgaW4gcm93c10KICAgICAgICAKICAgICAgICAjIENvdW50CiAgICAgICAgY291bnRfcXVlcnkgPSAiU0VMRUNUIENPVU5UKCopIEFTIGNudCBGUk9NIGRlZmVjdHMiICsgY2xhdXNlCiAgICAgICAgY291bnRfcGFyYW1zID0gcGFyYW1zWzotMl0gICMgUmVtb3ZlIGxpbWl0IGFuZCBvZmZzZXQKICAgICAgICBjb3VudF9yb3cgPSBjb25uLmV4ZWN1dGUoY291bnRfcXVlcnksIHR1cGxlKGNvdW50X3BhcmFtcykpLmZldGNob25lKCkKICAgICAgICB0b3RhbCA9IGNvdW50X3Jvd1siY250Il0gaWYgY291bnRfcm93IGVsc2UgMAogICAgICAgIAogICAgICAgIHJldHVybiBpdGVtcywgdG90YWwKCiAgICBkZWYgbGlzdF90cmFzaChzZWxmLCBsaW1pdDogaW50ID0gMTAwLCBvZmZzZXQ6IGludCA9IDApIC0+IFR1cGxlW0xpc3RbRGVmZWN0XSwgaW50XToKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgcm93cyA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgIlNFTEVDVCAqIEZST00gZGVmZWN0cyBXSEVSRSBkZWxldGVkPTEgT1JERVIgQlkgZGVsZXRlZF9hdCBERVNDIExJTUlUID8gT0ZGU0VUID8iLAogICAgICAgICAgICAoaW50KGxpbWl0KSwgaW50KG9mZnNldCkpCiAgICAgICAgKS5mZXRjaGFsbCgpCiAgICAgICAgaXRlbXMgPSBbc2VsZi5fcm93X3RvX2VudGl0eShkaWN0KHIpKSBmb3IgciBpbiByb3dzXQogICAgICAgIAogICAgICAgIGNvdW50X3JvdyA9IGNvbm4uZXhlY3V0ZSgiU0VMRUNUIENPVU5UKCopIEFTIGNudCBGUk9NIGRlZmVjdHMgV0hFUkUgZGVsZXRlZD0xIikuZmV0Y2hvbmUoKQogICAgICAgIHRvdGFsID0gY291bnRfcm93WyJjbnQiXSBpZiBjb3VudF9yb3cgZWxzZSAwCiAgICAgICAgCiAgICAgICAgcmV0dXJuIGl0ZW1zLCB0b3RhbAoKICAgIGRlZiBzdGF0cyhzZWxmKSAtPiBkaWN0OgogICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICB0b3RhbCA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgIlNFTEVDVCBDT1VOVCgqKSBGUk9NIGRlZmVjdHMgV0hFUkUgKGRlbGV0ZWQgSVMgTlVMTCBPUiBkZWxldGVkPTApIgogICAgICAgICkuZmV0Y2hvbmUoKVswXQogICAgICAgIHRyYXNoID0gY29ubi5leGVjdXRlKCJTRUxFQ1QgQ09VTlQoKikgRlJPTSBkZWZlY3RzIFdIRVJFIGRlbGV0ZWQ9MSIpLmZldGNob25lKClbMF0KICAgICAgICBieV9zdGF0dXMgPSB7czogMCBmb3IgcyBpbiBzb3J0ZWQoVkFMSURfU1RBVFVTRVMpfQogICAgICAgIGZvciByb3cgaW4gY29ubi5leGVjdXRlKAogICAgICAgICAgICAiU0VMRUNUIHN0YXR1cywgQ09VTlQoKikgQVMgY250IEZST00gZGVmZWN0cyAiCiAgICAgICAgICAgICJXSEVSRSAoZGVsZXRlZCBJUyBOVUxMIE9SIGRlbGV0ZWQ9MCkgR1JPVVAgQlkgc3RhdHVzIgogICAgICAgICk6CiAgICAgICAgICAgIGlmIHJvd1sic3RhdHVzIl0gaW4gYnlfc3RhdHVzOgogICAgICAgICAgICAgICAgYnlfc3RhdHVzW3Jvd1sic3RhdHVzIl1dID0gcm93WyJjbnQiXQogICAgICAgIHJldHVybiB7InRvdGFsIjogdG90YWwsICJ0cmFzaCI6IHRyYXNoLCAiYnlfc3RhdHVzIjogYnlfc3RhdHVzfQoKICAgICMg4pSA4pSAIOWGmSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIGRlZiBzYXZlKHNlbGYsIGRlZmVjdDogRGVmZWN0KSAtPiBEZWZlY3Q6CiAgICAgICAgIiIi5Yib5bu657y66Zm344CCIiIiCiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIGQgPSBkZWZlY3QudG9fZGljdCgpCiAgICAgICAgZGVmZWN0X2lkID0gZGVmZWN0LmlkLnZhbHVlCiAgICAgICAgbm93ID0gdGltZS50aW1lKCkKICAgICAgICAKICAgICAgICB0YWdzID0gZC5nZXQoInRhZ3MiKSBvciBbXQogICAgICAgIGlmIGlzaW5zdGFuY2UodGFncywgbGlzdCk6CiAgICAgICAgICAgIHRhZ3MgPSBqc29uLmR1bXBzKHRhZ3MsIGVuc3VyZV9hc2NpaT1GYWxzZSkKICAgICAgICAKICAgICAgICAjIOS4pemHjeeoi+W6puaemuS4vuagoemqjAogICAgICAgIHNldmVyaXR5ID0gZC5nZXQoInNldmVyaXR5IiwgU0VWRVJJVFlfTUFKT1IpCiAgICAgICAgaWYgc2V2ZXJpdHkgbm90IGluIFZBTElEX1NFVkVSSVRJRVM6CiAgICAgICAgICAgIHNldmVyaXR5ID0gU0VWRVJJVFlfTUFKT1IKICAgICAgICAKICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICIiIklOU0VSVCBJTlRPIGRlZmVjdHMKICAgICAgICAgICAgICAgKGlkLCB0aXRsZSwgZGVzY3JpcHRpb24sIHNldmVyaXR5LCBzdGF0dXMsIGZpbGVfcGF0aCwKICAgICAgICAgICAgICAgIHRlc3RfY2FzZV9pZCwgZXJyb3Jfc25pcHBldCwgY3JlYXRlZF9hdCwgdXBkYXRlZF9hdCwgYXNzaWduZWUsIHRhZ3MsIGRlbGV0ZWQpCiAgICAgICAgICAgICAgIFZBTFVFUyAoPyw/LD8sPyw/LD8sPyw/LD8sPyw/LD8sPykiIiIsCiAgICAgICAgICAgICgKICAgICAgICAgICAgICAgIGRlZmVjdF9pZCwKICAgICAgICAgICAgICAgIGQuZ2V0KCJ0aXRsZSIsICIiKSwKICAgICAgICAgICAgICAgIGQuZ2V0KCJkZXNjcmlwdGlvbiIsICIiKSwKICAgICAgICAgICAgICAgIHNldmVyaXR5LAogICAgICAgICAgICAgICAgZC5nZXQoInN0YXR1cyIsIFNUQVRVU19PUEVOKSwKICAgICAgICAgICAgICAgIGQuZ2V0KCJmaWxlX3BhdGgiLCAiIiksCiAgICAgICAgICAgICAgICBkLmdldCgidGVzdF9jYXNlX2lkIiwgIiIpLAogICAgICAgICAgICAgICAgZC5nZXQoImVycm9yX3NuaXBwZXQiLCAiIiksCiAgICAgICAgICAgICAgICBub3csCiAgICAgICAgICAgICAgICBub3csCiAgICAgICAgICAgICAgICBkLmdldCgiYXNzaWduZWUiLCAiIiksCiAgICAgICAgICAgICAgICB0YWdzLAogICAgICAgICAgICAgICAgMCwKICAgICAgICAgICAgKSwKICAgICAgICApCiAgICAgICAgY29ubi5jb21taXQoKQogICAgICAgIAogICAgICAgICMg5Zue6K+7CiAgICAgICAgcm93ID0gY29ubi5leGVjdXRlKCJTRUxFQ1QgKiBGUk9NIGRlZmVjdHMgV0hFUkUgaWQ9PyIsIChkZWZlY3RfaWQsKSkuZmV0Y2hvbmUoKQogICAgICAgIHJldHVybiBzZWxmLl9yb3dfdG9fZW50aXR5KGRpY3Qocm93KSkgaWYgcm93IGVsc2UgZGVmZWN0CgogICAgZGVmIHVwZGF0ZShzZWxmLCBkZWZlY3Q6IERlZmVjdCkgLT4gT3B0aW9uYWxbRGVmZWN0XToKICAgICAgICAiIiLmm7TmlrDnvLrpmbfjgIIiIiIKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgZCA9IGRlZmVjdC50b19kaWN0KCkKICAgICAgICBkZWZlY3RfaWQgPSBkZWZlY3QuaWQudmFsdWUKICAgICAgICAKICAgICAgICBleGlzdGluZyA9IGNvbm4uZXhlY3V0ZSgiU0VMRUNUICogRlJPTSBkZWZlY3RzIFdIRVJFIGlkPT8iLCAoZGVmZWN0X2lkLCkpLmZldGNob25lKCkKICAgICAgICBpZiBub3QgZXhpc3Rpbmc6CiAgICAgICAgICAgIHJldHVybiBOb25lCiAgICAgICAgCiAgICAgICAgdXBkYXRlcyA9IHt9CiAgICAgICAgZm9yIGtleSBpbiAoInRpdGxlIiwgImRlc2NyaXB0aW9uIiwgInNldmVyaXR5IiwgInN0YXR1cyIsICJmaWxlX3BhdGgiLAogICAgICAgICAgICAgICAgICAgICJ0ZXN0X2Nhc2VfaWQiLCAiZXJyb3Jfc25pcHBldCIsICJhc3NpZ25lZSIpOgogICAgICAgICAgICBpZiBrZXkgaW4gZCBhbmQgZFtrZXldIGlzIG5vdCBOb25lOgogICAgICAgICAgICAgICAgdXBkYXRlc1trZXldID0gZFtrZXldCiAgICAgICAgCiAgICAgICAgaWYgInRhZ3MiIGluIGQgYW5kIGRbInRhZ3MiXSBpcyBub3QgTm9uZToKICAgICAgICAgICAgdGFncyA9IGRbInRhZ3MiXQogICAgICAgICAgICBpZiBpc2luc3RhbmNlKHRhZ3MsIGxpc3QpOgogICAgICAgICAgICAgICAgdGFncyA9IGpzb24uZHVtcHModGFncywgZW5zdXJlX2FzY2lpPUZhbHNlKQogICAgICAgICAgICB1cGRhdGVzWyJ0YWdzIl0gPSB0YWdzCiAgICAgICAgCiAgICAgICAgaWYgbm90IHVwZGF0ZXM6CiAgICAgICAgICAgIHJldHVybiBkZWZlY3QKICAgICAgICAKICAgICAgICB1cGRhdGVzWyJ1cGRhdGVkX2F0Il0gPSB0aW1lLnRpbWUoKQogICAgICAgIHNldF9jbGF1c2UgPSAiLCAiLmpvaW4oZiJ7a30gPSA/IiBmb3IgayBpbiB1cGRhdGVzKQogICAgICAgIHZhbHVlcyA9IGxpc3QodXBkYXRlcy52YWx1ZXMoKSkgKyBbZGVmZWN0X2lkXQogICAgICAgIGNvbm4uZXhlY3V0ZShmIlVQREFURSBkZWZlY3RzIFNFVCB7c2V0X2NsYXVzZX0gV0hFUkUgaWQgPSA/IiwgdHVwbGUodmFsdWVzKSkKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICAgICAgCiAgICAgICAgIyDlm57or7sKICAgICAgICByb3cgPSBjb25uLmV4ZWN1dGUoIlNFTEVDVCAqIEZST00gZGVmZWN0cyBXSEVSRSBpZD0/IiwgKGRlZmVjdF9pZCwpKS5mZXRjaG9uZSgpCiAgICAgICAgcmV0dXJuIHNlbGYuX3Jvd190b19lbnRpdHkoZGljdChyb3cpKSBpZiByb3cgZWxzZSBOb25lCgogICAgZGVmIHNvZnRfZGVsZXRlKHNlbGYsIGRlZmVjdF9pZDogc3RyKSAtPiBib29sOgogICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICBjdXJzb3IgPSBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJVUERBVEUgZGVmZWN0cyBTRVQgZGVsZXRlZD0xLCBkZWxldGVkX2F0PT8gV0hFUkUgaWQ9PyIsCiAgICAgICAgICAgICh0aW1lLnRpbWUoKSwgZGVmZWN0X2lkKSwKICAgICAgICApCiAgICAgICAgY29ubi5jb21taXQoKQogICAgICAgIHJldHVybiBjdXJzb3Iucm93Y291bnQgPiAwCgogICAgZGVmIHJlc3RvcmUoc2VsZiwgZGVmZWN0X2lkOiBzdHIpIC0+IGJvb2w6CiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIGN1cnNvciA9IGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgIlVQREFURSBkZWZlY3RzIFNFVCBkZWxldGVkPTAsIGRlbGV0ZWRfYXQ9TlVMTCBXSEVSRSBpZD0/IEFORCBkZWxldGVkPTEiLAogICAgICAgICAgICAoZGVmZWN0X2lkLCksCiAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICByZXR1cm4gY3Vyc29yLnJvd2NvdW50ID4gMAoKICAgIGRlZiBwdXJnZShzZWxmLCBkZWZlY3RfaWQ6IHN0cikgLT4gYm9vbDoKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgY3Vyc29yID0gY29ubi5leGVjdXRlKCJERUxFVEUgRlJPTSBkZWZlY3RzIFdIRVJFIGlkID0gPyIsIChkZWZlY3RfaWQsKSkKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICAgICAgcmV0dXJuIGN1cnNvci5yb3djb3VudCA+IDAKCiAgICBkZWYgcGVybWFuZW50X2RlbGV0ZShzZWxmLCBkZWZlY3RfaWQ6IHN0cikgLT4gYm9vbDoKICAgICAgICByZXR1cm4gc2VsZi5wdXJnZShkZWZlY3RfaWQpCgogICAgIyDilIDilIAg6K+E6K66IOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAgZGVmIGxpc3RfY29tbWVudHMoc2VsZiwgYnVnX2lkOiBzdHIpIC0+IExpc3RbZGljdF06CiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIHJvd3MgPSBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJTRUxFQ1QgKiBGUk9NIGRlZmVjdF9jb21tZW50cyBXSEVSRSBidWdfaWQ9PyBBTkQgZGVsZXRlZD0wIE9SREVSIEJZIGNyZWF0ZV90aW1lIEFTQyIsCiAgICAgICAgICAgIChidWdfaWQsKQogICAgICAgICkuZmV0Y2hhbGwoKQogICAgICAgIHJldHVybiBbZGljdChyKSBmb3IgciBpbiByb3dzXQoKICAgIGRlZiBjcmVhdGVfY29tbWVudChzZWxmLCBidWdfaWQ6IHN0ciwgY29udGVudDogc3RyID0gIiIsIHBhcmVudF9pZDogc3RyID0gIiIsCiAgICAgICAgICAgICAgICAgICAgICAgY3JlYXRlX3VzZXI6IHN0ciA9ICIiLCByZXBseV91c2VyOiBzdHIgPSAiIiwgbm90aWZpZXI6IHN0ciA9ICIiKSAtPiBkaWN0OgogICAgICAgIGNvbm4gPSBzZWxmLl9jb25uKCkKICAgICAgICBjb21tZW50X2lkID0gc3RyKHV1aWQudXVpZDQoKSkKICAgICAgICBub3cgPSB0aW1lLnRpbWUoKQogICAgICAgIGNvbm4uZXhlY3V0ZSgKICAgICAgICAgICAgIiIiSU5TRVJUIElOVE8gZGVmZWN0X2NvbW1lbnRzCiAgICAgICAgICAgICAgIChpZCwgYnVnX2lkLCBwYXJlbnRfaWQsIGNvbnRlbnQsIGNyZWF0ZV91c2VyLCByZXBseV91c2VyLAogICAgICAgICAgICAgICAgbm90aWZpZXIsIGNyZWF0ZV90aW1lLCB1cGRhdGVfdGltZSwgZGVsZXRlZCkKICAgICAgICAgICAgICAgVkFMVUVTICg/LD8sPyw/LD8sPyw/LD8sPywwKSIiIiwKICAgICAgICAgICAgKGNvbW1lbnRfaWQsIGJ1Z19pZCwgcGFyZW50X2lkLCBjb250ZW50LCBjcmVhdGVfdXNlciwKICAgICAgICAgICAgIHJlcGx5X3VzZXIsIG5vdGlmaWVyLCBub3csIG5vdyksCiAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICByb3cgPSBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJTRUxFQ1QgKiBGUk9NIGRlZmVjdF9jb21tZW50cyBXSEVSRSBpZD0/IEFORCBkZWxldGVkPTAiLAogICAgICAgICAgICAoY29tbWVudF9pZCwpCiAgICAgICAgKS5mZXRjaG9uZSgpCiAgICAgICAgcmV0dXJuIGRpY3Qocm93KSBpZiByb3cgZWxzZSB7fQoKICAgIGRlZiB1cGRhdGVfY29tbWVudChzZWxmLCBjb21tZW50X2lkOiBzdHIsIGNvbnRlbnQ6IHN0cikgLT4gT3B0aW9uYWxbZGljdF06CiAgICAgICAgY29ubiA9IHNlbGYuX2Nvbm4oKQogICAgICAgIGV4aXN0aW5nID0gY29ubi5leGVjdXRlKAogICAgICAgICAgICAiU0VMRUNUICogRlJPTSBkZWZlY3RfY29tbWVudHMgV0hFUkUgaWQ9PyBBTkQgZGVsZXRlZD0wIiwKICAgICAgICAgICAgKGNvbW1lbnRfaWQsKQogICAgICAgICkuZmV0Y2hvbmUoKQogICAgICAgIGlmIG5vdCBleGlzdGluZzoKICAgICAgICAgICAgcmV0dXJuIE5vbmUKICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJVUERBVEUgZGVmZWN0X2NvbW1lbnRzIFNFVCBjb250ZW50PT8sIHVwZGF0ZV90aW1lPT8gV0hFUkUgaWQ9PyIsCiAgICAgICAgICAgIChjb250ZW50LCB0aW1lLnRpbWUoKSwgY29tbWVudF9pZCksCiAgICAgICAgKQogICAgICAgIGNvbm4uY29tbWl0KCkKICAgICAgICByb3cgPSBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJTRUxFQ1QgKiBGUk9NIGRlZmVjdF9jb21tZW50cyBXSEVSRSBpZD0/IEFORCBkZWxldGVkPTAiLAogICAgICAgICAgICAoY29tbWVudF9pZCwpCiAgICAgICAgKS5mZXRjaG9uZSgpCiAgICAgICAgcmV0dXJuIGRpY3Qocm93KSBpZiByb3cgZWxzZSBOb25lCgogICAgZGVmIGRlbGV0ZV9jb21tZW50KHNlbGYsIGNvbW1lbnRfaWQ6IHN0cikgLT4gYm9vbDoKICAgICAgICBjb25uID0gc2VsZi5fY29ubigpCiAgICAgICAgY3Vyc29yID0gY29ubi5leGVjdXRlKAogICAgICAgICAgICAiVVBEQVRFIGRlZmVjdF9jb21tZW50cyBTRVQgZGVsZXRlZD0xLCB1cGRhdGVfdGltZT0/IFdIRVJFIGlkPT8iLAogICAgICAgICAgICAodGltZS50aW1lKCksIGNvbW1lbnRfaWQpLAogICAgICAgICkKICAgICAgICBjb25uLmV4ZWN1dGUoCiAgICAgICAgICAgICJVUERBVEUgZGVmZWN0X2NvbW1lbnRzIFNFVCBkZWxldGVkPTEsIHVwZGF0ZV90aW1lPT8gV0hFUkUgcGFyZW50X2lkPT8iLAogICAgICAgICAgICAodGltZS50aW1lKCksIGNvbW1lbnRfaWQpLAogICAgICAgICkKICAgICAgICBjb25uLmNvbW1pdCgpCiAgICAgICAgcmV0dXJuIGN1cnNvci5yb3djb3VudCA+IDAKCiAgICAjIOKUgOKUgCDoh6rliqjliJvlu7og4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBkZWYgYXV0b19jcmVhdGVfZnJvbV9yZXN1bHQoc2VsZiwgZmlsZV9wYXRoOiBzdHIsIHRlc3RfcmVzdWx0OiBkaWN0LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRlc3RfY2FzZV9pZDogc3RyID0gIiIpIC0+IE9wdGlvbmFsW2RpY3RdOgogICAgICAgICIiIua1i+ivleWksei0peaXtuiHquWKqOWIm+W7uue8uumZt+OAgiIiIgogICAgICAgIGlmIHRlc3RfcmVzdWx0LmdldCgicGFzc2VkIik6CiAgICAgICAgICAgIHJldHVybiBOb25lCgogICAgICAgIHN0ZGVyciA9IHRlc3RfcmVzdWx0LmdldCgic3RkZXJyIiwgIiIpIG9yICIiCiAgICAgICAgc3Rkb3V0ID0gdGVzdF9yZXN1bHQuZ2V0KCJzdGRvdXQiLCAiIikgb3IgIiIKICAgICAgICBjb21iaW5lZCA9IHN0ZGVyciArICJcbiIgKyBzdGRvdXQKCiAgICAgICAgIyDmoLnmja7plJnor6/nsbvlnovliKTmlq3kuKXph43nqIvluqYKICAgICAgICBzZXZlcml0eSA9IFNFVkVSSVRZX01BSk9SCiAgICAgICAgaWYgYW55KGsgaW4gY29tYmluZWQubG93ZXIoKSBmb3IgayBpbiAoImVycm9yIiwgInRyYWNlYmFjayIsICJmYWlsZWQiKSk6CiAgICAgICAgICAgIHNldmVyaXR5ID0gU0VWRVJJVFlfQ1JJVElDQUwKICAgICAgICBpZiBhbnkoayBpbiBjb21iaW5lZC5sb3dlcigpIGZvciBrIGluICgiZXhjZXB0aW9uIiwgInNlZ21lbnRhdGlvbiIpKToKICAgICAgICAgICAgc2V2ZXJpdHkgPSBTRVZFUklUWV9CTE9DS0VSCgogICAgICAgICMg5o+Q5Y+W6ZSZ6K+v5pGY6KaBCiAgICAgICAgdGl0bGUgPSBmIua1i+ivleWksei0pToge2ZpbGVfcGF0aH0iCiAgICAgICAgaWYgIkFzc2VydGlvbkVycm9yIiBpbiBjb21iaW5lZDoKICAgICAgICAgICAgdGl0bGUgPSBmIuaWreiogOWksei0pToge2ZpbGVfcGF0aH0iCiAgICAgICAgZWxpZiAiSW1wb3J0RXJyb3IiIGluIGNvbWJpbmVkIG9yICJNb2R1bGVOb3RGb3VuZEVycm9yIiBpbiBjb21iaW5lZDoKICAgICAgICAgICAgdGl0bGUgPSBmIuWvvOWFpemUmeivrzoge2ZpbGVfcGF0aH0iCiAgICAgICAgZWxpZiAiVHlwZUVycm9yIiBpbiBjb21iaW5lZDoKICAgICAgICAgICAgdGl0bGUgPSBmIuexu+Wei+mUmeivrzoge2ZpbGVfcGF0aH0iCiAgICAgICAgZWxpZiAiU3ludGF4RXJyb3IiIGluIGNvbWJpbmVkOgogICAgICAgICAgICB0aXRsZSA9IGYi6K+t5rOV6ZSZ6K+vOiB7ZmlsZV9wYXRofSIKCiAgICAgICAgIyDliJvlu7rnvLrpmbcKICAgICAgICBkZWZlY3QgPSBEZWZlY3QoCiAgICAgICAgICAgIGRlZmVjdF9pZD1zZWxmLm5leHRfaWQoKSwKICAgICAgICAgICAgdGl0bGU9dGl0bGUsCiAgICAgICAgICAgIGRlc2NyaXB0aW9uPWYi5rWL6K+V6Ieq5Yqo5qOA5rWL5Yiw5aSx6LSl44CCXG5cbuaWh+S7tjoge2ZpbGVfcGF0aH1cblxu6L6T5Ye6OlxuYGBgXG57Y29tYmluZWRbOjIwMDBdfVxuYGBgIiwKICAgICAgICAgICAgc2V2ZXJpdHk9c2V2ZXJpdHksCiAgICAgICAgICAgIGZpbGVfcGF0aD1maWxlX3BhdGgsCiAgICAgICAgICAgIHRlc3RfY2FzZV9pZD10ZXN0X2Nhc2VfaWQsCiAgICAgICAgICAgIGVycm9yX3NuaXBwZXQ9Y29tYmluZWRbOjUwMF0sCiAgICAgICAgKQogICAgICAgIHNhdmVkID0gc2VsZi5zYXZlKGRlZmVjdCkKICAgICAgICByZXR1cm4gc2F2ZWQudG9fZGljdCgpCgoKIyDmqKHlnZfnuqfljZXkvosKZGVmZWN0X3JlcG9zaXRvcnkgPSBEZWZlY3RSZXBvc2l0b3J5SW1wbCgpCgpfX2FsbF9fID0gWyJEZWZlY3RSZXBvc2l0b3J5SW1wbCIsICJkZWZlY3RfcmVwb3NpdG9yeSIsICJWQUxJRF9TRVZFUklUSUVTIl0K
+"""缺陷聚合仓储实现（去 Adapter，直接 SQL）。
+
+修复说明：
+  - 消除 DefectRepoAdapter 中间层（只做 entity↔dict 翻译，无业务逻辑）
+  - 把 defect_repo 的 SQL 移入此处，成为域内私有实现
+  - 聚合重建（from_dict）与持久化在同一个文件内闭环，不再跨文件翻译
+  - DB 从 defects.db 统一为 tga.db
+
+修复前调用链：AppService → DefectRepoAdapter → DefectRepo → SQLite（4 层）
+修复后调用链：AppService → DefectRepositoryImpl → SQLite（2 层）
+"""
+from __future__ import annotations
+
+import json
+import time
+import uuid
+from typing import List, Optional, Tuple
+
+from app.core.database import Database
+from app.domain.defects.domain.entities.defect import Defect
+from app.logging_config import get_logger
+
+logger = get_logger(__name__)
+
+# ── 域内常量 ──────────────────────────────────────────
+DB_NAME = "tga.db"
+TABLE_DEFECTS = "defects"
+TABLE_COMMENTS = "defect_comments"
+
+# 缺陷状态 / 严重程度
+STATUS_OPEN = "open"
+STATUS_IN_PROGRESS = "in_progress"
+STATUS_FIXED = "fixed"
+STATUS_CLOSED = "closed"
+STATUS_WONT_FIX = "wont_fix"
+VALID_STATUSES = {STATUS_OPEN, STATUS_IN_PROGRESS, STATUS_FIXED, STATUS_CLOSED, STATUS_WONT_FIX}
+
+SEVERITY_BLOCKER = "blocker"
+SEVERITY_CRITICAL = "critical"
+SEVERITY_MAJOR = "major"
+SEVERITY_MINOR = "minor"
+SEVERITY_TRIVIAL = "trivial"
+VALID_SEVERITIES = {
+    SEVERITY_BLOCKER, SEVERITY_CRITICAL, SEVERITY_MAJOR, SEVERITY_MINOR, SEVERITY_TRIVIAL,
+}
+
+
+class DefectRepositoryImpl:
+    """缺陷仓储：直接持有 SQL，不再委托 Flat Repository。"""
+
+    def __init__(self):
+        self._ensure_tables()
+
+    @staticmethod
+    def _conn():
+        return Database.get_conn(DB_NAME)
+
+    # ── 建表 ──────────────────────────────────────────────
+    @classmethod
+    def _ensure_tables(cls) -> None:
+        """幂等建表。"""
+        conn = cls._conn()
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS defects (
+                id TEXT PRIMARY KEY,
+                title TEXT NOT NULL,
+                description TEXT DEFAULT '',
+                severity TEXT DEFAULT 'major',
+                status TEXT DEFAULT 'open',
+                file_path TEXT DEFAULT '',
+                test_case_id TEXT DEFAULT '',
+                error_snippet TEXT DEFAULT '',
+                created_at REAL,
+                updated_at REAL,
+                assignee TEXT DEFAULT '',
+                tags TEXT DEFAULT '[]',
+                deleted INTEGER DEFAULT 0,
+                deleted_at REAL
+            )
+        """)
+        # 兼容旧库：为已存在的缺陷表补充 tags 列
+        existing_cols = {row["name"] for row in conn.execute("PRAGMA table_info(defects)")}
+        if "tags" not in existing_cols:
+            conn.execute("ALTER TABLE defects ADD COLUMN tags TEXT DEFAULT '[]'")
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS defect_comments (
+                id TEXT PRIMARY KEY,
+                bug_id TEXT NOT NULL,
+                parent_id TEXT DEFAULT '',
+                content TEXT DEFAULT '',
+                create_user TEXT DEFAULT '',
+                reply_user TEXT DEFAULT '',
+                notifier TEXT DEFAULT '',
+                create_time REAL,
+                update_time REAL,
+                deleted INTEGER DEFAULT 0
+            )
+        """)
+        conn.commit()
+
+    def next_id(self) -> str:
+        return uuid.uuid4().hex[:12]
+
+    # ── 聚合重建 ──────────────────────────────────────────
+    @staticmethod
+    def _row_to_entity(row: dict) -> Defect:
+        """数据库行 → 聚合根实体。"""
+        return Defect.from_dict(dict(row))
+
+    # ── 读 ────────────────────────────────────────────────
+    def find_by_id(self, defect_id: str, include_deleted: bool = False) -> Optional[Defect]:
+        conn = self._conn()
+        if include_deleted:
+            # 回收站 / 全部：直接查主表（含已删除行）
+            for r in self.list_trash(limit=9999, offset=0)[0]:
+                if str(r.id.value) == str(defect_id):
+                    return r
+            return None
+        row = conn.execute(
+            "SELECT * FROM defects WHERE id=? AND (deleted IS NULL OR deleted=0)",
+            (defect_id,)
+        ).fetchone()
+        return self._row_to_entity(dict(row)) if row else None
+
+    def list(self, *, status: str = "", severity: str = "", limit: int = 100,
+             offset: int = 0) -> Tuple[List[Defect], int]:
+        conn = self._conn()
+        clause = " WHERE 1=1 AND (deleted IS NULL OR deleted = 0)"
+        params: list = []
+        if status and status in VALID_STATUSES:
+            clause += " AND status = ?"
+            params.append(status)
+        if severity and severity in VALID_SEVERITIES:
+            clause += " AND severity = ?"
+            params.append(severity)
+        
+        query = "SELECT * FROM defects" + clause
+        query += " ORDER BY created_at DESC LIMIT ? OFFSET ?"
+        params = list(params) + [int(limit), int(offset)]
+        rows = conn.execute(query, tuple(params)).fetchall()
+        items = [self._row_to_entity(dict(r)) for r in rows]
+        
+        # Count
+        count_query = "SELECT COUNT(*) AS cnt FROM defects" + clause
+        count_params = params[:-2]  # Remove limit and offset
+        count_row = conn.execute(count_query, tuple(count_params)).fetchone()
+        total = count_row["cnt"] if count_row else 0
+        
+        return items, total
+
+    def list_trash(self, limit: int = 100, offset: int = 0) -> Tuple[List[Defect], int]:
+        conn = self._conn()
+        rows = conn.execute(
+            "SELECT * FROM defects WHERE deleted=1 ORDER BY deleted_at DESC LIMIT ? OFFSET ?",
+            (int(limit), int(offset))
+        ).fetchall()
+        items = [self._row_to_entity(dict(r)) for r in rows]
+        
+        count_row = conn.execute("SELECT COUNT(*) AS cnt FROM defects WHERE deleted=1").fetchone()
+        total = count_row["cnt"] if count_row else 0
+        
+        return items, total
+
+    def stats(self) -> dict:
+        conn = self._conn()
+        total = conn.execute(
+            "SELECT COUNT(*) FROM defects WHERE (deleted IS NULL OR deleted=0)"
+        ).fetchone()[0]
+        trash = conn.execute("SELECT COUNT(*) FROM defects WHERE deleted=1").fetchone()[0]
+        by_status = {s: 0 for s in sorted(VALID_STATUSES)}
+        for row in conn.execute(
+            "SELECT status, COUNT(*) AS cnt FROM defects "
+            "WHERE (deleted IS NULL OR deleted=0) GROUP BY status"
+        ):
+            if row["status"] in by_status:
+                by_status[row["status"]] = row["cnt"]
+        return {"total": total, "trash": trash, "by_status": by_status}
+
+    # ── 写 ────────────────────────────────────────────────
+    def save(self, defect: Defect) -> Defect:
+        """创建缺陷。"""
+        conn = self._conn()
+        d = defect.to_dict()
+        defect_id = defect.id.value
+        now = time.time()
+        
+        tags = d.get("tags") or []
+        if isinstance(tags, list):
+            tags = json.dumps(tags, ensure_ascii=False)
+        
+        # 严重程度枚举校验
+        severity = d.get("severity", SEVERITY_MAJOR)
+        if severity not in VALID_SEVERITIES:
+            severity = SEVERITY_MAJOR
+        
+        conn.execute(
+            """INSERT INTO defects
+               (id, title, description, severity, status, file_path,
+                test_case_id, error_snippet, created_at, updated_at, assignee, tags, deleted)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            (
+                defect_id,
+                d.get("title", ""),
+                d.get("description", ""),
+                severity,
+                d.get("status", STATUS_OPEN),
+                d.get("file_path", ""),
+                d.get("test_case_id", ""),
+                d.get("error_snippet", ""),
+                now,
+                now,
+                d.get("assignee", ""),
+                tags,
+                0,
+            ),
+        )
+        conn.commit()
+        
+        # 回读
+        row = conn.execute("SELECT * FROM defects WHERE id=?", (defect_id,)).fetchone()
+        return self._row_to_entity(dict(row)) if row else defect
+
+    def update(self, defect: Defect) -> Optional[Defect]:
+        """更新缺陷。"""
+        conn = self._conn()
+        d = defect.to_dict()
+        defect_id = defect.id.value
+        
+        existing = conn.execute("SELECT * FROM defects WHERE id=?", (defect_id,)).fetchone()
+        if not existing:
+            return None
+        
+        updates = {}
+        for key in ("title", "description", "severity", "status", "file_path",
+                    "test_case_id", "error_snippet", "assignee"):
+            if key in d and d[key] is not None:
+                updates[key] = d[key]
+        
+        if "tags" in d and d["tags"] is not None:
+            tags = d["tags"]
+            if isinstance(tags, list):
+                tags = json.dumps(tags, ensure_ascii=False)
+            updates["tags"] = tags
+        
+        if not updates:
+            return defect
+        
+        updates["updated_at"] = time.time()
+        set_clause = ", ".join(f"{k} = ?" for k in updates)
+        values = list(updates.values()) + [defect_id]
+        conn.execute(f"UPDATE defects SET {set_clause} WHERE id = ?", tuple(values))
+        conn.commit()
+        
+        # 回读
+        row = conn.execute("SELECT * FROM defects WHERE id=?", (defect_id,)).fetchone()
+        return self._row_to_entity(dict(row)) if row else None
+
+    def soft_delete(self, defect_id: str) -> bool:
+        conn = self._conn()
+        cursor = conn.execute(
+            "UPDATE defects SET deleted=1, deleted_at=? WHERE id=?",
+            (time.time(), defect_id),
+        )
+        conn.commit()
+        return cursor.rowcount > 0
+
+    def restore(self, defect_id: str) -> bool:
+        conn = self._conn()
+        cursor = conn.execute(
+            "UPDATE defects SET deleted=0, deleted_at=NULL WHERE id=? AND deleted=1",
+            (defect_id,),
+        )
+        conn.commit()
+        return cursor.rowcount > 0
+
+    def purge(self, defect_id: str) -> bool:
+        conn = self._conn()
+        cursor = conn.execute("DELETE FROM defects WHERE id = ?", (defect_id,))
+        conn.commit()
+        return cursor.rowcount > 0
+
+    def permanent_delete(self, defect_id: str) -> bool:
+        return self.purge(defect_id)
+
+    # ── 评论 ──────────────────────────────────────────────
+    def list_comments(self, bug_id: str) -> List[dict]:
+        conn = self._conn()
+        rows = conn.execute(
+            "SELECT * FROM defect_comments WHERE bug_id=? AND deleted=0 ORDER BY create_time ASC",
+            (bug_id,)
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+    def create_comment(self, bug_id: str, content: str = "", parent_id: str = "",
+                       create_user: str = "", reply_user: str = "", notifier: str = "") -> dict:
+        conn = self._conn()
+        comment_id = str(uuid.uuid4())
+        now = time.time()
+        conn.execute(
+            """INSERT INTO defect_comments
+               (id, bug_id, parent_id, content, create_user, reply_user,
+                notifier, create_time, update_time, deleted)
+               VALUES (?,?,?,?,?,?,?,?,?,0)""",
+            (comment_id, bug_id, parent_id, content, create_user,
+             reply_user, notifier, now, now),
+        )
+        conn.commit()
+        row = conn.execute(
+            "SELECT * FROM defect_comments WHERE id=? AND deleted=0",
+            (comment_id,)
+        ).fetchone()
+        return dict(row) if row else {}
+
+    def update_comment(self, comment_id: str, content: str) -> Optional[dict]:
+        conn = self._conn()
+        existing = conn.execute(
+            "SELECT * FROM defect_comments WHERE id=? AND deleted=0",
+            (comment_id,)
+        ).fetchone()
+        if not existing:
+            return None
+        conn.execute(
+            "UPDATE defect_comments SET content=?, update_time=? WHERE id=?",
+            (content, time.time(), comment_id),
+        )
+        conn.commit()
+        row = conn.execute(
+            "SELECT * FROM defect_comments WHERE id=? AND deleted=0",
+            (comment_id,)
+        ).fetchone()
+        return dict(row) if row else None
+
+    def delete_comment(self, comment_id: str) -> bool:
+        conn = self._conn()
+        cursor = conn.execute(
+            "UPDATE defect_comments SET deleted=1, update_time=? WHERE id=?",
+            (time.time(), comment_id),
+        )
+        conn.execute(
+            "UPDATE defect_comments SET deleted=1, update_time=? WHERE parent_id=?",
+            (time.time(), comment_id),
+        )
+        conn.commit()
+        return cursor.rowcount > 0
+
+    # ── 自动创建 ──────────────────────────────────────────
+    def auto_create_from_result(self, file_path: str, test_result: dict,
+                                test_case_id: str = "") -> Optional[dict]:
+        """测试失败时自动创建缺陷。"""
+        if test_result.get("passed"):
+            return None
+
+        stderr = test_result.get("stderr", "") or ""
+        stdout = test_result.get("stdout", "") or ""
+        combined = stderr + "\n" + stdout
+
+        # 根据错误类型判断严重程度
+        severity = SEVERITY_MAJOR
+        if any(k in combined.lower() for k in ("error", "traceback", "failed")):
+            severity = SEVERITY_CRITICAL
+        if any(k in combined.lower() for k in ("exception", "segmentation")):
+            severity = SEVERITY_BLOCKER
+
+        # 提取错误摘要
+        title = f"测试失败: {file_path}"
+        if "AssertionError" in combined:
+            title = f"断言失败: {file_path}"
+        elif "ImportError" in combined or "ModuleNotFoundError" in combined:
+            title = f"导入错误: {file_path}"
+        elif "TypeError" in combined:
+            title = f"类型错误: {file_path}"
+        elif "SyntaxError" in combined:
+            title = f"语法错误: {file_path}"
+
+        # 创建缺陷
+        defect = Defect(
+            defect_id=self.next_id(),
+            title=title,
+            description=f"测试自动检测到失败。\n\n文件: {file_path}\n\n输出:\n```\n{combined[:2000]}\n```",
+            severity=severity,
+            file_path=file_path,
+            test_case_id=test_case_id,
+            error_snippet=combined[:500],
+        )
+        saved = self.save(defect)
+        return saved.to_dict()
+
+
+# 模块级单例
+defect_repository = DefectRepositoryImpl()
+
+__all__ = ["DefectRepositoryImpl", "defect_repository", "VALID_SEVERITIES"]

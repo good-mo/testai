@@ -36,7 +36,7 @@ def delete_by_key(key: str, request: Request):
     """Delete By Key。"""
     try:
         from app.domain.display_config.application.dto import DeleteByKeyCommand
-        cmd = DeleteByKeyCommand("key": key)
+        cmd = DeleteByKeyCommand(key=key)
         result = display_config_app_service.delete_by_key(cmd)
         return ok(result)
     except Exception as e:

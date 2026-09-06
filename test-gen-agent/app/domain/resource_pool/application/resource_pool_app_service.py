@@ -59,3 +59,4 @@ class ResourcePoolAppService:
 
 
 resource_pool_app_service = ResourcePoolAppService()
+resource_pool_service = resource_pool_app_service
