@@ -7,7 +7,7 @@ from fastapi import APIRouter, Request
 
 from app.core.response import ok, read_body
 from app.logging_config import get_logger
-from app.models.file import FileDownloadBody
+from app.domain.file.application.dto import FileDownloadBody
 
 logger = get_logger(__name__)
 router = APIRouter(tags=["adapter-attachment"])

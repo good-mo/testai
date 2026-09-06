@@ -13,13 +13,16 @@ from app.logging_config import get_logger
 logger = get_logger(__name__)
 router = APIRouter(tags=["adapter-functional_cases"])
 
-from app.models.case import (
+
+
+from app.domain.case.application.dto import (
     FunctionalCaseFollowBody,
     FunctionalCaseRefBody,
     FunctionalModuleBody,
     FunctionalTrashBatchBody,
     FunctionalTrashPageBody,
 )
+
 from app.domain.apitest.application.apitest_app_service import apitest_service
 from app.domain.cases.application.case_app_service import case_service
 

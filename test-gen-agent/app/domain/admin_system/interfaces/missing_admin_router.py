@@ -15,13 +15,8 @@
 from fastapi import APIRouter
 
 from app.core.response import ok
-from app.models.auth import (
-    GroupMemberBody,
-    GroupMemberListBody,
-    GroupPermissionBody,
-    UserGroupAddBody,
-    UserGroupUpdateBody,
-)
+
+from app.domain.auth.application.dto import GroupMemberBody, GroupMemberListBody, GroupPermissionBody, UserGroupAddBody, UserGroupUpdateBody
 from app.domain.admin_system.application.admin_app_service import admin_service
 from app.domain.auth.application.auth_app_service import auth_service
 from app.domain.project.application.project_app_service import project_service

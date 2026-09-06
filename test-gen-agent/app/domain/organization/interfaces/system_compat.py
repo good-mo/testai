@@ -9,7 +9,8 @@ from fastapi import APIRouter, Request
 
 from app.core.response import fail, ok, page_result, read_body
 from app.core.helpers import as_model
-from app.models.system_compat import (
+
+from app.domain.system_compat.application.dto import  (
     OrgProjectUserListPageBody,
     SysInviteCheckBody,
     SysOrgAddMemberBody,
@@ -27,7 +28,8 @@ from app.models.system_compat import (
     SystemProjectPageBody,
     SysOrgPageBody,
 )
-from app.models.workflow import (
+
+from app.domain.workflow.application.dto import (
     WorkflowDefinitionUpdateBody,
     WorkflowFlowUpdateBody,
     WorkflowStatusAddBody,
@@ -359,7 +361,8 @@ async def organization_user_invite(request: Request):
 
     前端 inviteOrgMember 请求体: {inviteEmails:[], userRoleIds:[], organizationId}
     """
-    from app.models.invitation import InviteCreateBody
+    
+    from app.domain.invitation.application.dto  import InviteCreateBody
     from app.domain.identity.application.identity_app_service import invitation_service
     mb = as_model(await read_body(request), InviteCreateBody)
     emails = mb.effective_emails
@@ -1128,7 +1131,9 @@ async def system_user_invite(request: Request):
     前端 inviteUser 请求体: {inviteEmails:[email...], userRoleIds:[role...]}
     返回：前端可通过 invitationUrl/inviteId 生成邀请注册链接。
     """
-    from app.models.invitation import InviteCreateBody
+    from app.domain.invitation.application.dto import InviteCreateBody
+
+
     from app.domain.identity.application.identity_app_service import invitation_service
     mb = as_model(await read_body(request), InviteCreateBody)
     emails = mb.effective_emails

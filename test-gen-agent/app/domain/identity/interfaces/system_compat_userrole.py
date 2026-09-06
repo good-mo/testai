@@ -12,7 +12,9 @@ from typing import Any, Dict, List
 from fastapi import APIRouter
 
 from app.core.response import ok, page_result
-from app.models.user_role import (
+
+
+from app.domain.user_role.application.dto import (
     UserApiKeyUpdateBody,
     UserPlatformSaveBody,
     UserRoleProjectAddBody,
@@ -22,6 +24,10 @@ from app.models.user_role import (
     UserRoleProjectPermissionUpdateBody,
     UserRoleProjectUpdateBody,
 )
+
+
+
+
 from app.domain.auth.application.auth_app_service import auth_service
 from app.domain.project.application.project_app_service import project_service
 
