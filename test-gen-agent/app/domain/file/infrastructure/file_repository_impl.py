@@ -109,4 +109,26 @@ class FileRepoAdapter:
         return {str(row["module_id"]): row["count"] for row in rows}
 
 
-__all__ = ["FileRepoAdapter"]
+__all__ = ["FileRepoAdapter", "file_repo"]
+
+
+# ── 薄门面：兼容旧 file_repo.upsert_meta(file_id, data) 签名 ──────────────
+class _FileRepoFacade:
+    """薄门面，让 attachment.py 的 file_repo.upsert_meta(file_id, data) 调用
+    本地 FileRepoAdapter，不再依赖 app.repositories.file_repo。"""
+
+    def __init__(self) -> None:
+        self._adapter = FileRepoAdapter()
+
+    def upsert_meta(self, file_id: str, data: dict) -> None:
+        from app.domain.file.domain.entities.file_item import FileItem
+        item = self._adapter.get_meta(file_id)
+        if item:
+            item.update_meta(data)
+        else:
+            item = FileItem(file_id=file_id, name=data.get("name", file_id), _uploaded=False)
+            item.update_meta(data)
+        self._adapter.upsert_meta(item)
+
+
+file_repo = _FileRepoFacade()

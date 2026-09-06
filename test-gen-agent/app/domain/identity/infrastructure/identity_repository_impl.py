@@ -14,6 +14,7 @@ from app.domain.identity.domain.entities.organization import Organization
 from app.domain.identity.domain.entities.role import Role
 from app.domain.identity.domain.entities.user import User
 from app.domain.auth.infrastructure.auth_repository_impl import auth_repository
+from app.domain.identity.infrastructure.identity_store import IdentityRepo
 
 
 class _IdentityStore:
@@ -23,7 +24,7 @@ class _IdentityStore:
         return lambda *args, **kwargs: None
 
 
-AuthRepo = InvitationRepo = OrganizationRepo = UserGroupRepo = _IdentityStore
+AuthRepo = InvitationRepo = OrganizationRepo = UserGroupRepo = IdentityRepo
 
 
 def _new_id() -> str:
@@ -183,10 +184,9 @@ class OrganizationRepoAdapter:
             self._org.add_member(org.id.value, m.user_id, m.role.value)
 
     def update(self, org: Organization) -> Optional[Organization]:
-        from app.repositories.organization_repo import OrganizationRepo
         data = {"name": org.name, "description": org.description}
         data["status"] = "active" if org.enabled else "disabled"
-        OrganizationRepo.update(org.id.value, data)
+        IdentityRepo.update_org(org.id.value, data)
         return self.find_by_id(org.id.value)
 
     def persist_member_change(self, org: Organization, user_id: str, role: str) -> None:

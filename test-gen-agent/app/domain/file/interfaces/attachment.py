@@ -124,7 +124,6 @@ async def attachment_transfer(request: Request):
     target_module = body.get("moduleId") or "root"
     if not file_id:
         return ok({"success": False, "msg": "缺少文件 ID"})
-    from app.repositories.file_repo import file_repo
     from app.domain.file.application.file_app_service import file_service
     meta = file_service.get_file_meta(file_id)
     if not meta:
@@ -196,7 +195,6 @@ async def attachment_update(request: Request):
     module_id = body.get("moduleId") or "root"
     if not file_id:
         return ok({"success": False})
-    from app.repositories.file_repo import file_repo
     from app.domain.file.application.file_app_service import file_service
     meta = file_service.get_file_meta(file_id) or {}
     file_repo.upsert_meta(file_id, {

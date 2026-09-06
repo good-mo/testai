@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List
 
-from app.repositories import project_app_config_repo
+from app.domain.project_app_config.infrastructure.project_app_config_store import project_app_config_repo
 
 
 class ProjectAppConfigRepoAdapter:

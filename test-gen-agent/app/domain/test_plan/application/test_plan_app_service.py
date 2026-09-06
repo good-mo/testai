@@ -28,6 +28,7 @@ from app.domain.test_plan.application.dto import (
 from app.domain.test_plan.domain.entities.test_plan import TestPlan
 from app.domain.test_plan.domain.repository import TestPlanRepository
 from app.domain.test_plan.infrastructure.test_plan_repository_impl import TestPlanRepoAdapter
+from app.domain.test_plan.infrastructure.test_plan_store import TestPlanRepo
 
 logger = logging.getLogger(__name__)
 
@@ -180,80 +181,63 @@ class TestPlanAppService:
     # application 方法面与旧 service 逐方法对齐"，将它们补齐到应用门面并薄委托
     # 既有 TestPlanRepo（防腐层），Service 层再统一收敛委托本门面。
     def list_modules(self, **kwargs) -> list:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.list_modules()
 
     def create_module(self, name: str, parent_id: str = "root",
                       project_id: str = "") -> dict:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.create_module(name=name, parent_id=parent_id,
                                           project_id=project_id)
 
     def update_module(self, module_id: str, name: str = "", **kwargs) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.update_module(module_id, name)
 
     def delete_module(self, module_id: str) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.delete_module(module_id)
 
     def move_module(self, drag_node_id: str, drop_node_id: str,
                     drop_position: int = 0) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.move_module(drag_node_id, drop_node_id,
                                         int(drop_position or 0))
 
     def count_plans_by_module(self, **kwargs) -> dict:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.count_plans_by_module(
             project_id=kwargs.get("projectId") or kwargs.get("project_id") or ""
         )
 
     def save_dashboard_layout(self, org_id: str, user_id: str, layout: list) -> None:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.save_dashboard_layout(org_id, user_id, layout)
 
     def load_dashboard_layout(self, org_id: str, user_id: str):
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.load_dashboard_layout(org_id, user_id)
 
     def save_schedule(self, plan_id: str, cron: str = "", enable: bool = True,
                       run_mode: str = "SERIAL", project_id: str = "") -> dict:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.save_schedule(plan_id, cron, enable, run_mode, project_id)
 
     def get_schedule(self, plan_id: str) -> Optional[dict]:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.get_schedule(plan_id)
 
     def get_schedules(self, plan_ids: list) -> dict:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.get_schedules(plan_ids or [])
 
     def delete_schedule(self, plan_id: str) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.delete_schedule(plan_id)
 
     def add_plan_case(self, plan_id: str, case_id: str,
                       case_type: str = "functional") -> Optional[dict]:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.add_plan_case(plan_id=plan_id, case_id=case_id,
                                           case_type=case_type)
 
     def remove_plan_case(self, rel_id: str, **kwargs) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.remove_plan_case(rel_id)
 
     def list_plan_cases(self, plan_id: str) -> list:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.list_plan_cases(plan_id)
 
     def update_plan_case_status(self, rel_id: str, status: str) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.update_plan_case_status(rel_id, status)
 
     def update_rel_pos(self, rel_id: str, pos: int) -> bool:
-        from app.repositories.test_plan_repo import TestPlanRepo
         return TestPlanRepo.update_rel_pos(rel_id, pos)
 
     def _find_or_raise(self, plan_id: str) -> TestPlan:

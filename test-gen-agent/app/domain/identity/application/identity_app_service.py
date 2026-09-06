@@ -40,6 +40,7 @@ from app.domain.identity.domain.repository import (
     UserRepository,
 )
 from app.domain.identity.infrastructure.identity_repository_impl import (
+    IdentityRepo,
     InvitationRepoAdapter,
     OrganizationRepoAdapter,
     RoleRepoAdapter,
@@ -119,8 +120,7 @@ class IdentityAppService:
         u = self._find_user(cmd.user_id)
         if cmd.old_password and cmd.new_password:
             # 走带旧密码校验的既有接口
-            from app.repositories.auth_repo import AuthRepo
-            ok = AuthRepo().change_password(cmd.user_id, cmd.old_password, cmd.new_password)
+            ok = IdentityRepo().change_password(cmd.user_id, cmd.old_password, cmd.new_password)
             if ok:
                 u.change_password(cmd.operator)
                 self._publish(u)
@@ -173,7 +173,6 @@ class IdentityAppService:
             org.disable(operator)
         self._orgs.update(org)
         # 同步存储层 status
-        from app.repositories.organization_repo import OrganizationRepo
         if enabled:
             OrganizationRepo.enable(org_id)
         else:
@@ -189,7 +188,6 @@ class IdentityAppService:
             role=cmd.role,
             operator=cmd.operator,
         )
-        from app.repositories.organization_repo import OrganizationRepo
         row = OrganizationRepo.add_member(cmd.org_id, cmd.user_id, role=cmd.role)
         self._publish(org)
         if row is None:
@@ -207,7 +205,6 @@ class IdentityAppService:
     def remove_member(self, org_id: str, user_id: str, operator: str = "system") -> bool:
         org = self._find_org(org_id)
         org.remove_member(user_id, operator)
-        from app.repositories.organization_repo import OrganizationRepo
         OrganizationRepo.remove_member(org_id, user_id)
         self._publish(org)
         return True
@@ -301,80 +298,65 @@ class IdentityAppService:
     # ═══════════════════════════════════════════════════
     def delete_organization(self, org_id: str, hard: bool = False) -> bool:
         """删除组织（soft/hard）。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.delete(org_id, hard=hard)
 
     def recover_organization(self, org_id: str) -> bool:
         """恢复已删除组织。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.recover(org_id)
 
     def get_organization_by_name(self, name: str) -> Optional[dict]:
         """按名称获取组织（未删除；薄委托既有 OrganizationRepo 保持行 schema）。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.get_by_name(name)
 
     def count_organizations(self, search: str = "") -> int:
         """统计组织数。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.count(search=search)
 
     def list_members(self, org_id: str, search: str = "",
                      limit: int = 100) -> list:
         """列出组织成员（薄委托既有 OrganizationRepo，保持既有行 schema）。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.list_members(org_id, search=search, limit=limit)
 
     def get_member(self, member_id: str) -> Optional[dict]:
         """按成员 id 获取组织成员行。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.get_member(member_id)
 
     def count_members(self, org_id: str) -> int:
         """统计组织成员数。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.count_members(org_id)
 
     def list_orgs_by_user(self, user_id: str) -> list:
         """反查用户所属的所有组织（未删除）。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.list_orgs_by_user(user_id)
 
     def list_orgs_by_users(self, user_ids: list) -> dict:
         """批量反查多个用户所属的组织。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.list_orgs_by_users(user_ids)
 
     def list_projects(self, org_id: str) -> list:
         """列出组织绑定的项目。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.list_projects(org_id)
 
     def bind_project(self, project_id: str, org_id: str) -> bool:
         """绑定项目到组织。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.bind_project(project_id, org_id)
 
     def tenant_summary(self) -> dict:
         """租户摘要统计。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.tenant_summary()
 
     def get_tenant_summary(self) -> dict:
         """租户摘要（兼容命名）。"""
-        from app.repositories.organization_repo import OrganizationRepo
         return OrganizationRepo.get_tenant_summary()
     # API Key 用例
     # ═══════════════════════════════════════════════════
     def list_api_keys(self, query: "ListApiKeysQuery" = None) -> list:
         """列出用户 API Key（对接既有 AuthRepo，auth 旁路覆盖）。"""
-        from app.repositories.auth_repo import AuthRepo
         uid = (query.user_id if query else "") or ""
         return AuthRepo().list_api_keys(uid)
 
     def create_api_key(self, cmd: "CreateApiKeyCommand") -> dict:
         """创建 API Key——薄委托既有 AuthRepo（api_keys 表为唯一权威）。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().create_api_key(
             cmd.user_id, description=cmd.description,
             forever=cmd.forever, expire_time=cmd.expire_time,
@@ -382,12 +364,10 @@ class IdentityAppService:
 
     def revoke_api_key(self, cmd: "RevokeApiKeyCommand") -> bool:
         """吊销 API Key——落既有 AuthRepo（key 值存于 api_keys 表）。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().delete_api_key(cmd.key_id)
 
     def toggle_api_key(self, cmd: "ToggleApiKeyCommand") -> bool:
         """启停 API Key（落既有 AuthRepo）。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().toggle_api_key(cmd.key_id, cmd.enable)
 
     # ═══════════════════════════════════════════════════
@@ -395,12 +375,10 @@ class IdentityAppService:
     # ═══════════════════════════════════════════════════
     def list_group_members(self, query: "ListGroupMembersQuery") -> list:
         """列出用户组成员（对接既有 UserGroupRepo）。"""
-        from app.repositories.user_group_repo import UserGroupRepo
         return UserGroupRepo.list_group_members(query.group_id, query.keyword or "")
 
     def add_group_member(self, cmd: "AddGroupMemberCommand") -> Optional[dict]:
         """添加用户组成员——薄委托既有 UserGroupRepo（成员表为唯一权威）。"""
-        from app.repositories.user_group_repo import UserGroupRepo
         return UserGroupRepo.add_group_member(
             cmd.group_id, cmd.user_id,
             username=cmd.username or "", name=cmd.name or "", email=cmd.email or "",
@@ -409,12 +387,10 @@ class IdentityAppService:
 
     def remove_group_member(self, cmd: "RemoveGroupMemberCommand") -> bool:
         """移除用户组成员（经既有 UserGroupRepo）。"""
-        from app.repositories.user_group_repo import UserGroupRepo
         return UserGroupRepo.remove_group_member(cmd.group_id, cmd.user_id)
 
     def remove_group_member_by_id(self, user_role_id: str) -> bool:
         """按关联记录 id 移除用户组成员。"""
-        from app.repositories.user_group_repo import UserGroupRepo
         return UserGroupRepo.remove_group_member_by_id(user_role_id)
 
     # ═══════════════════════════════════════════════════
@@ -422,22 +398,18 @@ class IdentityAppService:
     # ═══════════════════════════════════════════════════
     def add_local_config(self, cmd: "AddLocalConfigCommand") -> dict:
         """新增用户本地配置（落既有 AuthRepo）。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().add_local_config(cmd.user_id, cmd.user_url, cfg_type=cmd.cfg_type)
 
     def get_local_configs(self, user_id: str = "") -> list:
         """读取用户本地配置列表。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().get_local_configs(user_id)
 
     def update_local_config(self, cmd: "UpdateLocalConfigCommand") -> bool:
         """更新用户本地配置。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().update_local_config(cmd.cfg_id, cmd.user_url)
 
     def toggle_local_config(self, cmd: "ToggleLocalConfigCommand") -> bool:
         """启停用户本地配置。"""
-        from app.repositories.auth_repo import AuthRepo
         return AuthRepo().toggle_local_config(cmd.cfg_id, cmd.enable)
 
     # ═══════════════════════════════════════════════════
@@ -462,7 +434,6 @@ class IdentityAppService:
         return role
 
     def _persist_org(self, org: Organization) -> None:
-        from app.repositories.organization_repo import OrganizationRepo
         data = {"name": org.name, "description": org.description}
         if org.enabled:
             data["status"] = "active"

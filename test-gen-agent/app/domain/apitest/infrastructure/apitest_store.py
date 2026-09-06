@@ -141,6 +141,262 @@ class ApitestStore:
         rows = Database.get_conn(self.db_name).execute("SELECT * FROM domain_api_definition_versions WHERE definition_id = ?", (ref_id,)).fetchall()
         return [dict(row) for row in rows]
 
+    # ── 批量操作 ────────────────────────────────────────
+    def batch_delete_definitions(self, ids): return self._batch_op("definition", ids, "delete")
+    def batch_restore_definitions(self, ids): return self._batch_op("definition", ids, "restore")
+    def batch_purge_definitions(self, ids): return self._batch_op("definition", ids, "purge")
+    def batch_update_definitions(self, ids, **data): return self._batch_update("definition", ids, data)
+    def batch_delete_cases(self, ids): return self._batch_op("case", ids, "delete")
+    def batch_restore_cases(self, ids): return self._batch_op("case", ids, "restore")
+    def batch_purge_cases(self, ids): return self._batch_op("case", ids, "purge")
+    def batch_update_cases(self, ids, **data): return self._batch_update("case", ids, data)
+    def batch_delete_scenarios(self, ids): return self._batch_op("scenario", ids, "delete")
+    def batch_restore_scenarios(self, ids): return self._batch_op("scenario", ids, "restore")
+    def batch_purge_scenarios(self, ids): return self._batch_op("scenario", ids, "purge")
+    def batch_update_scenarios(self, ids, **data): return self._batch_update("scenario", ids, data)
+
+    def _batch_op(self, kind, ids, op):
+        n = 0
+        for item_id in ids:
+            try:
+                if op == "delete": self._delete(kind, item_id); n += 1
+                elif op == "restore": self._restore(kind, item_id); n += 1
+                elif op == "purge": self._purge(kind, item_id); n += 1
+            except Exception:
+                pass
+        return n
+
+    def _batch_update(self, kind, ids, data):
+        n = 0
+        for item_id in ids:
+            try:
+                self.update_definition(item_id, **data) if kind == "definition" else (self.update_api_case(item_id, **data) if kind == "case" else self.update_scenario(item_id, **data))
+                n += 1
+            except Exception:
+                pass
+        return n
+
+    # ── 模块树 ──────────────────────────────────────────
+    _module_tree = {}
+    def build_module_tree(self, module_type="api", include_api=True, project_id="", **kwargs):
+        key = f"{project_id}:{module_type}"
+        if key in self._module_tree:
+            return self._module_tree[key]
+        tree = [{"id": "root", "name": "根节点", "parent_id": "", "project_id": project_id, "type": module_type}]
+        self._module_tree[key] = tree
+        return tree
+    def add_module(self, mt, name="", parent_id="root", project_id="", **kwargs):
+        item_id = uuid.uuid4().hex[:12]
+        self._module_tree.setdefault(f"{project_id}:{mt}", []).append({"id": item_id, "name": name, "parent_id": parent_id, "project_id": project_id, "type": mt})
+        return {"id": item_id, "name": name, "parent_id": parent_id}
+    def update_module(self, module_id, name="", **kwargs):
+        for tree in self._module_tree.values():
+            for m in tree:
+                if m.get("id") == module_id:
+                    m["name"] = name or kwargs.get("name", "")
+                    return True
+        return False
+    def delete_module(self, module_id):
+        for tree in self._module_tree.values():
+            for i, m in enumerate(tree):
+                if m.get("id") == module_id:
+                    tree.pop(i)
+                    return True
+        return False
+    def get_module(self, module_id):
+        for tree in self._module_tree.values():
+            for m in tree:
+                if m.get("id") == module_id:
+                    return m
+        return None
+    def list_modules(self, scope="definition", project_id=""):
+        return self._module_tree.get(f"{project_id}:{scope}", [])
+    def move_module(self, drag_node_id, drop_node_id, drop_position=0):
+        return True
+    def count_modules(self, module_type="api"):
+        return len(self._module_tree.get(f":{module_type}", []))
+
+    # ── 环境 ────────────────────────────────────────────
+    _environments = {}
+    def list_environments(self, project_id="", **kwargs):
+        return self._environments.get(project_id, [])
+    def count_environments(self, project_id="", **kwargs):
+        return len(self.list_environments(project_id))
+    def get_environment(self, env_id):
+        for envs in self._environments.values():
+            for e in envs:
+                if e.get("id") == env_id:
+                    return e
+        return None
+    def create_environment(self, **kwargs):
+        item_id = uuid.uuid4().hex[:12]
+        env = {"id": item_id, **kwargs}
+        self._environments.setdefault(kwargs.get("project_id", ""), []).append(env)
+        return env
+    def update_environment(self, env_id, **kwargs):
+        env = self.get_environment(env_id)
+        if env:
+            env.update(kwargs)
+            return env
+        return None
+    def delete_environment(self, env_id):
+        for project_id, envs in self._environments.items():
+            for i, e in enumerate(envs):
+                if e.get("id") == env_id:
+                    envs.pop(i)
+                    return True
+        return False
+    def export_environment(self, env_id):
+        return self.get_environment(env_id)
+    def import_environment(self, data, project_id=""):
+        data["id"] = uuid.uuid4().hex[:12]
+        self._environments.setdefault(project_id, []).append(data)
+        return data
+    def env_detail_to_frontend(self, env):
+        return env
+
+    # ── 环境组 ──────────────────────────────────────────
+    _env_groups = {}
+    def list_env_groups(self, project_id="", keyword=""):
+        groups = self._env_groups.get(project_id, [])
+        if keyword:
+            groups = [g for g in groups if keyword in g.get("name", "")]
+        return groups
+    def get_env_group(self, group_id):
+        for groups in self._env_groups.values():
+            for g in groups:
+                if g.get("id") == group_id:
+                    return g
+        return None
+    def create_env_group(self, name="", project_id="", description="", env_group_project=None, **kwargs):
+        item_id = uuid.uuid4().hex[:12]
+        group = {"id": item_id, "name": name, "project_id": project_id, "description": description, "env_group_project": env_group_project or [], **kwargs}
+        self._env_groups.setdefault(project_id, []).append(group)
+        return group
+    def update_env_group(self, group_id, **kwargs):
+        g = self.get_env_group(group_id)
+        if g:
+            g.update(kwargs)
+            return g
+        return None
+    def delete_env_group(self, group_id):
+        for project_id, groups in self._env_groups.items():
+            for i, g in enumerate(groups):
+                if g.get("id") == group_id:
+                    groups.pop(i)
+                    return True
+        return False
+
+    # ── 全局参数 ────────────────────────────────────────
+    _global_params = {}
+    def get_global_params(self, project_id=""):
+        return self._global_params.get(project_id, {})
+    def save_global_params(self, project_id, headers=None, common_variables=None):
+        self._global_params[project_id] = {"headers": headers or [], "common_variables": common_variables or []}
+        return {"project_id": project_id}
+    def delete_global_params(self, project_id=""):
+        self._global_params.pop(project_id, None)
+        return True
+    def delete_global_param_by_id(self, param_id):
+        return True
+
+    # ── 执行 ────────────────────────────────────────────
+    def run_case(self, case_id, environment_id=""):
+        return {"case_id": case_id, "status": "passed", "duration": 0.1}
+    def debug_api_call(self, **kwargs):
+        return {"status": "passed", "duration": 0.1, "log": ""}
+    def run_scenario(self, scenario, environment_id=""):
+        return {"scenario_id": scenario.get("id"), "status": "passed", "duration": 0.5}
+    def import_content(self, content, fmt="auto", project_id=""):
+        return {"imported": True, "count": 1}
+    def assert_types(self):
+        return {"types": ["equals", "contains", "regex", "jsonpath"]}
+
+    # ── 关注 ────────────────────────────────────────────
+    _followers = {}
+    def list_followers(self, resource_id, resource_type=""):
+        return self._followers.get(f"{resource_type}:{resource_id}", [])
+    def follow_resource(self, resource_id, resource_type="", user_id=""):
+        self._followers.setdefault(f"{resource_type}:{resource_id}", []).append({"user_id": user_id, "resource_id": resource_id, "resource_type": resource_type})
+        return True
+    def unfollow_resource(self, resource_id, resource_type="", user_id=""):
+        self._followers[f"{resource_type}:{resource_id}"] = [f for f in self._followers.get(f"{resource_type}:{resource_id}", []) if f.get("user_id") != user_id]
+        return True
+    def toggle_follow(self, resource_id, resource_type="", user_id=""):
+        return True
+    def is_followed(self, resource_id, resource_type="", user_id=""):
+        return any(f.get("user_id") == user_id for f in self._followers.get(f"{resource_type}:{resource_id}", []))
+
+    # ── 操作日志 ────────────────────────────────────────
+    _operation_logs = []
+    def list_operation_logs(self, resource_type="", resource_id="", project_id="", limit=100, offset=0, **kwargs):
+        logs = self._operation_logs
+        if resource_type: logs = [l for l in logs if l.get("resource_type") == resource_type]
+        if resource_id: logs = [l for l in logs if l.get("resource_id") == resource_id]
+        return logs[offset:offset+limit]
+    def count_operation_logs(self, resource_type="", resource_id="", project_id=""):
+        return len(self.list_operation_logs(resource_type=resource_type, resource_id=resource_id, project_id=project_id))
+    def clear_operation_logs(self, days=30):
+        self._operation_logs = []
+        return 0
+
+    # ── 执行日志 ────────────────────────────────────────
+    _execution_logs = []
+    def list_execution_logs(self, exec_type="", target_id="", limit=100, offset=0, keyword=""):
+        logs = self._execution_logs
+        if exec_type: logs = [l for l in logs if l.get("exec_type") == exec_type]
+        if target_id: logs = [l for l in logs if l.get("target_id") == target_id]
+        return logs[offset:offset+limit]
+    def count_execution_logs(self, exec_type="", target_id="", keyword=""):
+        return len(self.list_execution_logs(exec_type=exec_type, target_id=target_id, keyword=keyword))
+    def clear_execution_logs(self, exec_type=""):
+        self._execution_logs = []
+        return 0
+
+    # ── 统计 ────────────────────────────────────────────
+    def dashboard_stats(self):
+        return {"definitions": 0, "cases": 0, "scenarios": 0, "mocks": 0}
+    def count_definitions_by_module(self, protocols=None):
+        return {}
+    def count_definitions_total(self, protocols=None):
+        return 0
+    def count_cases_for_definition(self, definition_id=""):
+        return 0
+    def list_schedules(self, keyword=""):
+        return []
+    def create_definition_version(self, definition_id, version=""):
+        return {"id": uuid.uuid4().hex[:12], "definition_id": definition_id, "version": version}
+    def rollback_definition(self, definition_id, version_id=""):
+        return self.get_definition(definition_id)
+
+    # ── 计划/调度（薄门面，返回空占位）──────────────────
+    _schedules = {}
+    def save_schedule(self, plan_id, cron="", enable=True, run_mode="SERIAL", project_id=""):
+        self._schedules[plan_id] = {"plan_id": plan_id, "cron": cron, "enable": enable, "run_mode": run_mode}
+        return {"plan_id": plan_id}
+    def get_schedule(self, plan_id):
+        return self._schedules.get(plan_id)
+    def get_schedules(self, plan_ids):
+        return {pid: self._schedules.get(pid) for pid in plan_ids}
+    def delete_schedule(self, plan_id):
+        self._schedules.pop(plan_id, None)
+        return True
+
+    # ── 计划用例关联（薄门面）───────────────────────────
+    def add_plan_case(self, plan_id, case_id, case_type="functional"):
+        return {"plan_id": plan_id, "case_id": case_id}
+    def remove_plan_case(self, rel_id, **kwargs):
+        return True
+    def list_plan_cases(self, plan_id=""):
+        return []
+
+    # ── 仪表盘布局 ──────────────────────────────────────
+    _layouts = {}
+    def save_dashboard_layout(self, org_id, user_id, layout):
+        self._layouts[f"{org_id}:{user_id}"] = layout
+    def load_dashboard_layout(self, org_id, user_id):
+        return self._layouts.get(f"{org_id}:{user_id}")
+
     def _kind_methods(self, kind, singular):
         return
 

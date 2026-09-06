@@ -5,7 +5,7 @@ import uuid
 from typing import List, Optional
 
 from app.domain.project_version.domain.entities.project_version import ProjectVersion
-from app.repositories.project_version_repo import project_version_repo
+from app.domain.project_version.infrastructure.project_version_store import project_version_repo
 
 
 class ProjectVersionRepoAdapter:

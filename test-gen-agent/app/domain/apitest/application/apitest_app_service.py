@@ -52,6 +52,7 @@ from app.domain.apitest.infrastructure.apitest_repository_impl import (
     mock_repository,
     scenario_repository,
 )
+from app.domain.apitest.infrastructure.apitest_store import ApitestRepo
 from app.domain.common.domain_events import event_bus
 from app.domain.common.exceptions import AggregateNotFound
 
@@ -475,7 +476,6 @@ class ApitestAppService:
         委托既有 ApitestRepo.run_mock_request 实现路径匹配与响应生成；
         此方法在应用层暴露供门面桥接，语义与旧契约一致。
         """
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.run_mock_request(
             method=cmd.method, path=cmd.path, base_path=cmd.base_path,
             query_params=cmd.query_params, request_body=cmd.request_body,
@@ -493,89 +493,71 @@ class ApitestAppService:
     # ═══════════════════════════════════════════════════
     def list_environments(self, project_id: str = "", **kwargs) -> list:
         """环境列表（apitest 测试环境配置，非 Docker 环境域）。"""
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_environments(project_id=project_id, **kwargs)
 
     def count_environments(self, project_id: str = "", **kwargs) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_environments(project_id=project_id, **kwargs)
 
     def get_environment(self, env_id: str) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.get_environment(env_id)
 
     def create_environment(self, **kwargs) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.create_environment(**kwargs)
 
     def update_environment(self, env_id: str, **kwargs) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.update_environment(env_id, **kwargs)
 
     def delete_environment(self, env_id: str) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.delete_environment(env_id)
 
     def export_environment(self, env_id: str) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.export_environment(env_id)
 
     def import_environment(self, data: dict, project_id: str = "") -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.import_environment(data, project_id=project_id)
 
     def env_detail_to_frontend(self, env: dict) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.env_detail_to_frontend(env)
 
     # ═══════════════════════════════════════════════════
     # Environment Group (env_groups)
     # ═══════════════════════════════════════════════════
     def list_env_groups(self, project_id: str = "", keyword: str = "") -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_env_groups(project_id=project_id, keyword=keyword)
 
     def get_env_group(self, group_id: str) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.get_env_group(group_id)
 
     def create_env_group(self, name: str = "", project_id: str = "",
                          description: str = "", env_group_project: list = None,
                          **kwargs) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.create_env_group(
             name=name, project_id=project_id, description=description,
             env_group_project=env_group_project, **kwargs,
         )
 
     def update_env_group(self, group_id: str, **kwargs) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.update_env_group(group_id, **kwargs)
 
     def delete_env_group(self, group_id: str) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.delete_env_group(group_id)
 
     # ═══════════════════════════════════════════════════
     # Global Params
     # ═══════════════════════════════════════════════════
     def get_global_params(self, project_id: str) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.get_global_params(project_id)
 
     def save_global_params(self, project_id: str, headers: list = None,
                            common_variables: list = None) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.save_global_params(
             project_id, headers=headers, common_variables=common_variables,
         )
 
     def delete_global_params(self, project_id: str) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.delete_global_params(project_id)
 
     def delete_global_param_by_id(self, param_id: str) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.delete_global_param_by_id(param_id)
 
     # ═══════════════════════════════════════════════════
@@ -583,7 +565,6 @@ class ApitestAppService:
     # ═══════════════════════════════════════════════════
     def build_module_tree(self, module_type: str = "api", include_api: bool = True,
                           project_id: str = "", **kwargs) -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.build_module_tree(
             module_type, include_api=include_api, project_id=project_id,
         )
@@ -591,90 +572,73 @@ class ApitestAppService:
     def add_module(self, scope: str = "definition", name: str = "",
                    parent_id: str = "root", project_id: str = "",
                    module_type: str = "", **kwargs) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         mt = scope if scope else module_type
         return ApitestRepo.add_module(
             mt, name=name, parent_id=parent_id, project_id=project_id,
         )
 
     def update_module(self, module_id: str, name: str = "", **kwargs) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.update_module(
             module_id, name=name or kwargs.get("name", ""),
         )
 
     def delete_module(self, module_id: str) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.delete_module(module_id)
 
     def get_module(self, module_id: str) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.get_module(module_id)
 
     def list_modules(self, scope: str = "definition", project_id: str = "") -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_modules(scope, project_id=project_id)
 
     def move_module(self, drag_node_id: str, drop_node_id: str,
                     drop_position: int = 0) -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.move_module(
             drag_node_id, drop_node_id, drop_position=drop_position,
         )
 
     def count_modules(self, module_type: str = "api") -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_modules(module_type)
 
     # ═══════════════════════════════════════════════════
     # 执行（Execution）
     # ═══════════════════════════════════════════════════
     def run_case(self, case_id: str, environment_id: str = "") -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.run_case(case_id, environment_id=environment_id)
 
     def debug_api_call(self, **kwargs) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.debug_api_call(**kwargs)
 
     def run_scenario(self, scenario: dict, environment_id: str = "") -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.run_scenario(scenario, environment_id)
 
     def import_content(self, content: str, fmt: str = "auto",
                        project_id: str = "") -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.import_content(content, fmt, project_id)
 
     def get_assert_types(self) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.assert_types()
 
     # ═══════════════════════════════════════════════════
     # Followers（关注）
     # ═══════════════════════════════════════════════════
     def list_followers(self, resource_id: str, resource_type: str = "") -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_followers(resource_id, resource_type)
 
     def follow_resource(self, resource_id: str, resource_type: str = "",
                         user_id: str = "") -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.follow_resource(resource_id, resource_type, user_id)
 
     def unfollow_resource(self, resource_id: str, resource_type: str = "",
                           user_id: str = "") -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.unfollow_resource(resource_id, resource_type, user_id)
 
     def toggle_follow(self, resource_id: str, resource_type: str = "",
                       user_id: str = "") -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.toggle_follow(resource_id, resource_type, user_id)
 
     def is_followed(self, resource_id: str, resource_type: str = "",
                     user_id: str = "") -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.is_followed(resource_id, resource_type, user_id)
 
     # ═══════════════════════════════════════════════════
@@ -683,7 +647,6 @@ class ApitestAppService:
     def list_operation_logs(self, resource_type: str = "", resource_id: str = "",
                             project_id: str = "", limit: int = 100,
                             offset: int = 0, **kwargs) -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_operation_logs(
             resource_type=resource_type, resource_id=resource_id,
             project_id=project_id, limit=limit, offset=offset, **kwargs,
@@ -691,14 +654,12 @@ class ApitestAppService:
 
     def count_operation_logs(self, resource_type: str = "",
                              resource_id: str = "", project_id: str = "") -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_operation_logs(
             resource_type=resource_type, resource_id=resource_id,
             project_id=project_id,
         )
 
     def clear_operation_logs(self, days: int = 30) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.clear_operation_logs(days=days)
 
     # ═══════════════════════════════════════════════════
@@ -707,54 +668,43 @@ class ApitestAppService:
     def list_execution_logs(self, exec_type: str = "", target_id: str = "",
                             limit: int = 100, offset: int = 0,
                             keyword: str = "") -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_execution_logs(
             exec_type, target_id, limit, offset=offset, keyword=keyword)
 
     def count_execution_logs(self, exec_type: str = "",
                              target_id: str = "", keyword: str = "") -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_execution_logs(exec_type, target_id, keyword=keyword)
 
     def clear_execution_logs(self, exec_type: str = "") -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.clear_execution_logs(exec_type)
 
     # ═══════════════════════════════════════════════════
     # 统计 / 定义版本辅助
     # ═══════════════════════════════════════════════════
     def dashboard_stats(self) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.dashboard_stats()
 
     def count_definitions_by_module(self, protocols=None) -> dict:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_definitions_by_module(protocols=protocols)
 
     def count_definitions_total(self, protocols=None) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_definitions_total(protocols=protocols)
 
     def count_cases_for_definition(self, definition_id: str) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_cases_for_definition(definition_id)
 
     def list_schedules(self, keyword: str = "") -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_schedules(keyword=keyword)
 
     def list_definition_versions(self, ref_id: str) -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_definition_versions(ref_id)
 
     def create_definition_version(self, definition_id: str,
                                   version: str = "") -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.create_definition_version(definition_id, version)
 
     def rollback_definition(self, definition_id: str,
                             version_id: str) -> Optional[dict]:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.rollback_definition(definition_id, version_id)
 
     # ═══════════════════════════════════════════════════
@@ -766,7 +716,6 @@ class ApitestAppService:
                                   protocols: Optional[list] = None,
                                   module_ids: Optional[list] = None) -> list:
         """definition 列表直接透传（薄门面）。"""
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_definitions(
             keyword, limit, offset, project_id=project_id,
             include_latest_only=include_latest_only,
@@ -774,41 +723,35 @@ class ApitestAppService:
         )
 
     def count_definitions(self, project_id: str = "", **kwargs) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_definitions(project_id=project_id, **kwargs)
 
     def list_cases_via_repo(self, keyword: str = "", limit: int = 100,
                             offset: int = 0, project_id: str = "",
                             **kwargs) -> list:
         """case 列表直接透传（薄门面）。"""
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_api_cases(
             keyword=keyword, limit=limit, offset=offset,
             project_id=project_id, **kwargs,
         )
 
     def count_cases(self, project_id: str = "", **kwargs) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_api_cases(project_id=project_id, **kwargs)
 
     def list_scenarios_via_repo(self, keyword: str = "", limit: int = 100,
                                 offset: int = 0, project_id: str = "",
                                 **kwargs) -> list:
         """scenario 列表直接透传（薄门面）。"""
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.list_scenarios(
             keyword=keyword, limit=limit, offset=offset,
             project_id=project_id, **kwargs,
         )
 
     def count_scenarios(self, project_id: str = "", **kwargs) -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         return ApitestRepo.count_scenarios(project_id=project_id, **kwargs)
 
     # 回收站（definition/case/scenario）—— 经已有聚合仓储实现
     def list_trash_by_repo(self, project_id: str = "", limit: int = 100,
                            resource: str = "definition") -> list:
-        from app.repositories.apitest_repo import ApitestRepo
         if resource == "definition":
             return ApitestRepo.list_trash_definitions(project_id, limit)
         if resource == "case":
@@ -817,7 +760,6 @@ class ApitestAppService:
 
     def count_trash_by_repo(self, project_id: str = "",
                             resource: str = "definition") -> int:
-        from app.repositories.apitest_repo import ApitestRepo
         if resource == "definition":
             return ApitestRepo.count_trash_definitions(project_id)
         if resource == "case":
@@ -827,7 +769,6 @@ class ApitestAppService:
     def batch_op_by_repo(self, ids: list, op: str = "delete",
                          resource: str = "definition", **fields) -> int:
         """批量操作薄门面（delete/restore/purge/update）。"""
-        from app.repositories.apitest_repo import ApitestRepo
         if resource == "definition":
             if op == "delete":
                 return ApitestRepo.batch_delete_definitions(ids)
@@ -856,7 +797,6 @@ class ApitestAppService:
 
     def purge_by_repo(self, resource_id: str,
                       resource: str = "definition") -> bool:
-        from app.repositories.apitest_repo import ApitestRepo
         if resource == "definition":
             return ApitestRepo.purge_definition(resource_id)
         if resource == "case":
