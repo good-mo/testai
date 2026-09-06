@@ -1,0 +1,13 @@
+{
+  "name": "e2e-smoke",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "P0 核心冒烟 E2E（Playwright + Chromium）",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

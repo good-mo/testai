@@ -1,4 +1,10 @@
-"""误报规则应用服务。"""
+"""误报规则应用服务。
+
+修复说明：
+  - 修改 import：从 FakeErrorRepoAdapter 改为 FakeErrorRepositoryImpl
+  - 使用模块级单例 fake_error_repository
+  - 其他代码完全不变（方法签名和业务逻辑保持一致）
+"""
 from __future__ import annotations
 
 import uuid
@@ -11,8 +17,11 @@ from app.domain.fake_error.application.dto import (
     UpdateRulesCommand,
 )
 from app.domain.fake_error.domain.entities.error_rule import FakeErrorRule
+
+# ── 修复：改 import ──────────────────────────────────────────
 from app.domain.fake_error.infrastructure.fake_error_repository_impl import (
-    FakeErrorRepoAdapter,
+    FakeErrorRepositoryImpl,
+    fake_error_repository,
 )
 
 
@@ -20,7 +29,8 @@ class FakeErrorAppService:
     """误报规则用例编排服务。"""
 
     def __init__(self, repo=None):
-        self._repo = repo or FakeErrorRepoAdapter()
+        # ── 修复：使用新的 Repository 单例 ──────────────────
+        self._repo = repo or fake_error_repository
 
     def list(self, cmd: ListRulesCommand) -> list:
         rules = self._repo.list(cmd.project_id)

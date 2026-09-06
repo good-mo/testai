@@ -1,0 +1,53 @@
+"""缺陷聚合仓储接口（Repository Port）。
+
+仅在 domain 层定义、由 infrastructure 实现。应用层依赖此接口而非具体
+实现，便于测试替换（内存仓储）与多存储切换。仓储粒度为"聚合"：Defect
+及其值对象作为一个整体被读取/保存，保证事务一致性。
+"""
+from __future__ import annotations
+
+from typing import List, Optional, Protocol, Tuple
+
+from app.domain.defects.domain.entities.defect import Defect
+
+
+class DefectRepository(Protocol):
+    """缺陷聚合仓储契约。"""
+
+    def next_id(self) -> str: ...
+
+    def save(self, defect: Defect) -> Defect: ...
+
+    def update(self, defect: Defect) -> Optional[Defect]: ...
+
+    def find_by_id(self, defect_id: str, include_deleted: bool = False) -> Optional[Defect]: ...
+
+    def soft_delete(self, defect_id: str) -> bool: ...
+
+    def restore(self, defect_id: str) -> bool: ...
+
+    def purge(self, defect_id: str) -> bool: ...
+
+    def list_trash(self, limit: int = 100, offset: int = 0) -> Tuple[List[Defect], int]: ...
+
+    def list(self, *, status: str = "", severity: str = "", limit: int = 100,
+             offset: int = 0) -> Tuple[List[Defect], int]: ...
+
+    def stats(self) -> dict: ...
+
+    # ── 评论（子表，非聚合根写路径的旁路读写）──────────────
+    def list_comments(self, bug_id: str) -> List[dict]: ...
+
+    def create_comment(self, bug_id: str, content: str = "", parent_id: str = "",
+                       create_user: str = "", reply_user: str = "",
+                       notifier: str = "") -> dict: ...
+
+    def update_comment(self, comment_id: str, content: str) -> Optional[dict]: ...
+
+    def delete_comment(self, comment_id: str) -> bool: ...
+
+    # ── 旁路：自动创建 / 永久删除 ────────────────────────
+    def auto_create_from_result(self, file_path: str, test_result: dict,
+                                test_case_id: str = "") -> Optional[dict]: ...
+
+    def permanent_delete(self, defect_id: str) -> bool: ...

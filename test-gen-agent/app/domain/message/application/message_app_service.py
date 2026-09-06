@@ -1,6 +1,6 @@
 """消息应用服务（Application Service / Use Case 门面）。
 
-负责消息领域（机器人/消息设置/站内通知）的用例编排。
+负责消息领域（机器人/消息设置/站内通知/消息模板/用户列表集成）的用例编排。
 """
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ from typing import Optional
 
 from app.domain.common.domain_events import event_bus
 from app.domain.message.application.dto import (
+    MessageUserListQuery,
     NotificationCreateCommand,
     NotificationQuery,
     NotificationReadAllCommand,
@@ -19,6 +20,8 @@ from app.domain.message.application.dto import (
     RobotGetCommand,
     RobotListQuery,
     RobotUpdateCommand,
+    TemplateDetailQuery,
+    TemplateFieldsQuery,
 )
 from app.domain.message.domain.entities.notification import Notification
 from app.domain.message.domain.entities.robot import Robot
@@ -43,6 +46,42 @@ BUILTIN_ROBOTS = [
         "enable": True,
     },
 ]
+
+# 消息模板默认字段定义（所有事件类型通用）
+_COMMON_TEMPLATE_FIELDS = [
+    {"key": "operator", "label": "操作人", "description": "执行当前操作的用户名称", "example": "张三"},
+    {"key": "projectName", "label": "项目名称", "description": "所属项目名称", "example": "测试项目A"},
+    {"key": "resourceName", "label": "资源名称", "description": "被操作对象的名称", "example": "用例-登录功能"},
+    {"key": "operation", "label": "操作类型", "description": "当前操作的动作名称", "example": "新建用例"},
+    {"key": "createTime", "label": "操作时间", "description": "操作发生的时间", "example": "2025-01-15 14:30:00"},
+]
+
+# 按事件类型扩展的额外字段
+_EVENT_EXTRA_FIELDS = {
+    "CASE_REVIEW": [
+        {"key": "reviewResult", "label": "评审结果", "description": "用例评审的结论", "example": "通过"},
+        {"key": "reviewComment", "label": "评审意见", "description": "评审人的备注", "example": "用例覆盖充分"},
+    ],
+    "CASE_EXECUTE": [
+        {"key": "executeResult", "label": "执行结果", "description": "用例执行状态", "example": "通过"},
+        {"key": "bugCount", "label": "发现缺陷数", "description": "本次执行发现的缺陷数量", "example": "2"},
+    ],
+    "CREATE": [
+        {"key": "bugPriority", "label": "缺陷优先级", "description": "缺陷优先级", "example": "P1"},
+        {"key": "bugStatus", "label": "缺陷状态", "description": "缺陷当前状态", "example": "新建"},
+    ],
+}
+
+# 默认模板内容
+_DEFAULT_TEMPLATE = (
+    "操作人：${operator}\n"
+    "项目：${projectName}\n"
+    "对象：${resourceName}\n"
+    "操作：${operation}\n"
+    "时间：${createTime}"
+)
+
+_DEFAULT_SUBJECT_TEMPLATE = "【${projectName}】${operation}通知"
 
 
 class MessageAppService:
@@ -133,8 +172,6 @@ class MessageAppService:
     # ── 消息设置 ─────────────────────────────────────────
     def list_message_settings(self, project_id: str) -> list:
         """消息设置完整树。"""
-        # 复用既有实现逻辑，此处简化直接返回配置树结构
-        # 详细实现在原 message_service 中，此处作为 DDD 门面转发
         from app.domain.message.domain.services.msg_config_builder import (
             build_settings_tree,
         )
@@ -142,6 +179,71 @@ class MessageAppService:
 
     def save_message_config(self, data: dict) -> dict:
         return self._repo.upsert_task(data)
+
+    # ── 消息模板 ─────────────────────────────────────────
+    def get_template_detail(self, cmd: TemplateDetailQuery) -> dict:
+        """获取消息模板详情。
+
+        查询指定 project / task_type / event / robot 的模板配置；
+        若未保存过则返回默认模板。
+        """
+        saved = self._repo.get_task(
+            cmd.project_id, cmd.task_type, cmd.event, cmd.robot_id,
+        )
+        if saved:
+            return {
+                "template": saved.get("template", ""),
+                "defaultTemplate": _DEFAULT_TEMPLATE,
+                "useDefaultTemplate": bool(saved.get("use_default_template", True)),
+                "subject": saved.get("subject", ""),
+                "defaultSubject": f"【{cmd.robot_id}】通知",
+                "useDefaultSubject": bool(saved.get("use_default_subject", True)),
+                "enable": bool(saved.get("enable", False)),
+                "robotId": cmd.robot_id,
+                "taskType": cmd.task_type,
+                "event": cmd.event,
+            }
+        # 未保存过 → 返回默认模板
+        return {
+            "template": "",
+            "defaultTemplate": _DEFAULT_TEMPLATE,
+            "useDefaultTemplate": True,
+            "subject": "",
+            "defaultSubject": _DEFAULT_SUBJECT_TEMPLATE,
+            "useDefaultSubject": True,
+            "enable": False,
+            "robotId": cmd.robot_id,
+            "taskType": cmd.task_type,
+            "event": cmd.event,
+        }
+
+    def get_template_fields(self, cmd: TemplateFieldsQuery) -> list:
+        """获取消息模板可用字段列表。
+
+        返回通用字段 + 按事件类型扩展的字段，供前端模板编辑器使用。
+        """
+        fields = list(_COMMON_TEMPLATE_FIELDS)
+        extra = _EVENT_EXTRA_FIELDS.get(cmd.event, [])
+        fields.extend(extra)
+        return fields
+
+    # ── 用户列表查询集成（跨域委托 identity） ────────────
+    def list_message_users(self, query: MessageUserListQuery) -> dict:
+        """获取用户列表（委托 identity 域）。
+
+        消息域在配置通知接收人时需要选择用户，
+        此处跨域委托给 identity_app_service.list_users()。
+        """
+        from app.domain.identity.application.identity_app_service import (
+            identity_app_service,
+        )
+        from app.domain.identity.application.dto import UserListQuery
+        identity_query = UserListQuery(
+            search=query.search,
+            limit=query.limit,
+            offset=query.offset,
+        )
+        return identity_app_service.list_users(identity_query)
 
     # ── 站内通知 ─────────────────────────────────────────
     def create_notification(self, cmd: NotificationCreateCommand) -> dict:

@@ -40,7 +40,7 @@ class CaseAppService:
     """测试用例用例编排服务。"""
 
     def __init__(self, repo: CaseRepository = None):
-        # 允许依赖注入（便于测试替身）；默认使用既有存储适配器
+        # 允许依赖注入（便于测试替身）；默认使用 DDD Repository
         self._repo: CaseRepository = repo or case_repository
 
     # ── 聚合级基础操作 ─────────────────────────────
@@ -78,18 +78,13 @@ class CaseAppService:
         return case.to_dict() if case else None
 
     def update(self, cmd: UpdateCaseCommand) -> Optional[dict]:
-        """更新聚合并记录字段级审计 + 版本快照。
-
-        支持：标题/描述/正文内容/优先级/测试类型/标签/元数据，以及受状态机
-        约束的状态迁移（`status` 经由领域命令 change_status 走合法迁移）。
-        """
+        """更新聚合并记录字段级审计 + 版本快照。"""
         case = self._find_or_raise(cmd.case_id)
         before = case.to_dict()
 
         def _diff(attr):
             return str(before.get(attr, ""))
 
-        # 合并 metadata 进聚合（模块归属/前置条件等散列键收敛在此）
         if cmd.metadata is not None:
             meta_merge = dict(cmd.metadata)
             case._metadata.update(meta_merge)
@@ -111,14 +106,12 @@ class CaseAppService:
             case.change_priority(cmd.priority)
         if cmd.test_type is not None:
             case.change_test_type(cmd.test_type)
-        # 状态变更走领域状态机（非法迁移/废弃态拒绝均在此守护）
         if cmd.status is not None and str(cmd.status) != before.get("status", ""):
             case.change_status(str(cmd.status), cmd.operator)
 
         self._repo.update(case)
         self._publish(case)
         try:
-            # 字段级审计（仅针对发生了变化的字段）
             after = case.to_dict()
             for k in ("title", "description", "source_code", "test_code",
                       "file_path", "priority", "test_type", "requirement_ref"):
@@ -155,11 +148,7 @@ class CaseAppService:
         return case.to_dict()
 
     def submit_review(self, cmd: ReviewCommand) -> Optional[dict]:
-        """提交评审（草稿→评审中）。
-
-        经聚合状态机校验并更新用例状态，同时将评审记录写入 case_reviews
-        管理表（供 get_reviews 查询）。
-        """
+        """提交评审（草稿→评审中）。"""
         case = self._find_or_raise(cmd.case_id)
         case.submit_for_review(reviewer=cmd.reviewer, operator=cmd.operator)
         self._repo.update(case)
@@ -175,10 +164,7 @@ class CaseAppService:
         return case.to_dict()
 
     def review(self, cmd: ReviewCommand) -> Optional[dict]:
-        """处理评审结论（approve/reject/need_revise）。
-
-        经聚合状态机更新用例状态，同时将评审结论写入 case_reviews 管理表。
-        """
+        """处理评审结论（approve/reject/need_revise）。"""
         case = self._find_or_raise(cmd.case_id)
         case.review(outcome=cmd.outcome, reviewer=cmd.reviewer, comment=cmd.comment)
         self._repo.update(case)
@@ -207,12 +193,10 @@ class CaseAppService:
         return case.to_dict()
 
     def get_reviews(self, case_id: str) -> list:
-        """查询用例评审记录（case_reviews 管理表）。"""
+        """查询用例评审记录。"""
         return self._repo.get_reviews(case_id)
 
     def soft_delete(self, cmd: DeleteCaseCommand) -> bool:
-        # 领域层校验并生成软删除事实；落库统一委托 trash_case（原子：
-        # 快照进回收站 + 置 deprecated），因此不必先单独 update 主表。
         case = self._find_or_raise(cmd.case_id)
         case.delete(cmd.operator, cmd.reason)
         self._repo.soft_delete(case.id.value, deleted_by=cmd.operator, reason=cmd.reason)
@@ -224,7 +208,6 @@ class CaseAppService:
         return True
 
     def restore(self, cmd: RestoreCaseCommand) -> bool:
-        # 领域层校验并从回收站快照恢复为草稿；落库统一委托 restore_case。
         case = self._find_deleted_or_raise(cmd.case_id)
         case.restore(cmd.operator)
         self._repo.restore(case.id.value, operator=cmd.operator)
@@ -269,10 +252,7 @@ class CaseAppService:
         items, total = self._repo.list_deleted(limit=limit, offset=offset)
         return {"list": [c.to_dict() for c in items], "total": total}
 
-    # ── 导入 / 导出（旁路方法 · DDD 覆盖）──────────────
-    # case_service 的 import/export 曾直连 CaseRepo；此处经应用门面收敛，
-    # 使导入路径（写）与导出路径（读）统一由用例上下文编排，格式/字节契约
-    # 透传既有 CaseRepo（零回归、可回滚）。
+    # ── 导入 / 导出 ──────────────────────────────────
     def export_excel(self, cases: list) -> bytes:
         return self._repo.export_excel(cases)
 
@@ -285,82 +265,65 @@ class CaseAppService:
     def import_mindmap(self, content: str, operator: str = "") -> dict:
         return self._repo.import_mindmap(content, operator)
 
-    # ── 旁路方法（与 case_service 逐方法对齐 · 薄委托既有 CaseRepo）──
-    # application 方法面与旧 service 逐方法对齐，将这些管理/查询/需求/回收站
-    # 方法补齐到应用门面并薄委托既有 CaseRepo（防腐层，不搬移业务）。
+    # ── 旁路方法（统一通过 DDD Repository）──────────────
     def get_stats(self) -> dict:
-        """用例统计（委托既有 CaseRepo）。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.get_stats()
+        """用例统计。"""
+        return self._repo.get_stats()
 
     def update_case_result(self, case_id: str, result: dict) -> Optional[dict]:
         """更新用例最后执行结果。"""
         import json as _json
-
-        from app.repositories.case_repo import CaseRepo
-
         case = self._find_or_none(case_id)
         if case is None:
             return None
-        return CaseRepo.update(case_id, {"last_result": _json.dumps(result, ensure_ascii=False)})
+        return self._repo.update_case(case_id, {"last_result": _json.dumps(result, ensure_ascii=False)})
 
     def get_mindmap(self, project_filter: str = "") -> dict:
-        """获取思维导图（委托既有 CaseRepo）。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.get_mindmap(project_filter)
+        """获取思维导图。"""
+        return self._repo.get_mindmap(project_filter)
 
     def get_full_info(self, case_id: str) -> Optional[dict]:
         """获取用例完整信息（含版本/评审等聚合视图）。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.get_full_info(case_id)
+        return self._repo.get_full_info(case_id)
 
     def hard_delete(self, case_id: str) -> bool:
         """物理删除用例（连同关联子表）。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.hard_delete(case_id)
+        return self._repo.delete(case_id)
 
     def purge_case(self, case_id: str) -> bool:
         """从回收站彻底删除用例。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.purge_case(case_id)
+        return self._repo.delete(case_id)
 
     def list_trash_cases(self) -> list:
         """列出回收站用例（原始存储行形态）。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.list_trash_cases()
+        return self._repo.list_trash_cases()
 
     def list_versions(self, case_id: str) -> list:
         """列出用例版本历史。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.list_case_versions(case_id)
+        return self._repo.list_case_versions(case_id)
 
     def get_version(self, case_id: str, version: int) -> Optional[dict]:
         """获取指定版本快照。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.get_case_version(case_id, version)
+        return self._repo.get_case_version(case_id, version)
 
     def rollback(self, case_id: str, version: int, operator: str = "") -> bool:
         """回滚到指定版本。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.rollback_case(case_id, version, operator=operator)
+        return self._repo.rollback_case(case_id, version, operator=operator)
 
     def list_changes(self, case_id: str, limit: int = 50) -> list:
         """列出用例变更日志。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.list_case_changes(case_id, limit=limit)
+        return self._repo.list_case_changes(case_id, limit=limit)
 
     def count_changes(self, case_id: str) -> int:
         """统计用例变更日志数。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.count_case_changes(case_id)
+        return self._repo.count_case_changes(case_id)
 
     def add_requirement(self, case_id: str, requirement_id: str,
                         requirement_type: str = "jira",
                         requirement_title: str = "",
                         requirement_url: str = "") -> dict:
         """为用例绑定需求。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.add_requirement(
+        return self._repo.add_requirement(
             case_id, requirement_id=requirement_id,
             requirement_type=requirement_type,
             requirement_title=requirement_title,
@@ -369,13 +332,11 @@ class CaseAppService:
 
     def remove_requirement(self, case_id: str, requirement_id: str) -> bool:
         """移除用例绑定的需求。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.remove_requirement(case_id, requirement_id)
+        return self._repo.remove_requirement(case_id, requirement_id)
 
     def list_requirements(self, case_id: str) -> list:
         """列出用例绑定的需求。"""
-        from app.repositories.case_repo import CaseRepo
-        return CaseRepo.list_requirements(case_id)
+        return self._repo.list_requirements(case_id)
 
     # ── 内部助手 ────────────────────────────────────
     def _find_or_raise(self, case_id: str) -> TestCase:

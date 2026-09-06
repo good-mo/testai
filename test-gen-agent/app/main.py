@@ -112,54 +112,74 @@ from app.auth.router import router as auth_router
 from app.auth.router_member import router as auth_member_router
 from app.auth.router_system import router as auth_system_router
 from app.file_mgmt.router import router as file_router
-from app.routers import (
-    ai_config_router,
-    apitest_compat_router,
-    apitest_router,
-    apitest_trash_router,
-    attachment_router,
-    auth_compat_router,
-    case_review_router,
-    cases_router,
-    datafactory_router,
-    debug_compat_router,
-    defects_compat_extra_router,
-    defects_compat_router,
-    defects_router,
-    environments_extra_router,
-    environments_router,
-    frontend_router,
-    functional_cases_extra_router,
-    functional_cases_router,
-    gap_fixes_router,
-    generation_router,
-    insights_router,
-    integrations_router,
-    method_compat_router,
-    notifications_router,
-    organizations_router,
-    other_compat_router,
-    platform_router,
-    plugins_router,
-    project_compat_router,
-    projects_router,
-    projects_scan_router,
-    reports_compat_router,
-    reports_router,
-    runs_router,
-    scripts_router,
-    system_compat_extra_router,
-    system_compat_router,
-    system_compat_userrole_router,
-    system_router,
-    task_center_router,
-    test_compat_router,
-    test_resources_router,
-    websocket_router,
-)
-from app.routers.extra_router import router as _extra_router
-from app.routers.missing_admin import router as missing_admin_router
-from app.routers.registry import (
+# DDD 域路由导入
+from app.domain.ai_config.interfaces.ai_config import router as ai_config_router
+from app.domain.apitest.interfaces.apitest_router import router as apitest_router
+from app.domain.apitest.interfaces.apitest_trash import router as apitest_trash_router
+from app.domain.file.interfaces.attachment import router as attachment_router
+from app.domain.case_review.interfaces.case_review import router as case_review_router
+from app.domain.datafactory.interfaces.datafactory import router as datafactory_router
+from app.domain.environment.interfaces.environments_extra import router as environments_extra_router
+from app.domain.frontend_api.interfaces.frontend_router import router as frontend_router
+from app.domain.debug.interfaces.gap_fixes import router as gap_fixes_router
+from app.domain.generation.interfaces.generation import router as generation_router
+from app.domain.test_insight.interfaces.insights import router as insights_router
+from app.domain.integration.interfaces.integrations import router as integrations_router
+from app.domain.organization.interfaces.organizations import router as organizations_router
+from app.domain.platform.interfaces.platform import router as platform_router
+from app.domain.plugins.interfaces.plugins import router as plugins_router
+from app.domain.project.interfaces.projects_scan import router as projects_scan_router
+from app.domain.runs.interfaces.runs import router as runs_router
+from app.domain.script.interfaces.scripts import router as scripts_router
+from app.domain.admin_system.interfaces.system_router import router as system_router
+from app.domain.task_center.interfaces.task_center import router as task_center_router
+from app.domain.resource_pool.interfaces.test_resources import router as test_resources_router
+from app.domain.frontend_api.interfaces.websocket_router import router as websocket_router
+
+# 兼容层路由（保留在 app.routers）
+# DDD 域路由导入
+from app.domain.ai_config.interfaces.ai_config import router as ai_config_router
+from app.domain.apitest.interfaces.apitest_router import router as apitest_router
+from app.domain.apitest.interfaces.apitest_trash import router as apitest_trash_router
+from app.domain.file.interfaces.attachment import router as attachment_router
+from app.domain.case_review.interfaces.case_review import router as case_review_router
+from app.domain.datafactory.interfaces.datafactory import router as datafactory_router
+from app.domain.environment.interfaces.environments_extra import router as environments_extra_router
+from app.domain.frontend_api.interfaces.frontend_router import router as frontend_router
+from app.domain.debug.interfaces.gap_fixes import router as gap_fixes_router
+from app.domain.generation.interfaces.generation import router as generation_router
+from app.domain.test_insight.interfaces.insights import router as insights_router
+from app.domain.integration.interfaces.integrations import router as integrations_router
+from app.domain.organization.interfaces.organizations import router as organizations_router
+from app.domain.platform.interfaces.platform import router as platform_router
+from app.domain.plugins.interfaces.plugins import router as plugins_router
+from app.domain.project.interfaces.projects_scan import router as projects_scan_router
+from app.domain.runs.interfaces.runs import router as runs_router
+from app.domain.script.interfaces.scripts import router as scripts_router
+from app.domain.admin_system.interfaces.system_router import router as system_router
+from app.domain.task_center.interfaces.task_center import router as task_center_router
+from app.domain.resource_pool.interfaces.test_resources import router as test_resources_router
+from app.domain.frontend_api.interfaces.websocket_router import router as websocket_router
+from app.domain.cases.interfaces.router import router as cases_router
+from app.domain.defects.interfaces.router import router as defects_router
+from app.domain.environment.interfaces.router import router as environments_router
+from app.domain.project.interfaces.router import router as projects_router
+from app.domain.reports.interfaces.router import router as reports_router
+
+# 兼容层路由（从 domain 导入）
+from app.domain.apitest.interfaces.apitest_compat import router as apitest_compat_router
+from app.domain.auth.interfaces.auth_compat import router as auth_compat_router
+from app.domain.debug.interfaces.debug_compat import router as debug_compat_router
+from app.domain.defects.interfaces.defects_compat import router as defects_compat_router
+from app.domain.cases.interfaces.method_compat import router as method_compat_router
+from app.domain.cases.interfaces.other_compat import router as other_compat_router
+from app.domain.organization.interfaces.system_compat_extra import router as system_compat_extra_router
+from app.domain.organization.interfaces.system_compat import router as system_compat_router
+from app.domain.identity.interfaces.system_compat_userrole import router as system_compat_userrole_router
+from app.domain.fake_error.interfaces.test_compat import router as test_compat_router
+from app.domain.cases.interfaces.functional_cases import router as functional_cases_router
+
+from app.core.registry import (
     GROUP_BUSINESS,
     GROUP_CATCHALL,
     GROUP_CORE,
@@ -191,7 +211,6 @@ _router_registry.add_group(
         ("dashboard_mine", dashboard_mine_router),
         ("system_settings", system_settings_router),
         ("file", file_router),
-        ("missing_admin", missing_admin_router),
     ],
     priority=PRIORITY_CORE,
     note="认证与基础模块路由",
@@ -210,34 +229,35 @@ _router_registry.add_group(
         ("datafactory", datafactory_router),
         ("debug_compat", debug_compat_router),
         ("defects_compat", defects_compat_router),
-        ("defects_compat_extra", defects_compat_extra_router),
-        ("defects", defects_router),
-        ("environments_extra", environments_extra_router),
-        ("environments", environments_router),
+                ("defects", defects_router),
+                ("environments", environments_router),
         ("frontend", frontend_router),
         ("functional_cases", functional_cases_router),
-        ("functional_cases_extra", functional_cases_extra_router),
-        ("gap_fixes", gap_fixes_router),
+                ("gap_fixes", gap_fixes_router),
         ("generation", generation_router),
         ("insights", insights_router),
         ("integrations", integrations_router),
         ("method_compat", method_compat_router),
-        ("notifications", notifications_router),
+        # notifications 已拆分为 message 和 identity_log
+        # ("notifications", notifications_router),
+        # TODO: 注册 DDD 域路由
+        ("message", message_router),
+        ("identity_log", identity_log_router),
         ("organizations", organizations_router),
         ("other_compat", other_compat_router),
         ("platform", platform_router),
         ("plugins", plugins_router),
-        ("project_compat", project_compat_router),
+        ("custom_field_compat", custom_field_compat_router),
+        ("template_compat", template_compat_router),
+        ("workflow_compat", workflow_compat_router),
         ("projects", projects_router),
         ("projects_scan", projects_scan_router),
-        ("reports_compat", reports_compat_router),
         ("reports", reports_router),
         ("runs", runs_router),
         ("scripts", scripts_router),
         ("system_compat", system_compat_router),
         ("system_compat_userrole", system_compat_userrole_router),
-        ("system_compat_extra", system_compat_extra_router),
-        ("system", system_router),
+                ("system", system_router),
         ("task_center", task_center_router),
         ("test_compat", test_compat_router),
         ("test_resources", test_resources_router),
@@ -248,8 +268,7 @@ _router_registry.add_group(
 )
 _router_registry.add_group(
     GROUP_CATCHALL,
-    [("extra_router", _extra_router)],
-    priority=PRIORITY_CATCHALL,
+        priority=PRIORITY_CATCHALL,
     note="前端缺失 API 补充；含 {suffix}/{project_id} 泛化路由，必须最后 include",
 )
 
@@ -363,4 +382,3 @@ def ms_frontend(full_path: str = ""):
 from app.core.fastpath import install_route_fastpath
 
 install_route_fastpath(app)
-
